@@ -1,0 +1,40 @@
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: hello-kubernetes
+#  labels:
+#    app: hello-kubernetes
+#spec:
+#  replicas: 3
+#  selector:
+#    matchLabels:
+#      app: hello-kubernetes
+#  template:
+#    metadata:
+#      labels:
+#        app: hello-kubernetes
+#    spec:
+#      serviceAccountName: hello-kubernetes
+#      containers:
+#        - image: paulbouwer/hello-kubernetes:1
+#          name: hello-kubernetes
+#          env:
+#            - name: PORT
+#              value: '8080'
+#            - name: MESSAGE
+#              value: 'Hello Cloud Native Linz :)'
+#            - name: KUBERNETES_NAMESPACE
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: metadata.namespace
+#            - name: KUBERNETES_POD_NAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: metadata.name
+#            - name: KUBERNETES_NODE_NAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: spec.nodeName
+#          ports:
+#            - containerPort: 8080
+#              name: http

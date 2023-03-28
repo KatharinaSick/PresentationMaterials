@@ -1,0 +1,19 @@
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: ksick-cncf-linz-demo-crossplane-gitops
+spec:
+  forProvider:
+    location: EU
+    forceDestroy: true
+    lifecycleRule:
+      - condition:
+          - age: 7
+        action:
+          - type: Delete
+      - condition:
+          - age: 1
+        action:
+          - type: AbortIncompleteMultipartUpload
+  providerConfigRef:
+    name: default

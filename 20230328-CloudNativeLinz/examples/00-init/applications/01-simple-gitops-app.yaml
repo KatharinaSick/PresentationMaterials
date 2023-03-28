@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 01-simple-gitops-app
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/KatharinaSick/PresentationMaterials'
+    path: 20230328-CloudNativeLinz/examples/01-simple-gitops-app
+    targetRevision: HEAD
+  destination:
+    namespace: 01-simple-gitops-app
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: true
+    syncOptions:
+      - CreateNamespace=true
