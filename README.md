@@ -1,2 +1,3 @@
-# PresentationMaterials
-Contains slides and demos of my public presentations
+# Presentation Materials
+
+This repository contains the slides and demos for my public presentations.
