@@ -1,0 +1,20 @@
+{
+  "name": "20230906-techtalkdays",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.11",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-theme-ksick-dynatrace": "^0.4.0"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.35",
+    "@iconify-json/simple-icons": "^1.1.69",
+    "vite-plugin-remote-assets": "^0.3.2"
+  }
+}
