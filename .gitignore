@@ -13,3 +13,6 @@ override.tf.json
 
 # Crossplane
 *sa.json
+
+# Build
+dist

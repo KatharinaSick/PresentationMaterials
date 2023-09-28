@@ -2,7 +2,7 @@
   "name": "20230906-techtalkdays",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --out ../dist/20230906/TechTalkDays --base /20230906/TechTalkDays",
     "dev": "slidev --open",
     "export": "slidev export"
   },

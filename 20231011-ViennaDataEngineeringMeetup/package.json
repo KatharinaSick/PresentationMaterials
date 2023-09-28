@@ -2,7 +2,7 @@
   "name": "20231011-viennadataengineeringmeetup",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --out ../dist/20231011/ViennaDataEngineeringMeetup --base /20231011/ViennaDataEngineeringMeetup",
     "dev": "slidev --open",
     "export": "slidev export"
   },
@@ -11,6 +11,7 @@
     "slidev-theme-ksick-dynatrace": "^0.4.1"
   },
   "devDependencies": {
+    "@iconify-json/simple-icons": "^1.1.69",
     "vite-plugin-remote-assets": "^0.3.2"
   }
 }
