@@ -1,7 +1,6 @@
 ---
 theme: ksick-dynatrace
 title: Internal Developer Platforms - The Key to Developer Productivity
-download: true
 defaults:
   speaker: Katharina Sick
   image: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/About/Drawing.png

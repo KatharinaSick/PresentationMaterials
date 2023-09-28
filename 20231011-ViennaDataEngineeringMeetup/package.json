@@ -1,0 +1,16 @@
+{
+  "name": "20231011-viennadataengineeringmeetup",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.11",
+    "slidev-theme-ksick-dynatrace": "^0.4.1"
+  },
+  "devDependencies": {
+    "vite-plugin-remote-assets": "^0.3.2"
+  }
+}
