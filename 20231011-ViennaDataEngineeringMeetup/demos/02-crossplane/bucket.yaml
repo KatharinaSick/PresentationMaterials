@@ -1,0 +1,12 @@
+# https://marketplace.upbound.io/providers/upbound/provider-gcp-storage/v0.37.0
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: i-was-created-with-crossplane-yay
+spec:
+  forProvider:
+    location: EU
+    labels:
+      a-key: with-a-value
+  providerConfigRef:
+    name: default
