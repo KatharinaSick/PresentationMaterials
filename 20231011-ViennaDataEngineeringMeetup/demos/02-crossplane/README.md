@@ -50,11 +50,11 @@ kubectl apply -f ./02-crossplane/provider-config.yaml
 
 - Create a GCP storage bucket
 ```shell
-kubectl apply -f ./02-crossplane/provider-config.yaml
+kubectl apply -f ./02-crossplane/bucket.yaml
 ```
-- Uncomment the bucket labes and reapply it
+- Uncomment the bucket labels and reapply it
 ```shell
-kubectl apply -f ./02-crossplane/provider-config.yaml
+kubectl apply -f ./02-crossplane/bucket.yaml
 ```
 - Delete the bucket
 ```shell

@@ -23,6 +23,7 @@
           pkgs.kubernetes-helm
           pkgs.k9s
         ];
+        EDITOR = "vim";
       };
     });
 }

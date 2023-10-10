@@ -18,5 +18,7 @@ override.tf.json
 dist
 
 # Node
-
 **/node_modules
+
+# Local presentations
+.local
