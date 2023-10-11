@@ -381,3 +381,20 @@ layout: center
 ---
 
 # Kubernetes + Crossplane + GitOps = ❤️
+
+---
+layout: center
+---
+
+# Thank you 🙏
+
+<div style="display: flex; flex-direction: row; gap: 100px; margin-top: 32px">
+<div>
+<img style="width: 200px; height: 200px" src="/slides-qr.svg" />
+<strong>Slides</strong>
+</div>
+<div>
+<img style="width: 200px; height: 200px" src="/demos-qr.svg" />
+<strong>Demos</strong>
+</div>
+</div>
