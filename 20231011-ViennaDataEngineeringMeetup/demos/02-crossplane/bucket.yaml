@@ -6,7 +6,7 @@ metadata:
 spec:
   forProvider:
     location: EU
-    #labels:
-      #a-key: with-a-value
+    labels:
+      a-key: with-a-value
   providerConfigRef:
     name: default
