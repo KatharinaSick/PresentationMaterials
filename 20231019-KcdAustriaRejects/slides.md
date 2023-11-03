@@ -3,7 +3,7 @@ theme: ksick-dynatrace
 title: Securing Kubernetes Clusters - The Principle of Least Privilege with ArgoCD and Crossplane
 defaults:
   speaker: Katharina Sick
-  image: /me.png
+  image: me.png
   website: ksick.dev
   jobTitle: Senior Software Engineer
   eventName: KCD Austria Rejects
