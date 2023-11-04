@@ -1,0 +1,19 @@
+{
+  "name": "20231114-kcddenmark",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out ../dist/20231114/KcdDenmark --base /20231114/KcdDenmark",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.11",
+    "slidev-theme-ksick-dynatrace": "^0.6.0"
+  },
+  "devDependencies": {
+    "@iconify-json/codicon": "^1.1.32",
+    "@iconify-json/logos": "^1.1.37",
+    "@iconify-json/simple-icons": "^1.1.76",
+    "vite-plugin-remote-assets": "^0.3.2"
+  }
+}
