@@ -3,7 +3,7 @@
 # Internal Developer Platforms - The Key to Developer Productivity
 
 Slides for a talk I did at [TechTalkDays](https://techtalkdays.com/).
-The recording will be published on YouTube.
+The recording is available on [YouTube](https://www.youtube.com/watch?v=zgxdq3O-atE).
 
 Created with [Slidev](https://sli.dev/) & deployed
 at [slides.ksick.dev/20230906-TechTalkDays](https://slides.ksick.dev/20230906-TechTalkDays).
