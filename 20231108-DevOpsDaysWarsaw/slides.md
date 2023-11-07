@@ -274,6 +274,21 @@ To make all of this possible we are using ArgoCD. So how do we manage to run Git
 
 ---
 
+# What is ArgoCD?
+
+<v-clicks>
+
+🛥 Continuous Delivery for Kubernetes
+
+🕵️ GitOps agent
+
+⭐ Applications track sources
+
+✨ Projects group applications
+</v-clicks>
+
+---
+
 # Least Privilege with ArgoCD
 
 <v-clicks>
@@ -295,6 +310,21 @@ image: mindset.png
 ---
 
 <!-- The tale of lost mindset -->
+
+---
+
+# What is Crossplane?
+
+<v-clicks>
+
+🦸‍♀ Kubernetes operator
+
+🏗️ Orchestrates applications and infrastructure
+
+♾️ Highly extensible and configurable
+
+🔧 Not opinionated
+</v-clicks>
 
 ---
 
