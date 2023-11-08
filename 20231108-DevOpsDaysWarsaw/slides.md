@@ -362,11 +362,15 @@ image: mindset.png
 layout: center
 ---
 
-<div style="display: flex; flex-direction: column; justify-content: end; align-items: center; height: 100%">
-
 # Thank you ❤️
 
-<img style="width: 130px; height: 130px; margin-top: 36px" src="/qr-slides.svg" />
-
-<a href="https://ksick.dev" style="font-size: 18px; margin: 0; padding: 0">ksick.dev</a>
+<div style="display: flex; flex-direction: row; gap: 100px; margin-top: 32px">
+<div>
+<img style="width: 200px; height: 200px" src="/qr-linkedin.svg" />
+<strong>LinkedIn</strong>
+</div>
+<div>
+<img style="width: 200px; height: 200px" src="/qr-slides.svg" />
+<strong>Slides</strong>
+</div>
 </div>
