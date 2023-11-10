@@ -5,11 +5,12 @@ title: >-
   Hate You
 defaults:
   speaker: Katharina Sick
-  image: me.png
+  image: me.webp
   website: ksick.dev
   jobTitle: Senior Software Engineer
   eventName: KCD Denmark
   eventDate: November 14, 2023
+download: true
 ---
 
 # Principle of Least Privilege
@@ -26,7 +27,7 @@ K8s has evolved: app hub -> ⏭️ main platform for everything
 
 ---
 layout: image-full
-image: platform.png
+image: platform.webp
 ---
 
 <!--
@@ -56,7 +57,7 @@ preload: false
 }
 </style>
 
-# OWASP Kubernetes Top 10
+# OWASP Kubernetes Top 10 (2022)
 
 <ol style="margin-top: 32px">
 <li :class="{ owaspHighlighted: $slidev.nav.clicks === 1, listItem: true }">Insecure Workload Configurations</li>
@@ -89,9 +90,8 @@ layout: about
 
 ---
 layout: image-full
-image: storytime.png
+image: storytime.webp
 ---
-
 
 
 <!--
@@ -154,7 +154,6 @@ Assume Breach
 
 ---
 preload: false
-clicks: 7
 ---
 
 <style>
@@ -176,17 +175,41 @@ clicks: 7
 }
 </style>
 
-<img src="/galaxy.png" alt="Galaxy" :class="{ background: $slidev.nav.clicks > 0 }" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
+<img src="/galaxy.webp" alt="Galaxy" :class="{ background: $slidev.nav.clicks > 0 }" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
 
 <logos-kubernetes style="position: absolute; width: 150px; height: 150px; left: 440px; top: 185px" />
 
 <span v-click class="subject" style="left: 480px; top: 60px">👩‍💻</span>
 <span v-click class="subject" style="left: 625px; top: 150px">🤖</span>
-<span v-click :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 625px; top: 300px">📦</span>
-<span v-click :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 480px; top: 400px">🚢</span>
-<span v-click :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 325px; top: 300px">🌐️</span>
-<span v-click :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 325px; top: 150px">🧩️</span>
+<span v-click class="subject" style="left: 625px; top: 300px">📦</span>
+<span v-click class="subject" style="left: 480px; top: 400px">🚢</span>
+<span v-click class="subject" style="left: 325px; top: 300px">🌐️</span>
+<span v-click class="subject" style="left: 325px; top: 150px">🧩️</span>
 
+---
+preload: false
+clicks: 7
+---
+
+# Wiz Kubernetes Security Report (2023)
+
+<img src="/galaxy.webp" alt="Galaxy" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0"  />
+
+<span class="subject" style="left: 50px; top: 120px; font-size: 36px" v-motion :initial="{x: 430, y: -30, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">👩‍💻</span>
+<span class="subject" style="left: 50px; top: 186px; font-size: 36px" v-motion :initial="{x: 575, y: -6, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🤖</span>
+<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 252px; font-size: 36px" v-motion :initial="{x: 575, y: 78, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">📦</span>
+<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 318px; font-size: 36px" v-motion :initial="{x: 430, y: 112, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🚢</span>
+<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 384px; font-size: 36px" v-motion :initial="{x: 275, y: -54, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🌐️</span>
+<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 450px; font-size: 36px" v-motion :initial="{x: 275, y: -270, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🧩️️</span>
+
+<ul style="position:absolute; top: 130px; left: 150px">
+<li v-click style="list-style-type: none">&lt;1% of clusters allow anonymous API access</li>
+<li v-click style="list-style-type: none">8% of pods have elevated RBAC privileges</li>
+<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">16% of pods have risky system capabilities</li>
+<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">18% of pods mount sensitive host paths</li>
+<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">18% of pods run as root</li>
+<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">91% of namespaces don't have network policies</li>
+</ul> 
 
 ---
 layout: two-cols-header
@@ -243,7 +266,7 @@ roleRef:
 layout: center
 ---
 
-<img src="/maze.png" alt="Maze" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
+<img src="/maze.webp" alt="Maze" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
 
 <h1 style="z-index: 2">At its core, RBAC is clear and logical.<br/>In practice, it's a maze of considerations.</h1>
 
@@ -262,15 +285,31 @@ layout: center
 
 ---
 layout: center
+preload: false
 ---
 
-<img src="/gitops.png" alt="Maze" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
+<img src="/gitops.webp" alt="Maze" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
 
 <h1 style="z-index: 2"> Git Repositories > Humans</h1>
 
 <!--
 To make all of this possible we are using ArgoCD. So how do we manage to run GitOps with ArgoCD and Least Privilege? ⏭️
 -->
+
+---
+
+# What is ArgoCD?
+
+<v-clicks>
+
+🛥 Continuous Delivery for Kubernetes
+
+👾️ GitOps agent
+
+⭐ Applications track sources
+
+✨ Projects group applications
+</v-clicks>
 
 ---
 
@@ -291,11 +330,27 @@ To make all of this possible we are using ArgoCD. So how do we manage to run Git
 
 ---
 layout: image-full
-image: mindset.png
+image: mindset.webp
 ---
 
 <!-- The tale of lost mindset -->
 
+
+---
+
+# What is Crossplane?
+
+<v-clicks>
+
+🦸‍♀ Kubernetes operator
+
+🏗️ Orchestrates applications and infrastructure
+
+♾️ Highly extensible and configurable
+
+🔧 Not opinionated
+</v-clicks>
+ 
 ---
 
 # Least Privilege with Crossplane
@@ -311,7 +366,7 @@ image: mindset.png
 
 ---
 
-<img src="/challenges.png" alt="Challenges" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 0" />
+<img src="/challenges.webp" alt="Challenges" class="background" style="position:absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 0" />
 
 <h1 style="position: relative; opacity: 1">Challenges</h1>
 
@@ -334,10 +389,10 @@ layout: center
 
 # Thank you ❤️
 
-<div style="display: flex; flex-direction: row; gap: 100px; margin-top: 32px">
+<div style="display: flex; flex-direction: row; gap: 100px; margin: 32px">
 <div>
-<img style="width: 200px; height: 200px" src="/qr-slides.svg" />
-<strong>Slides</strong>
+<img style="width: 200px; height: 200px" src="/qr-linkedin.svg" />
+<strong>LinkedIn</strong>
 </div>
 <div>
 <img style="width: 200px; height: 200px" src="/qr-feedback.svg" />
