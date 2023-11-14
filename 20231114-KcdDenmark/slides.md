@@ -188,7 +188,7 @@ preload: false
 
 ---
 preload: false
-clicks: 7
+clicks: 2
 ---
 
 # Wiz Kubernetes Security Report (2023)
@@ -197,18 +197,18 @@ clicks: 7
 
 <span class="subject" style="left: 50px; top: 120px; font-size: 36px" v-motion :initial="{x: 430, y: -30, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">👩‍💻</span>
 <span class="subject" style="left: 50px; top: 186px; font-size: 36px" v-motion :initial="{x: 575, y: -6, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🤖</span>
-<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 252px; font-size: 36px" v-motion :initial="{x: 575, y: 78, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">📦</span>
-<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 318px; font-size: 36px" v-motion :initial="{x: 430, y: 112, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🚢</span>
-<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 384px; font-size: 36px" v-motion :initial="{x: 275, y: -54, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🌐️</span>
-<span :class="{ disabled: $slidev.nav.clicks > 6, subject: true }" style="left: 50px; top: 450px; font-size: 36px" v-motion :initial="{x: 275, y: -270, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🧩️️</span>
+<span :class="{ disabled: $slidev.nav.clicks > 1, subject: true }" style="left: 50px; top: 252px; font-size: 36px" v-motion :initial="{x: 575, y: 78, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">📦</span>
+<span :class="{ disabled: $slidev.nav.clicks > 1, subject: true }" style="left: 50px; top: 318px; font-size: 36px" v-motion :initial="{x: 430, y: 112, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🚢</span>
+<span :class="{ disabled: $slidev.nav.clicks > 1, subject: true }" style="left: 50px; top: 384px; font-size: 36px" v-motion :initial="{x: 275, y: -54, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🌐️</span>
+<span :class="{ disabled: $slidev.nav.clicks > 1, subject: true }" style="left: 50px; top: 450px; font-size: 36px" v-motion :initial="{x: 275, y: -270, scale: 2}" :enter="{x: 0, y: 0, scale: 1, transition: { type: 'keyframes', ease: 'linear', duration: 750 }}">🧩️️</span>
 
-<ul style="position:absolute; top: 130px; left: 150px">
-<li v-click style="list-style-type: none">&lt;1% of clusters allow anonymous API access</li>
-<li v-click style="list-style-type: none">8% of pods have elevated RBAC privileges</li>
-<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">16% of pods have risky system capabilities</li>
-<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">18% of pods mount sensitive host paths</li>
-<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">18% of pods run as root</li>
-<li v-click :class="{ disabled: $slidev.nav.clicks > 6 }" style="list-style-type: none">91% of namespaces don't have network policies</li>
+<ul v-click style="position:absolute; top: 130px; left: 150px">
+<li style="list-style-type: none">&lt;1% of clusters allow anonymous API access</li>
+<li style="list-style-type: none">8% of pods have elevated RBAC privileges</li>
+<li :class="{ disabled: $slidev.nav.clicks > 1 }" style="list-style-type: none">16% of pods have risky system capabilities</li>
+<li :class="{ disabled: $slidev.nav.clicks > 1 }" style="list-style-type: none">18% of pods mount sensitive host paths</li>
+<li :class="{ disabled: $slidev.nav.clicks > 1 }" style="list-style-type: none">18% of pods run as root</li>
+<li :class="{ disabled: $slidev.nav.clicks > 1 }" style="list-style-type: none">91% of namespaces don't have network policies</li>
 </ul> 
 
 ---
