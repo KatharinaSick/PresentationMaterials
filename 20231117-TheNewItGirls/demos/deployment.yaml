@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kubernetes
+spec:
+#  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-kubernetes
+
+  template:
+    metadata:
+      labels:
+        app: hello-kubernetes
+    spec:
+      containers:
+        - image: paulbouwer/hello-kubernetes:1
+          name: hello-kubernetes
+          ports:
+            - containerPort: 8080
+              name: http
+#          resources:
+#            limits:
+#              cpu: 250m
+#              memory: 100Mb
+#            requests:
+#              cpu: 250m
+#              memory: 100Mb
+
+#          env:
+#            - name: MESSAGE
+#              value: 'Hello #thenewITgirls :)'
+#            - name: KUBERNETES_NAMESPACE
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: metadata.namespace
+#            - name: KUBERNETES_POD_NAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: metadata.name
+#            - name: KUBERNETES_NODE_NAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: spec.nodeName
+#            - name: MESSAGE
+#              valueFrom:
+#                secretKeyRef:
+#                  name: hello-kubernetes-secrets
+#                  key: message
+#            - name: MESSAGE
+#              valueFrom:
+#                configMapKeyRef:
+#                  name: hello-kubernetes-config
+#                  key: message
+
