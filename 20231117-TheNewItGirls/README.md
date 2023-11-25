@@ -1,11 +1,24 @@
+---
+title: 'Getting started with Containers and Kubernetes: A Beginners Workshop'
+summary: This workshop is a step by step journey into the world of containers and Kubernetes. Whether you're new to these technologies or simply looking for a better understanding, join us for 4 hours of hands-on learning to tackle the notorious "works on my machine" challenge.
+status: done
+event:
+  name: '#thenewITgirls TechTrack'
+  link: https://www.thenewitgirls.com/en/
+  date: 2023/11/17
+  logo: https://secure.meetupstatic.com/photos/event/9/8/0/1/clean_501338913.webp
+images:
+  thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/images/thumbnail.webp
+  full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/images/full.webp
+co-speakers:
+  - name: Rigerta Demiri
+    linkedin: https://www.linkedin.com/in/rigerta/
+slides:
+  - type: pdf
+    url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/slides.pdf
+---
+
 # Getting started with Containers and Kubernetes: A Beginner's Workshop
-
-Slides & examples for the workshop [Rigerta](https://github.com/rigerta) and I did
-at [#thenewITgirls](https://www.meetup.com/thenewitgirls/).
-
-Rigerta did the first part about containers in general and then I covered Kubernetes basics.
-
-## Abstract
 
 This workshop is a step by step journey into the world of containers and Kubernetes. Whether you're new to these
 technologies or simply looking for a better understanding, join us for 4 hours of hands-on learning to tackle the
