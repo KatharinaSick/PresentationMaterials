@@ -20,5 +20,6 @@ dist
 # Node
 **/node_modules
 
-# Local presentations
+# Local presentations & files
 .local
+*.local.*
