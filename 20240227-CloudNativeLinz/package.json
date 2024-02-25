@@ -1,8 +1,8 @@
 {
-  "name": "20231114-kcddenmark",
+  "name": "20240227-cloudnativelinz",
   "private": true,
   "scripts": {
-    "build": "slidev build --out ../dist/20231114/KcdDenmark/ --base /20231114/KcdDenmark/",
+    "build": "slidev build --out ../dist/20240227/CloudNativeLinz/ --base /20240227/CloudNativeLinz/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
