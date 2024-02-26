@@ -7,7 +7,7 @@ defaults:
   website: ksick.dev
   jobTitle: Senior Software Engineer
   eventName: Cloud Native Linz
-  eventDate: Februar 27, 2024
+  eventDate: February 27, 2024
 download: true
 ---
 
