@@ -116,9 +116,10 @@ Something Else
 
 ---
 preload: false
-layout: image-center
-image: /reddit.png
+layout: center
 ---
+
+<img src="/reddit.png" alt="Reddit post" style="border-radius: 4px"/>
 
 ---
 preload: false
@@ -402,7 +403,7 @@ clicks: 6
 layout: center
 ---
 
-<img src="/illusion.webp" style="width: 50%; margin: auto; border-radius: 4px"></img>
+<img src="/illusion.jpeg" style="width: 80%; margin: auto; border-radius: 4px"></img>
 
 ---
 layout: center
