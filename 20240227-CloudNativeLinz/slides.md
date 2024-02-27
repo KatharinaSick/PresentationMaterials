@@ -26,6 +26,10 @@ download: true
   opacity: 0.1;
 }
 
+.invisible {
+  opacity: 0;
+}
+
 .icon {
   width: 50px;
   height: 50px;
@@ -53,10 +57,11 @@ download: true
 Building Platforms With Developers in Mind
 
 <!--
-What are platforms?
-Main goal: reduce cognitive load, focus on innovation & be more productive
-How: Gathering repetitive tasks around building, delivering and observing applications into one central hub.
-Self-service heaven for developers
+What are platforms?<br/>
+Main goal: reduce cognitive load, focus on innovation & productivity<br/>
+
+How: Gathering repetitive tasks around building, delivering and observing applications into one central hub.<br/>
+**Self-service heaven for developers** <br/>
 -->
 
 ---
@@ -74,14 +79,27 @@ thoughtworks.com
 </a>
 
 <!--
-Building a platform at Dynatrace
-Lots of things to consider: 
-- How users intaract with the platform & deploy resources onto it?
+ops related tasks become a breeze<br/>
+no operations bottleneck<br/>
+performance and innovation -> awesome<br/>  
+
+we're bulding one at dynatrace<br/>
+How can users interact with the platform?
 -->
 
 ---
 layout: about
 ---
+
+<!--
+How do you build such a platform?<br/>
+CI/CD alone is a beast<br/>
+Self-service without bothering operations or platform team
+
+The catch? Platform Engineers suddenly need UI/UX skills
+Because, ultimately ⏭️ every platform offers an interface
+-->
+
 
 ---
 layout: center
@@ -114,12 +132,24 @@ Something Else
 </div>
 </div>
 
+<!--
+Well-designed user interface is key for adoption<br/>
+Get it right: more and more<br/>
+ignore needs: end up like this folk on reddit
+-->
+
 ---
 preload: false
 layout: center
 ---
 
 <img src="/reddit.png" alt="Reddit post" style="border-radius: 4px"/>
+
+<!--
+No one sees value if it doesn't solve tehir problems
+
+How to build a platofrm people actually like to use?
+-->
 
 ---
 preload: false
@@ -140,6 +170,25 @@ preload: false
 📊 Make it observable
 </v-clicks>
 
+<!--
+It depends <br/>
+Heaviliy influenced by its domain<br/>
+Needs to be adjusted to workflows<br/>
+find your needs, use-cases, requirements
+
+Let's get focused<br/>
+What problems?<br/>
+Don't get distracted with tools, it's all about delivering value
+
+Intuitive interactions & seamless workflows<br/>
+Gregor's Law: "Excessive complexity is nature’s punishment for organizations that are
+unable to make decisions."
+
+MVP -> TVP
+
+You are going to face errors. Be prepared
+-->
+
 ---
 layout: center
 ---
@@ -150,6 +199,25 @@ layout: center
 Treat Your Developer Platform as a Product
 </h1>
 
+<div style="position: absolute; width: 250px; top:350px; display: flex; align-items: center; justify-content: center; flex-direction: column">
+<img style="height: 100px; width: 100px" src="/qr-techtalkdays.svg" alt="QR Code"/>
+<a style="font-size: 12px; margin-top: 8px" href="https://youtu.be/zgxdq3O-atE?si=GdpU7MBRZdd_tuN4">Introduction to<br/>Inernal Developer Platforms</a>
+</div>
+
+
+<!--
+Developers are your most important customers
+
+Listen to their needs, gather their feedback, and iterate based on their experiences.
+
+Building a
+platform people love is about building a platform people actually use.
+
+How do people actually interact with the platform? That's where we finally start diving into abstraction.
+
+Burger example
+-->
+
 ---
 layout: two-cols
 preload: false
@@ -157,16 +225,20 @@ preload: false
 
 <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; text-align: center; gap: 12px; flex-direction: column">
     <span style="font-size: 48px;" :class="{ disabled: $slidev.nav.clicks > 4 }">🍞</span>
-    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4 }">🥬</span>
-    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4 }">🥩</span>
-    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4 }">🧀</span>
-    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4 }">🍅</span>
+    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4, invisible: $slidev.nav.clicks < 1 }">🥬</span>
+    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4, invisible: $slidev.nav.clicks < 2 }">🥩</span>
+    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4, invisible: $slidev.nav.clicks < 3 }">🧀</span>
+    <span style="font-size: 48px;" v-click :class="{ disabled: $slidev.nav.clicks > 4, invisible: $slidev.nav.clicks < 4 }">🍅</span>
 </div>
 
 ::right::
 <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-    <span style="font-size: 100px;" v-click>🍔</span>
+    <span style="font-size: 100px;" v-click :class="{ invisible: $slidev.nav.clicks < 5 }">🍔</span>
 </div>
+
+<!--
+That's the power of abstraction
+-->
 
 ---
 layout: center
@@ -182,6 +254,21 @@ However, the value of the platform doesn’t just derive from its scope, [...] b
 Platform Strategy, Gregor Hohpe
 </a>
 
+<!--
+value of a platform = how well it connects components 
+
+Just like cooking. Highest quality ingredients but great meal comes from how they are prepared.
+We need to combine components and offer well-prepared meals to our developers
+
+Meal = opinionated. Get all elements and put opinions & experiences on top to create something that can be **easily consumed**
+
+High & direct impact on cognitive load
+
+Devs should not have to wrestle with the inner mechanics of a platform
+
+They should focus on "what" with minimal exposure to "how"
+-->
+
 ---
 layout: center
 preload: false
@@ -190,7 +277,7 @@ preload: false
 <img style="height: 250px; width: 250px; position: absolute; left: 230px; top: 150px" src="/crossplane.svg" alt="Crossplane Logo"/>
 <img style="height: 250px; width: 250px; position: absolute; left: 500px; top: 150px" src="/backstage.svg" alt="Backstage Logo"/>
 
-<span v-click>
+<span v-click :class="{ invisible: $slidev.nav.clicks < 1 }">
 <div style="position: absolute; width: 250px; left: 0px; top:50px; display: flex; align-items: center; justify-content: center; flex-direction: column">
 <img style="height: 80px; width: 80px" src="/kubevela.svg" alt="Kubevela Logo"/>
 <span style="font-size: 12px">KubeVela</span>
@@ -216,6 +303,13 @@ preload: false
 <span style="font-size: 12px">Cortex</span>
 </div>
 </span>
+
+<!--
+How can abstraction be implemented in a cloud native platform?
+
+Very different approaches, alternatives exist
+-->
+
 ---
 preload: false
 ---
@@ -256,6 +350,11 @@ preload: false
 <Arrow v-bind="{ x1:550, y1:460, x2:650, y2:460 }" />
 <ion:ios-more style="position: absolute; height: 50px; width: 50px; left: 670px; top: 435px" />
 </span>
+
+<!--
+Two super powers: IaC & compositions.
+
+-->
 
 ---
 layout: two-cols-header
@@ -326,7 +425,7 @@ clicks: 6
 ::left::
 
 <div style="display: flex; flex-direction: column; gap: 12px; align-items: center">
-<div class="component" >Database Instance</div>
+<div class="component">Database Instance</div>
 <div class="component">Database</div>
 <v-click at="0"><div class="component">Deployment</div></v-click>
 <v-click at="1"><div class="component">Service</div></v-click>
@@ -353,6 +452,16 @@ spec:
 ```
 </div>
 </v-click>
+
+<!--
+You need knowledge about GCP and Kubernetes.
+
+We can make it easier
+
+Composition enables us to create abstractions with Crossplane.
+
+We can also choose a different path: Backstage
+-->
 
 ---
 layout: center
@@ -382,9 +491,9 @@ clicks: 6
 
 <v-clicks>
 
-🧑‍💻 Focus on the user
+<span :class="{ invisible: $slidev.nav.clicks < 1 }">🧑‍💻 Focus on the user</span>
 
-🗺️ Understand your domain
+<span :class="{ invisible: $slidev.nav.clicks < 2 }">🗺️ Understand your domain</span>
 </v-clicks>
 
 <img v-if="$slidev.nav.clicks === 3" v-click="[3,4]" src="/juliano.png" style="border-radius: 4px"/>
@@ -392,18 +501,46 @@ clicks: 6
 
 <v-clicks at="3">
 
-🤓 Provide opinions, not restrictions
+<span :class="{ invisible: $slidev.nav.clicks < 4 }">🤓 Provide opinions, not restrictions</span>
 
-📖 Be transparent
+<span :class="{ invisible: $slidev.nav.clicks < 5 }">📖 Be transparent</span>
 
-🎯 Show the right information at the right time
+<span :class="{ invisible: $slidev.nav.clicks < 6 }">🎯 Show the right information at the right time</span>
 </v-clicks>
+
+<!--
+And finally, let's remember a few guiding principles to ensure our abstractions are actually making things simpler,
+instead of introducing hidden complexity
+
+User focus: think about tasks, does your abstraction help achieving this task?<br/>it's not about hiding details but about showing the right information at the right time
+
+Understand domain: meaningful name that shields from complexity<br/>name -> interface -> implementation
+
+opinions: needs a strong vision. removing choice vs providing defaults<br/>jigsaw puzzle removing pieces makes it harder
+
+transparent: communication, decision records, give devs the chance to understand what's going on
+
+right information: failure doesn't respect abstraction
+-->
 
 ---
 layout: center
 ---
 
 <img src="/illusion.jpeg" style="width: 80%; margin: auto; border-radius: 4px"></img>
+
+<!--
+restrictions -> less flexible -> dangerous illusions
+
+Restaurant example: everybody gets the same & peanuts
+
+abstractions are a great tool to reduce cognitive load but can be dangerous<br/>
+Think about region: latency, resilience or availability -> communication, meaningful names!
+
+lot of information: platforms -> tvp -> abstraction -> too much abstraction
+
+So how to finally get abstraction right?
+-->
 
 ---
 layout: center
@@ -413,6 +550,16 @@ layout: center
 <div style="display: flex">
 <h1 style="font-size: 64px; padding-top: 16px">It depends️</h1><h1 class="gradient" style="font-size: 48px">™️</h1>
 </div>
+
+<!--
+This talk summarizes a lot of things, I learned from books, podcasts and conversations with great people.
+
+Abstraction is not easy
+
+But if you focus on your users and domain and follow guidelines
+like using opinions instead of restrictions and being transparent it is doable and will have great effects on reducing
+cognitive load and increasing developer productivity.
+r-->
 
 ---
 
@@ -445,9 +592,9 @@ Domain-Driven Design, Eric Evans<br/>&nbsp;
 The DevOps Toolkit, Viktor Farcic
 </a>
 
-<img src="/thoughtworks.svg" style="object-fit: contain; height: 50px"/>
+<img src="/thoughtworks.png" style="object-fit: contain; padding: 0 24px"/>
 <a href="https://www.thoughtworks.com/insights" target="_blank">
-Thoughtworks Blog
+Thoughtworks Blog & Podcast
 </a>
 
 <h1 style="margin: 12px 0 0 0">💬</h1>
