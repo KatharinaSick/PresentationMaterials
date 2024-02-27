@@ -201,7 +201,7 @@ Treat Your Developer Platform as a Product
 
 <div style="position: absolute; width: 250px; top:350px; display: flex; align-items: center; justify-content: center; flex-direction: column">
 <img style="height: 100px; width: 100px" src="/qr-techtalkdays.svg" alt="QR Code"/>
-<a style="font-size: 12px; margin-top: 8px" href="https://youtu.be/zgxdq3O-atE?si=GdpU7MBRZdd_tuN4">Introduction to<br/>Inernal Developer Platforms</a>
+<a style="font-size: 12px; margin-top: 8px" href="https://youtu.be/zgxdq3O-atE?si=GdpU7MBRZdd_tuN4">Introduction to<br/>Developer Platforms</a>
 </div>
 
 
@@ -368,7 +368,7 @@ preload: false
 ::left::
 
 <v-click>
-```yaml
+```yaml{all|1-2|3-4|5-18|all}
 apiVersion: sql.gcp.upbound.io/v1beta1
 kind: DatabaseInstance
 metadata:
@@ -396,7 +396,7 @@ spec:
 ::right::
 
 <v-click>
-```yaml
+```yaml{all|1-2|3-4|5-7|all}
 apiVersion: sql.gcp.upbound.io/v1beta1
 kind: Database
 metadata:
