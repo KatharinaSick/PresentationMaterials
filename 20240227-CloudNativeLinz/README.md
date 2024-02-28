@@ -7,6 +7,9 @@ event:
   link: https://cloudnativelinz.github.io/
   date: 2024/02/27
   logo: https://cloudnativelinz.github.io/images/cloudnativelinz-logo.png
+images:
+  thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240227-CloudNativeLinz/images/thumbnail.webp
+  full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240227-CloudNativeLinz/images/full.webp
 slides:
   - type: web
     url: https://slides.ksick.dev/20240227/cloudnativelinz
