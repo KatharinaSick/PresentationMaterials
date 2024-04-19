@@ -1,0 +1,23 @@
+{
+  "name": "20240420-globalazureaustria",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out ../dist/20240420/GlobalAzureAustria --base /20240420/GlobalAzureAustria",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.9",
+    "slidev-theme-ksick-dynatrace": "^1.0.2",
+    "@iconify-json/simple-icons": "^1.1.93",
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify-json/arcticons": "^1.1.95",
+    "@iconify-json/ion": "^1.1.15",
+    "@iconify-json/skill-icons": "^1.1.8",
+    "@iconify-json/vscode-icons": "^1.1.33"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.43.1",
+    "vite-plugin-remote-assets": "^0.4.1"
+  }
+}
