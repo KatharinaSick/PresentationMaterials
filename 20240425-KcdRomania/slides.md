@@ -246,9 +246,9 @@ metadata:
   namespace: default
   name: pod-reader
 rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["get", "watch", "list"]
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "watch", "list"]
 ```
 
 </v-click>
@@ -352,7 +352,7 @@ To make all of this possible we are using ArgoCD. So how do we manage to run Git
 # Falco: The Cloud Native Runtime Security
 
 <img src="/falco-horizontal-color.svg" alt="Falco"  class="background" style="position:absolute; width: 90%; height: 100%; left: 5%; top: 0; z-index: -1" />
-<img style="width:800px; margin-left: auto; margin-right: auto;" src="/falco-architecture.webp" />
+<img style="width:800px; margin-left: auto; margin-right: auto;" src="/falco-architecture.png" />
 
 ---
 
@@ -387,10 +387,12 @@ If we trust our platform blindly,<br/>who's truly in control?
 </h1>
 
 ---
+layout: center
+---
 
-# Let's build trust
+# Let's Build Trust
 
-TODO Falco dashboard screenshot
+<img src="/falco-dashboard.png" alt="Observability Dashboard for Falco" style="width: 90%; height: 80%; object-fit: cover" />
 
 ---
 layout: center

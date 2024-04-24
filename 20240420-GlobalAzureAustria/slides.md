@@ -3,7 +3,7 @@ theme: ksick-dynatrace
 title: To Containers and Beyond - Kubernetes as a Universal Control Plane
 defaults:
   speaker: Katharina Sick
-  image: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/About/Drawing.png
+  image: me.webp
   website: ksick.dev
   description: Senior Software Engineer
   eventName: Global Azure Austria
