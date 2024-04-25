@@ -316,6 +316,24 @@ To make all of this possible we are using ArgoCD. So how do we manage to run Git
 -->
 
 ---
+  
+# Least Privilege with ArgoCD
+ 
+<v-clicks>
+ 
+  🎯 Keep repository configuration on point
+ 
+  ✋ Use ArgoCD projects to provide boundaries
+ 
+  📝 Declare policies to prevent misuse
+ 
+  🎮 Simplify the user interface for clear policies
+ 
+  🌱 Provide development environments
+
+</v-clicks>
+
+---
 
 # What About Blind Spots?
 
