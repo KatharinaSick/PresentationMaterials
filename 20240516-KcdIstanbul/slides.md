@@ -5,7 +5,7 @@ title: >-
 defaults:
   speaker: Katharina Sick & Thomas Labarussias
   eventName: KCD Istanbul
-  eventDate: May 16, 2025
+  eventDate: May 16, 2024
 download: true
 
 ---

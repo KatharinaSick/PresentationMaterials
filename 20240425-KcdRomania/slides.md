@@ -5,7 +5,7 @@ title: >-
 defaults:
   speaker: Katharina Sick & Thomas Labarussias
   eventName: KCD Romania
-  eventDate: April 25, 2025
+  eventDate: April 25, 2024
 backgroundImage: kcd-romania-transparent.png
 download: true
 
