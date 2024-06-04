@@ -237,3 +237,18 @@ layout: center
 <strong>Slides</strong>
 </div>
 </div>
+
+---
+layout: center
+---
+
+<img src="/kcd-austria.jpg" alt="Speaker at KCD Austria" style="object-fit: cover; opacity: 0.3; position:absolute; width: 100%; height: 100%; left: 0; top: 0" />
+<img src="/kcd-austria-logo.png" alt="KCD Austria Logo" style="position: absolute; top: 12px; right: 12px; height: 100px; z-index: 2" />
+
+<h1 style="font-size: 56px; line-height: 1.2; z-index: 2">
+<span style="font-size: 32px">Join us at<br/></span>
+KCD Austria
+<span style="font-size: 32px"><br/>October 8th-10th</span>
+
+</h1>
+<a href="https://kcdaustria.at" target="_blank" style="font-size: 24px; z-index: 2"><br/>kcdaustria.at</a>
