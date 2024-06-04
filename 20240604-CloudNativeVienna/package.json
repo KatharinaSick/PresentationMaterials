@@ -11,8 +11,8 @@
     "@iconify-json/ion": "^1.1.15",
     "@iconify-json/skill-icons": "^1.1.8",
     "@iconify-json/vscode-icons": "^1.1.33",
-    "@slidev/cli": "^0.47.5",
-    "slidev-theme-ksick-dynatrace": "^0.6.0"
+    "@slidev/cli": "^0.49.9",
+    "slidev-theme-ksick-dynatrace": "^1.0.3"
   },
   "devDependencies": {
     "@iconify-json/codicon": "^1.1.43",

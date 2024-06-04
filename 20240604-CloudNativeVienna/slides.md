@@ -5,9 +5,10 @@ defaults:
   speaker: Katharina Sick
   image: me.webp
   website: ksick.dev
-  jobTitle: Platform Engineer
+  description: Platform Engineer at Dynatrace
   eventName: Cloud Native Austria
   eventDate: June 04, 2024
+  showDynatraceLogo: true
 download: true
 ---
 
@@ -64,7 +65,7 @@ layout: center
 <img src="/hbd-k8s.png" alt="Happy Birthday Kubernetes" style="height: 90%"/>
 
 ---
-layout: about
+layout: speaker
 ---
 
 ---
