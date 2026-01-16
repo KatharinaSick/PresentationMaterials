@@ -18,9 +18,6 @@ talks:
     tags:
       - Platform Engineering
       - Developer Experience
-      - Internal Developer Platform
-      - Developer Productivity
-      - Abstractions
       - Thinnest Viable Platform
   - title: "Simplifying Development with Developer Platforms: A Beginner's Overview"
     abstract: |
@@ -36,7 +33,9 @@ talks:
       type: web
       url: https://slides.ksick.dev/20240926/wtmsalzburg
     tags:
-      - x
+      - Developer Platforms
+      - Developer Experience
+      - Platform Engineering
   - title: "Finding My Passion: Kubernetes, Community, and the Joy of Developer Experience"
     abstract: |
       Like many developers, the world of deployments and CI/CD pipelines made me want to run for the hills. But then I stumbled into the Cloud Native world, and everything changed!
@@ -51,7 +50,9 @@ talks:
       type: web
       url: https://slides.ksick.dev/20240604/cloudnativevienna
     tags:
-      - x
+      - Kubernetes
+      - Cloud Native Community
+      - Developer Experience
   - title: "Closing the Loop: Applying Least Privilege and Ensuring We Did It Well"
     abstract: |
       According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.
@@ -71,7 +72,9 @@ talks:
       name: Thomas Labarussias
       url: https://www.linkedin.com/in/thomas-labarussias
     tags:
-      - x
+      - Kubernetes
+      - Least Privilege
+      - Falco
   - title: "Closing the Loop: Applying Least Privilege and Ensuring We Did It Well"
     abstract: |
       According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.
@@ -89,11 +92,8 @@ talks:
       url: https://slides.ksick.dev/20240525/kcdromania
     tags:
       - Kubernetes
-      - Security
-      - Principle of Least Privilege
+      - Least Privilege
       - Falco
-      - Observability
-      - Platform Engineering
 
   - title: "To Containers and Beyond: Kubernetes as a Universal Control Plane"
     abstract: |
@@ -111,11 +111,6 @@ talks:
       - Kubernetes
       - Crossplane
       - GitOps
-      - Cloud Native
-      - CNCF
-      - Control Plane
-      - Infrastructure as Code
-      - Azure
 
   - title: Crossplane Observability & Traceability for Effective Multi-Cloud Management
     abstract: |
@@ -141,11 +136,6 @@ talks:
       - Crossplane
       - Observability
       - Multi-Cloud
-      - Cloud Native
-      - CNCF
-      - Distributed Tracing
-      - Infrastructure as Code
-      - KubeCon
 
   - title: "Building Better Software Faster: The Role of CI/CD in Development"
     abstract: |
@@ -165,11 +155,8 @@ talks:
       url: https://slides.ksick.dev/20240229/sedays
     tags:
       - CI/CD
-      - Software Development
       - Developer Productivity
-      - DevOps
       - Software Quality
-      - Release Management
 
   - title: "Pathways, Not Pitfalls: Building Platforms With Developers in Mind"
     abstract: |
@@ -190,10 +177,7 @@ talks:
     tags:
       - Platform Engineering
       - Developer Experience
-      - Internal Developer Platform
-      - Cloud Native
-      - DevOps
-      - Abstractions
+      - Thinnest Viable Platform
 
   - title: "Getting started with Containers and Kubernetes: A Beginners Workshop"
     abstract: |
@@ -220,10 +204,6 @@ talks:
       - Containers
       - Kubernetes
       - Docker
-      - Workshop
-      - Beginners
-      - Cloud Native
-      - DevOps
 
   - title: "Principle of Least Privilege: How to Secure Kubernetes Without Making Users Hate You"
     abstract: |
@@ -245,13 +225,8 @@ talks:
       url: https://slides.ksick.dev/20231114/kcddenmark
     tags:
       - Kubernetes
+      - Least Privilege
       - Security
-      - Principle of Least Privilege
-      - ArgoCD
-      - Crossplane
-      - Zero Trust
-      - OWASP
-      - KCD
 
   - title: "Principle of Least Privilege: How to Secure Kubernetes Without Making Users Hate You"
     abstract: |
@@ -273,13 +248,8 @@ talks:
       url: https://slides.ksick.dev/20231108/devopsdayswarsaw
     tags:
       - Kubernetes
+      - Least Privilege
       - Security
-      - Principle of Least Privilege
-      - ArgoCD
-      - Crossplane
-      - Zero Trust
-      - OWASP
-      - DevOps
 
   - title: "Securing Kubernetes Clusters: The Principle of Least Privilege with ArgoCD and Crossplane"
     abstract: |
@@ -297,12 +267,8 @@ talks:
       url: https://slides.ksick.dev/20231019/KcdAustriaRejects
     tags:
       - Kubernetes
+      - Least Privilege
       - Security
-      - ArgoCD
-      - Crossplane
-      - Principle of Least Privilege
-      - OWASP
-      - Cloud Native
 
   - title: To Containers and Beyond - Kubernetes as a Universal Control Plane
     abstract: |
@@ -322,10 +288,6 @@ talks:
       - Kubernetes
       - Crossplane
       - GitOps
-      - Cloud Native
-      - Infrastructure as Code
-      - CNCF
-      - Control Plane
 
   - title: Internal Developer Platforms - The Key to Developer Productivity
     abstract: |
@@ -346,8 +308,6 @@ talks:
       - Internal Developer Platform
       - Developer Productivity
       - Platform Engineering
-      - DevOps
-      - Developer Experience
 
   - title: Crossplane & GitOps - A Perfect Match?
     abstract: |
@@ -368,11 +328,7 @@ talks:
     tags:
       - Crossplane
       - GitOps
-      - Infrastructure as Code
-      - Kubernetes
-      - Cloud Native
-      - Terraform
-      - Automation
+      - ArgoCD
 
   - title: Kickstarting CI Best Practices with Jenkins in Autonomous Teams
     abstract: |
@@ -397,10 +353,7 @@ talks:
     tags:
       - Jenkins
       - CI/CD
-      - Kubernetes
       - Configuration as Code
-      - DevOps
-      - Automation
 
   - title: RESTful Webservices mit Spring Boot
     abstract: |
@@ -428,4 +381,3 @@ talks:
       - REST API
       - Spring Boot
       - Java
-      - Workshop
