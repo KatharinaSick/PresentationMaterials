@@ -1,0 +1,431 @@
+talks:
+  - title: "Build Their Platform, Not Yours: Empowering Developers"
+    abstract: |
+      Developer platforms are designed to make developers' lives easier. When built with the end user in mind, they can streamline workflows, foster collaboration, and speed up innovation. In essence, they act as a helpful assistant that takes care of the complex behind-the-scenes work, freeing developers to focus on what they usually do best – building great software.
+
+      This naturally leads us to some critical questions: How much of the underlying complexity should these platforms abstract away? How can we empower developers with helpful tools without making their work feel rigid? And how can we cater to the diverse needs and preferences within development teams?
+      
+      This talk will explore various approaches to crafting opinionated user interfaces and compare their strengths and weaknesses. We'll journey from the concept of the thinnest viable platform (TVP) to the pitfalls of over-engineering, where meaningful abstractions turn into limitations.
+    date: 2025/05/10
+    event:
+      name: Global Azure Austria
+      url: https://globalazure.at/
+      logo: https://globalazure.at/img/gab2025.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20250510/globalazureaustria
+    recording: https://www.youtube.com/live/R7wJjyL2mvA?si=xg_kmMlA8j5QLKLJ
+    tags:
+      - Platform Engineering
+      - Developer Experience
+      - Internal Developer Platform
+      - Developer Productivity
+      - Abstractions
+      - Thinnest Viable Platform
+  - title: "Simplifying Development with Developer Platforms: A Beginner's Overview"
+    abstract: |
+      Developer platforms are designed to make developers' lives easier. When built with the end user in mind, they can streamline workflows, foster collaboration, and speed up innovation. In essence, they act as a helpful assistant that takes care of the complex behind-the-scenes work, freeing developers to focus on what they usually do best – building great software.
+
+      This talk is a starting point for anyone interested in creating such platforms. We'll discuss key considerations like how much complexity to abstract away, how to maintain flexibility for developers, and how to cater to individual needs. By the end, you'll have a clearer understanding of how developer platforms can simplify the development process and improve the overall experience for everyone involved.
+    date: 2024/09/26
+    event:
+      name: WTM Salzburg
+      url: https://www.meetup.com/gdg-women-techmakers-salzburg/
+      logo: https://secure.meetupstatic.com/photos/event/b/2/5/2/clean_512685650.webp
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240926/wtmsalzburg
+    tags:
+      - x
+  - title: "Finding My Passion: Kubernetes, Community, and the Joy of Developer Experience"
+    abstract: |
+      Like many developers, the world of deployments and CI/CD pipelines made me want to run for the hills. But then I stumbled into the Cloud Native world, and everything changed!
+
+      Even though I'm still relatively new to the game (about three years in), I've become hooked on how Kubernetes and its ecosystem empower platform engineers to make a significant impact on developer productivity and experience. In this talk, I'll share my journey and what keeps me excited about Kubernetes – the fantastic open source community, the incredible levels of collaboration, and how it's changing the way we think about software delivery.
+    date: 2024/06/04
+    event:
+      name: Cloud Native Vienna
+      url: https://community.cncf.io/cloud-native-vienna/
+      logo: https://res.cloudinary.com/startup-grind/image/fetch/c_scale,w_2560/c_crop,h_650,w_2560,y_0.5_mul_h_sub_0.5_mul_650/c_crop,h_650,w_2560/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-cncf/chapter_banners/cncLogo.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240604/cloudnativevienna
+    tags:
+      - x
+  - title: "Closing the Loop: Applying Least Privilege and Ensuring We Did It Well"
+    abstract: |
+      According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.
+
+      This talk will cover the Principle of Least Privilege and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, we’ll see how to use Falco to observe if we did well and detect suspicious events that may happen in our clusters anyway.
+
+      Join us to discover how the Principle of Least Privilege, Falco and observability empower you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.
+    date: 2024/05/16
+    event:
+      name: KCD Istanbul
+      url: https://2024.kcd.istanbul/
+      logo: https://2024.kcd.istanbul/logo-horizontal-1510x280.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240516/kcdistanbul
+    coSpeaker:
+      name: Thomas Labarussias
+      url: https://www.linkedin.com/in/thomas-labarussias
+    tags:
+      - x
+  - title: "Closing the Loop: Applying Least Privilege and Ensuring We Did It Well"
+    abstract: |
+      According to OWASP, insecure workload configuration is the top security problem in Kubernetes. With the shift to Platform engineering, minimizing the attack surface of our Kubernetes clusters becomes even more critical.
+
+      This talk will cover the Principle of Least Privilege and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, we'll see how to use Falco to observe if we did well and detect suspicious events that may happen in our clusters anyway.
+
+      Join us to discover how the Principle of Least Privilege, Falco and observability empower you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.
+    date: 2024/05/25
+    event:
+      name: Kubernetes Community Days  Romania
+      url: https://2024.cloudnativedays.ro/
+      logo: https://2024.cloudnativedays.ro/static/kcd-romania-logo-90810c5709308be826cdde6e10e55d0c.svg
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240525/kcdromania
+    tags:
+      - Kubernetes
+      - Security
+      - Principle of Least Privilege
+      - Falco
+      - Observability
+      - Platform Engineering
+
+  - title: "To Containers and Beyond: Kubernetes as a Universal Control Plane"
+    abstract: |
+      Kubernetes has evolved beyond container orchestration - it is a powerful tool for managing diverse resources, from deployments to infrastructure and cloud resources. It is designed for extensibility and offers a robust foundation for more than just deployments. This talk will dive into the exciting world of extending Kubernetes. We'll explore how Crossplane, an open source CNCF project, takes Kubernetes to a new level and enhances it to a versatile control plane. Further, it'll cover how GitOps can boost this powerful combination by providing automation, security, improved collaboration and more.
+    date: 2024/04/20
+    event:
+      name: Global Azure Austria
+      url: https://globalazure.at/
+      logo: https://globalazure.at/img/gab2024.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240420/globalazureaustria
+    recording: https://www.youtube.com/watch?v=8oCxLK5P5I0&t=195s
+    tags:
+      - Kubernetes
+      - Crossplane
+      - GitOps
+      - Cloud Native
+      - CNCF
+      - Control Plane
+      - Infrastructure as Code
+      - Azure
+
+  - title: Crossplane Observability & Traceability for Effective Multi-Cloud Management
+    abstract: |
+      Companies adopting cloud-native technologies increasingly use declarative definitions of cloud infrastructure. This shift offers excellent scalability, flexibility and agility opportunities, but also comes with challenges: What if resource creation takes longer than expected? What if resources fail to materialize at all? How to identify problems and potential performance optimizations? The answer lies in a familiar strategy: as in software development, we can address these challenges through instrumentation and leveraging observability data to uncover patterns, pinpoint root causes, and drive informed optimizations.
+
+      Join to learn how to answer those questions using existing metrics, logs and distributed traces emitted by tools like Crossplane, a popular open source CNCF project. The presenters will walk you through their best practices for making declarative cloud infrastructure traceable and leverage this data to improve issue resolution and your cloud infrastructure's reliability.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240320-KubeCon/images/thumbnail.jpg
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240320-KubeCon/images/full.jpg
+    date: 2024/03/20
+    event:
+      name: KubeCon + CloudNativeCon Europe
+      url: https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/
+      logo: https://events.linuxfoundation.org/wp-content/uploads/2023/04/KC_CNC_EU_logo_white.svg
+    recording: https://www.youtube.com/watch?v=R2NBPX2x9n4
+    slides:
+      type: web
+      url: https://vfarcic.github.io/observability/crossplane.html
+    coSpeaker:
+      name: Viktor Farcic
+      url: https://www.linkedin.com/in/viktorfarcic/
+    tags:
+      - Crossplane
+      - Observability
+      - Multi-Cloud
+      - Cloud Native
+      - CNCF
+      - Distributed Tracing
+      - Infrastructure as Code
+      - KubeCon
+
+  - title: "Building Better Software Faster: The Role of CI/CD in Development"
+    abstract: |
+      Creating high-quality software goes beyond writing excellent code. It involves a strong focus on the entire software development lifecycle. Therefore, a robust CI/CD platform is essential in getting developers started quickly, supporting ongoing contributions, and enhancing productivity.
+
+      This talk will provide practical insights on managing the challenges of modern software development at scale. Attendees will learn about productivity platforms that enable rapid release cycles, help ensure software quality, and allow developers to deliver applications with ease.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240229-SeDays/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240229-SeDays/images/full.webp
+    date: 2024/02/29
+    event:
+      name: SE 2024
+      url: https://se2024.se.jku.at
+      logo: https://se2024.se.jku.at/wp-content/uploads/2023/08/Logos_SE_24.svg
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240229/sedays
+    tags:
+      - CI/CD
+      - Software Development
+      - Developer Productivity
+      - DevOps
+      - Software Quality
+      - Release Management
+
+  - title: "Pathways, Not Pitfalls: Building Platforms With Developers in Mind"
+    abstract: |
+      When implemented with the end user in mind, developer platforms can take away a lot of cognitive load from developers and help streamline workflows, improve collaboration and accelerate innovation. By building meaningful abstractions and templates, we can remove a vast amount of complexity from developers. But how much complexity should be hidden? How can we ensure we provide the appropriate level of freedom? And how can we cope with every developer's individual needs?
+
+      This talk will explore various approaches to crafting opinionated user interfaces and compare their strengths and weaknesses. We'll journey from the concept of the thinnest viable platform (TVP) to the pitfalls of over-engineering, where meaningful abstractions turn into illusions.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240227-CloudNativeLinz/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20240227-CloudNativeLinz/images/full.webp
+    date: 2024/02/27
+    event:
+      name: Cloud Native Linz
+      url: https://cloudnativelinz.github.io/
+      logo: https://cloudnativelinz.github.io/images/cloudnativelinz-logo.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20240227/cloudnativelinz
+    tags:
+      - Platform Engineering
+      - Developer Experience
+      - Internal Developer Platform
+      - Cloud Native
+      - DevOps
+      - Abstractions
+
+  - title: "Getting started with Containers and Kubernetes: A Beginners Workshop"
+    abstract: |
+      This workshop is a step by step journey into the world of containers and Kubernetes. Whether you're new to these technologies or simply looking for a better understanding, join us for 4 hours of hands-on learning to tackle the notorious "works on my machine" challenge.
+
+      To kick things off, we'll introduce ourselves and share our experiences working with containers and Kubernetes. You'll learn how these technologies have transformed how we develop and deploy software, making it easier and more consistent. We'll start by understanding containers - consider them self-contained packages with all the necessary ingredients for running an application. Using Docker, we'll guide you through creating these containers, ensuring that your applications work seamlessly across different systems. Next, we'll dive into Kubernetes, an intelligent tool that helps manage your containers effortlessly. We'll explain key concepts like load balancing (spreading the workload evenly) and scaling (adapting to handle more traffic). You'll see how Kubernetes automatically takes care of these tasks, allowing your applications to run smoothly even under heavy demand.
+
+      Throughout the workshop, you'll have the chance to follow along with coding exercises, and we will be there to support you every step of the way. By the end, you'll have gained practical experience and the confidence to incorporate containers and Kubernetes into your own projects.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/images/full.webp
+    date: 2023/11/17
+    event:
+      name: "#thenewITgirls TechTrack"
+      url: https://www.thenewitgirls.com/en/
+      logo: https://secure.meetupstatic.com/photos/event/9/8/0/1/clean_501338913.webp
+    slides:
+      type: pdf
+      url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/slides.pdf
+    coSpeaker:
+      name: Rigerta Demiri
+      url: https://www.linkedin.com/in/rigerta/
+    tags:
+      - Containers
+      - Kubernetes
+      - Docker
+      - Workshop
+      - Beginners
+      - Cloud Native
+      - DevOps
+
+  - title: "Principle of Least Privilege: How to Secure Kubernetes Without Making Users Hate You"
+    abstract: |
+      According to OWASP, insecure workload configuration is the top security problem in Kubernetes. As modern Kubernetes clusters evolve from mere container orchestrators to versatile control planes managing various resources, minimizing the attack surface of these clusters becomes even more critical.
+
+      But security shouldn't come at the expense of user experience. This talk will cover the Principle of Least Privilege (PoLP) and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, it will extend this principle to ArgoCD and Crossplane and explore the differences between the PoLP and Zero Trust and how they're complementary.
+
+      Join me to discover how the Principle of Least Privilege, applied to Kubernetes, ArgoCD, and Crossplane, empowers you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231114-KcdDenmark/images/thumbnail.jpg
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231114-KcdDenmark/images/full.jpg
+    date: 2023/11/14
+    event:
+      name: KCD Denmark
+      url: https://kcddenmark.dk/
+      logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAb1BMVEX/KB7/////AAD/JBn/EwD/IBT/HRD/4N//3Nv/Ggv/+fn/7ez/FwX/5eT/9fX/1dT/trT/dHD/i4j/TUf/Rj//o6D/0M//yMb/PTX/npv/lJH/enb/ZF//rav/KiX/XVj/bWj/hYL/VlH/wL//NCxoWwyhAAAEjElEQVRoga3Z6YKCIBAAYOIwDTU7TM3MTN//GRdvhElRd/7sUX0hx3Chg3mUlzj+BCfzDyDjd2YxZggx/E6MeUP8FFqUoCYIpU/+j7ifkJ5ugtKr9084f9IJXYeLUwN+EecFpggIB1/s3XiGIbrh6eu8Ew/AcrfB8DfahZc/S97ytxl+EY9mcdEzcVWuxMu7b1Tylo+zFXggBmM/DJdK3vCUhdCwBXAxzkW3XoPXPHn6mqTipxDVI4asxGveuar8FOdJl0JItRZH9bAtvJ84v1p9px7xhzkueHrxQFyMc3d8yG04Qhb+HHXcduWhSOLDNrzmSxXn08RH7v0bzmtxhPBDwVN38vqI2zO55Uewm4Ir5duFI+xNcPXhyW0PToMJHirEiB834FY6wV/sP/G+r3V4pUyS7LsHRw6XcE1geY97W3AcSXigduax5Jtw9ynhqfO/Je/K1uJ3dV3CXgPugh9fCHoacF8b4iPOrS04Pg+4nrP34jQc8Kf26NZnH94WrsG/TH3RuvS4rzaHURDU4yfN3o0jeuxwIGXvx4MOz/Su3KcegSMjnTDLpXgIitMO/+htNuKn9yJuUUzjPE2C6HzkIjw7Cp5Fh8f6x01xImD2CR8c3CcJnAOzpFMY4IziKg1m9kcIyFoTXMvG/bNhnIfH33CHF2rWmuJAyYkl6qJc3jEisMqRe/2NW5ikkdFeFAFZCw0JWa8WCzsXM7nBwZWmhEsPxoRsUBsSnkCzAYCLvpGX+hp8Hs/1zCJGbzLFRZlf2Tq5xuF+LOF3Vpc5M9zuT/EjuNCU8Irlweoydzi8iW1nkiaiLWXu8AKcaSR8R6AKU4vI1U6YI3Lnj50lGCfPfpRZGCZJmAWRPT4p8h9heiMubZIxpdSq8iJ7GFaF/8iueYzqTE7bEL8471sRNFmnWyv6nn0WYXvGFcyj5FPVFCNqdyNEPDu6lL75GZcUXpDenbo6oebqv8ES3XCl69vhhy64Y6yR7fBVt7+Ruwb3z0kuapitWws8lmFeXr9MwKvcJjBLy9kuIvbs2N0ANyGaFceXpLTlGVz6/QPMgsZ2+wV1D0DV/fb9fm9x9cbjyVW6aSXahrQIJSIYY/WP/8DJG3EH6gD4sR/HEYKPJST8urHOcVLnlgTQ9+P00yauVJ8v8HknzuqTiWaE3rVuTO19OKG8x7mWhyRc3zAZRFutbW7RGpWed+G4nSX7IxFFp8c9OO02PcMx1LRRJRxckc2G1R8zDSn3NmnUPThhXMX96ZWHtx0fu/E4WUwaVcLVE6pFe1zySDORfDsh4cBGci5oeoBwuVE340NjqvjhOyRAi2/DCeG/cD6sbyR87rpFCzyZkqez/3AK4GzDlSWmsrTo96TM34LT4jCHHwq6HbduCqYtitpGlfDlu5wuCJu/szj0RyBkA4619ZW+nKs3SeNlizmOA40C1oqiUWXc8LpFHpkz+OFK0WrcygEIXOV+3ff4hxFOCLSbBHH/Lf3b6LoFg7e68PrcputwoDF/4wfpitMAx1dYWd5ZLF4UMQx0FEMcPhwYg7x+XhT/AfhAPHLnGweFAAAAAElFTkSuQmCC
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20231114/kcddenmark
+    tags:
+      - Kubernetes
+      - Security
+      - Principle of Least Privilege
+      - ArgoCD
+      - Crossplane
+      - Zero Trust
+      - OWASP
+      - KCD
+
+  - title: "Principle of Least Privilege: How to Secure Kubernetes Without Making Users Hate You"
+    abstract: |
+      According to OWASP, insecure workload configuration is the top security problem in Kubernetes. As modern Kubernetes clusters evolve from mere container orchestrators to versatile control planes managing various resources, minimizing the attack surface of these clusters becomes even more critical.
+
+      But security shouldn't come at the expense of user experience. This talk will cover the Principle of Least Privilege (PoLP) and how it can be applied to balance robust security and a good experience for users and administrators. Moreover, it will extend this principle to ArgoCD and Crossplane and explore the differences between the PoLP and Zero Trust and how they're complementary.
+
+      Join me to discover how the Principle of Least Privilege, applied to Kubernetes, ArgoCD, and Crossplane, empowers you to safeguard your Kubernetes ecosystem without making yourself and your users suffer.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231108-DevOpsDaysWarsaw/images/thumbnail.jpg
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231108-DevOpsDaysWarsaw/images/full.jpg
+    date: 2023/11/08
+    event:
+      name: DevOpsDays Warsaw
+      url: https://community.cncf.io/events/details/cncf-cloud-native-austria-presents-meetup-kcd-2nd-chance-edition-2023/
+      logo: https://media.licdn.com/dms/image/C560BAQHTGDRAzD32AQ/company-logo_200_200/0/1660814852374/devopsdays_warsaw_logo?e=1709164800&v=beta&t=NSNs1_JxH_uTVSVngF_P5LgiiabegFhGMoCUJft1GBo
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20231108/devopsdayswarsaw
+    tags:
+      - Kubernetes
+      - Security
+      - Principle of Least Privilege
+      - ArgoCD
+      - Crossplane
+      - Zero Trust
+      - OWASP
+      - DevOps
+
+  - title: "Securing Kubernetes Clusters: The Principle of Least Privilege with ArgoCD and Crossplane"
+    abstract: |
+      According to OWASP, insecure workload configuration is the top security problem in Kubernetes. As modern Kubernetes clusters evolve from mere container orchestrators to versatile control planes managing various types of resources, protecting these clusters becomes even more critical. In this talk, you'll learn practical strategies to address security problems in your Kubernetes cluster by applying the Principle of Least Privilege (PoLP). Moreover, we'll extend this principle to ArgoCD and Crossplane, two powerful tools used in many Kubernetes clusters. Join me to discover how the Principle of Least Privilege, applied to Kubernetes, ArgoCD, and Crossplane, empowers you to safeguard your Kubernetes ecosystem.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231019-KcdAustriaRejects/images/thumbnail.jpeg
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231019-KcdAustriaRejects/images/full.jpeg
+    date: 2023/10/19
+    event:
+      name: KCD Austria Rejects
+      url: https://community.cncf.io/events/details/cncf-cloud-native-austria-presents-meetup-kcd-2nd-chance-edition-2023/
+      logo: https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-cncf/events/rejects-logo.png
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20231019/KcdAustriaRejects
+    tags:
+      - Kubernetes
+      - Security
+      - ArgoCD
+      - Crossplane
+      - Principle of Least Privilege
+      - OWASP
+      - Cloud Native
+
+  - title: To Containers and Beyond - Kubernetes as a Universal Control Plane
+    abstract: |
+      Kubernetes has evolved beyond container orchestration - it is a powerful tool for managing diverse resources, from deployments to infrastructure and cloud resources. It is designed for extensibility and offers a robust foundation for more than just deployments. This talk will dive into the exciting world of extending Kubernetes. We'll explore how Crossplane, an open source CNCF project, takes Kubernetes to a new level and enhances it to a versatile control plane. Further, it'll cover how GitOps can boost this powerful combination by providing automation, security, improved collaboration and more.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231011-ViennaDataEngineeringMeetup/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231011-ViennaDataEngineeringMeetup/images/full.webp
+    date: 2023/10/11
+    event:
+      name: Vienna Data Engineering Meetup
+      url: https://www.meetup.com/vienna-data-engineering-meetup
+      logo: https://secure.meetupstatic.com/photos/event/5/8/7/0/clean_512062640.webp
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20231011/ViennaDataEngineeringMeetup
+    tags:
+      - Kubernetes
+      - Crossplane
+      - GitOps
+      - Cloud Native
+      - Infrastructure as Code
+      - CNCF
+      - Control Plane
+
+  - title: Internal Developer Platforms - The Key to Developer Productivity
+    abstract: |
+      In the fast-moving world of tech, helping developers work efficiently is key. This talk dives into Internal Developer Platforms (IDPs), a way to make software development smoother and faster.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20230906-TechTalkDays/images/thumbnail.png
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20230906-TechTalkDays/images/full.png
+    date: 2023/09/06
+    event:
+      name: TechTalkDays
+      url: https://techtalkdays.com/
+      logo: https://yt3.googleusercontent.com/C2686qivKuWsJMKCnDIvlVd7NTty0P8fsVEf_V-Pl36iC9Jet5hgEdyMvNZBCuYsa0Rnmz1BgI0=s176-c-k-c0x00ffffff-no-rj
+    recording: https://www.youtube.com/watch?v=zgxdq3O-atE
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20230906/TechTalkDays
+    tags:
+      - Internal Developer Platform
+      - Developer Productivity
+      - Platform Engineering
+      - DevOps
+      - Developer Experience
+
+  - title: Crossplane & GitOps - A Perfect Match?
+    abstract: |
+      This talk will explore the combination of Crossplane and GitOps for automating infrastructure management. Attendees will follow our team's journey from manual deployments over Terraform to the benefits of GitOps, ending in how Crossplane can help manage infrastructure as code to automate the creation and maintenance of cloud resources. We will also cover the basics of GitOps and how it enables teams to manage infrastructure through code changes.
+
+      Throughout the session, Katharina will share their experiences combining GitOps and Crossplane, including best practices, pitfalls, and what they would do differently now.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20230328-CloudNativeLinz/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20230328-CloudNativeLinz/images/full.webp
+    date: 2023/03/28
+    event:
+      name: Cloud Native Computing Linz Meetup
+      url: https://cloudnativelinz.github.io/
+      logo: https://cloudnativelinz.github.io/images/cloudnativelinz-logo.png
+    slides:
+      type: pdf
+      url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20230328-CloudNativeLinz/slides.pdf
+    tags:
+      - Crossplane
+      - GitOps
+      - Infrastructure as Code
+      - Kubernetes
+      - Cloud Native
+      - Terraform
+      - Automation
+
+  - title: Kickstarting CI Best Practices with Jenkins in Autonomous Teams
+    abstract: |
+      When developing a project, there are many things to consider. It's not just about the code itself, but also about building, testing and packaging everything. Making this process easier is the main goal for the Engineering Productivity teams at Dynatrace.
+
+      Join us in this talk to learn about how we are utilizing Jenkins to ease the process of building and delivering applications for hundreds of developers. You'll see how our Jenkins instances are running in a Kubernetes cluster, how they are provisioned via Configuration as Code with minimal overhead and which tools are used to get the most out of our workflow. Additionally, we'll add a live demo to show how all of these components can work together.
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20220530-JenkinsOnlineMeetup/images/thumbnail.webp
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20220530-JenkinsOnlineMeetup/images/full.webp
+    date: 2022/05/30
+    event:
+      name: Jenkins Online Meetup
+      url: https://www.jenkins.io/events/online-meetup/
+      logo: https://www.jenkins.io/images/logos/worldwide/256.png
+    recording: https://www.youtube.com/watch?v=a3-eM75GBLs
+    slides:
+      type: pdf
+      url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20220530-JenkinsOnlineMeetup/slides.pdf
+    coSpeaker:
+      name: Martin Singer
+      url: https://www.linkedin.com/in/martin-singer1/
+    tags:
+      - Jenkins
+      - CI/CD
+      - Kubernetes
+      - Configuration as Code
+      - DevOps
+      - Automation
+
+  - title: RESTful Webservices mit Spring Boot
+    abstract: |
+      Die Kommunikation zwischen Front- und Backend einer App erfolgt oft über eine sogenannte REST API. Dabei stellt das Backend bestimmte Methoden zur Verfügung, die Clients benutzen können. Doch wie funktioniert so eine REST API eigentlich und was sollte man dabei beachten?
+
+      In diesem Workshop werden wir einen einfachen Web Service mit Spring Boot implementieren.
+
+      Um an diesem Workshop teilzunehmen, solltest du folgendes auf deinem Computer installieren:
+
+      Java mit Version 1.8 oder höher
+      Eine Enwicklungsumgebung wie Intellij IDEA (bevorzugt) oder Eclipse (wenn du schon Erfahrung damit hast)
+    image:
+      thumbnail: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20210416-GlobalAzureJuniorBootcamp/images/thumbnail.png
+      full: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20210416-GlobalAzureJuniorBootcamp/images/full.png
+    date: 2021/04/16
+    event:
+      name: Global Azure Junior Bootcamp
+      url: https://globalazure.at/
+      logo: https://globalazure.at/img/gab2023.png
+    recording: https://www.youtube.com/watch?v=MkcdgIN0avw
+    slides:
+      type: pdf
+      url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20210416-GlobalAzureJuniorBootcamp/slides.pdf
+    tags:
+      - REST API
+      - Spring Boot
+      - Java
+      - Workshop
