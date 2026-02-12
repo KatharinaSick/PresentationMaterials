@@ -427,7 +427,7 @@ Let's keep the conversation going
         </div>
     </div>
     <div class="text-center">
-        <a class="quote-source" href="https://linkedin.com/in/katharina-sick" target="_blank">LinkedIn</a>
+        <a class="quote-source" href="https://linkedin.com/in/katharinasick" target="_blank">LinkedIn</a>
     </div>
 </div>
 
@@ -439,7 +439,7 @@ Let's keep the conversation going
         </div>
     </div>
     <div class="text-center">
-        <a class="quote-source" href="https://ksick.dev/slides" target="_blank">Slides</a>
+        <a class="quote-source" href="https://slides.ksick.dev/20260212/PlatformEngineeringLinz" target="_blank">Slides</a>
     </div>
 </div>
 </div>
