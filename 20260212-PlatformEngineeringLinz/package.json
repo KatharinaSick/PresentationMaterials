@@ -1,0 +1,15 @@
+{
+  "name": "20260212-platformengineeringlinz",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out ../dist/20260212/PlatformEngineeringLinz/ --base /20260212/PlatformEngineeringLinz/",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "slidev-theme-underglow": "^0.1.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.11.5"
+  }
+}
