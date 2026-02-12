@@ -12,7 +12,7 @@ themeConfig:
 
 # Cover slide
 layout: image-full
-image: /cover.png
+image: cover.png
 hideFooter: true
 ---
 
@@ -38,7 +38,7 @@ layout: two-columns
 ---
 layout: intro
 name: Katharina Sick
-image: /me.jpeg
+image: me.jpeg
 jobTitle: Developer Programs Engineer
 company: Dynatrace
 website: https://ksick.dev
@@ -62,7 +62,7 @@ layout: center
 layout: quote
 quote: Learning ≠ Readiness
 subtitle: Perkins & Salomon, Transfer of Learning (1992)
-background: /05-hawkins.jpeg
+background: 05-hawkins.jpeg
 overlayOpacity: 0.3
 ---
 
@@ -89,7 +89,7 @@ layout: two-columns
 layout: quote
 quote: Our Brains Have Limits.<br/>The Platform Doesn't Care.
 subtitle: Sweller, Cognitive Load During Problem Solving (1988)
-background: /07-demogorgons.jpeg
+background: 07-demogorgons.jpeg
 ---
 
 ---
@@ -127,7 +127,7 @@ layout: center
 layout: quote
 quote: The In-Between
 subtitle: Safe • Realistic • Guided
-background: /10-inbetween.jpeg
+background: 10-inbetween.jpeg
 overlayOpacity: 0.8
 ---
 
@@ -307,7 +307,7 @@ layout: three-columns
 ---
 layout: quote
 quote: Platform Engineering Isn’t Tools.<br/>It’s Connections.
-background: /14-hawkins.jpeg
+background: 14-hawkins.jpeg
 overlayOpacity: 0.8
 ---
 
