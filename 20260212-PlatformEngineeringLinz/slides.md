@@ -212,12 +212,12 @@ clicks: 2
 </div>
 
 <div 
-    class="absolute left-210 bottom--10 flex flex-col items-center justify-center"
+    class="absolute left-207 bottom--10 flex flex-col items-center justify-center"
     v-motion
     :initial="{ x: -40, y: -50, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-istio.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
-    <p style="font-size: 1rem; margin-top: 0">Istio</p>
+    <img src="/12-dynatrace.png" class="w-15 h-15 p-2 object-contain rounded-full bg-white"/>
+    <p style="font-size: 1rem; margin-top: 0">Dynatrace</p>
 </div>
 
 <div 
@@ -285,7 +285,7 @@ layout: three-columns
 
 ::left::
 
-<div class="text-center">
+<div class="text-center" v-click>
   <div style="font-size: 4rem; margin-bottom: 1rem;">🔗</div>
   <h2>Connect Facts</h2>
 </div>
