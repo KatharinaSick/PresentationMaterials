@@ -1,0 +1,15 @@
+{
+  "name": "20260507-AustrianPlatformEngineeringCommunity",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out ../dist/20260507/AustrianPlatformEngineeringCommunity/ --base /20260507/AustrianPlatformEngineeringCommunity/",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "slidev-theme-underglow": "^0.1.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.11.5"
+  }
+}
