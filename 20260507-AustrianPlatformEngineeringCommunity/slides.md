@@ -22,7 +22,10 @@ Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
 
 # Intro
 
-Maybe the spongebob rainbow meme when Kathi mentions Backstage? :)
+<div style="display: flex; justify-content: center; margin-top: 1.0rem;">
+  <img src="./public/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
+</div>
+
 
 <!--
 Conversation between us:
@@ -77,9 +80,41 @@ Quick intros about us & what we're passionate about
 
 # Our fictional company
 
+<div style="display: flex; gap: 1.5rem; align-items: flex-start; margin-top: 2.25rem;">
+  <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.8rem; min-width: 0;">
+    <div style="display: flex; flex-direction: column; width: 100%; padding: 0.9rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border-left: 6px solid #01D393; box-sizing: border-box;">
+      <div style="font-size: 1rem; font-weight: 700; line-height: 1.25;">ALFIE Corp is a SaaS business based on microservices</div>
+    </div>
+    <div style="display: flex; flex-direction: column; width: 100%; padding: 0.9rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border-left: 6px solid #176AFA; box-sizing: border-box;">
+      <div style="font-size: 1rem; font-weight: 700; line-height: 1.25;">They are operating lots of services in many teams</div>
+    </div>
+    <div style="display: flex; flex-direction: column; width: 100%; padding: 0.9rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border-left: 6px solid #7D1CFE; box-sizing: border-box;">
+      <div style="font-size: 1rem; font-weight: 700; line-height: 1.25;">So they are bootstrapping lots of services</div>
+    </div>
+    <div style="display: flex; flex-direction: column; width: 100%; padding: 0.9rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, 0.04); border-left: 6px solid #01D393; box-sizing: border-box;">
+      <div style="font-size: 1rem; font-weight: 700; line-height: 1.25;">And are using many tools, some of them homegrown, to operate them</div>
+    </div>
+  </div>
+
+  <div style="flex: 0.85; display: flex; justify-content: flex-end;">
+    <div style="width: 100%; max-width: 360px;">
+      <img
+        src="./public/alfie.png"
+        alt="ALFIE Corp"
+        style="display: block; width: 100%; max-height: 250px; object-fit: contain;"
+      />
+    </div>
+  </div>
+</div>
+
+
 <!--
 But today we're not Kathi & Thomas from Dynatrace & TSC Labs but we both work at Alfi corp (or whatever). 
 Quickly introduce the company and our roles.
+
+ALFIE was an chaotic trainee at one of our companies some time ago and founded a company. This company built a SaaS product which really took off. In the meanwhile, they are operating lots of services in many teams, so they are also bootstrapping many services. Besides that, they have got lots of homegrown and operations tooling to operate this.
+
+Kathi, it seems like it's your turn ... Why do you think they would need Backstage?
 -->
 
 ---
@@ -118,7 +153,7 @@ Note: we should add a note that if you have backstage already running, you can a
 
 ---
 
-# Apply Baseline to Alfi corp
+# Apply Baseline to ALFIE Corp
 
 <!--
 Briefly discuss the main problems of Alfi corp
