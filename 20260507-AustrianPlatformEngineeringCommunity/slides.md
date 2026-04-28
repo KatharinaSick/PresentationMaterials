@@ -42,6 +42,33 @@ K: Fair point. Let's fidn out. But before that: who are you actually to push me 
 
 # Who are we?
 
+<div style="display: flex; gap: 2em; justify-content: center; align-items: stretch; padding: 2em;">
+
+<div style="border: 2px solid #176AFA; padding: 2em; border-radius: 12px; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 1em; max-width: 300px; min-height: 280px;">
+
+<div style="font-size: 3em;">👤</div>
+
+<h3 style="margin: 0.5em 0; font-size: 1.5em;">Katharina Sick</h3>
+
+<div style="font-weight: bold; color: #176AFA;">Dynatrace</div>
+
+<div style="font-size: 0.9em; opacity: 0.9;">Observability Lead</div>
+
+</div>
+
+<div style="border: 2px solid #7D1CFE; padding: 2em; border-radius: 12px; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 1em; max-width: 300px; min-height: 280px;">
+
+<div style="font-size: 3em;">👤</div>
+
+<h3 style="margin: 0.5em 0; font-size: 1.5em;">Thomas Schuetz</h3>
+
+<div style="font-weight: bold; color: #7D1CFE;">TSC Labs</div>
+
+<div style="font-size: 0.9em; opacity: 0.9;">Cloud Native Trainer & Architect</div>
+
+</div>
+
+</div>
 <!--
 Quick intros about us & what we're passionate about
 -->
