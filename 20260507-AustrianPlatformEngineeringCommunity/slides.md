@@ -22,7 +22,10 @@ Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
 
 # Intro
 
-Maybe the spongebob rainbow meme when Kathi mentions Backstage? :)
+<div style="display: flex; justify-content: center; margin-top: 1.0rem;">
+  <img src="./public/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
+</div>
+
 
 <!--
 Conversation between us:
@@ -42,42 +45,109 @@ K: Fair point. Let's fidn out. But before that: who are you actually to push me 
 
 # Who are we?
 
+<div style="display: flex; gap: 2em; justify-content: center; align-items: stretch; padding: 1em;">
+  <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Observability Lead" accent="#7D1CFE" image="/me.jpeg"></SpeakerCard>
+  <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="/tscweb.jpeg"></SpeakerCard>
+</div>
+
 <!--
-Quick intros about us & what we're passionate about
+Before begin with our Backstage Journey, let's introduce ourselves ...
+
+Quick intros about us & what we're passionate about...
+
+T: Kathi, You caught me off guard with that topic and I always hear about Backstage somewhere, so what is it about and where can it help us?
+
+-->
+
+
+
+---
+
+# What is Backstage?
+
+<!--
+- K: Describes Backstage
+- K: Describes Where it can improve DevEx
+
+- K: Thomas, what do you think about it?
+-->
+
+---
+layout: two-cols
+---
+
+# Overkill?
+
+<Box accent="#01D393">Backstage is a Framework to create IDPs</Box>
+
+<Box accent="#7D1CFE">It introduces a new component to maintain</Box>
+
+<Box accent="#176AFA">The IDP also changes the way things work</Box>
+
+<!--
+T: Sees the problems and overhead coming with Backstage
+
+K: Talks about the documentation, ecosystem and wide adoption
+
+T: Asks himself how the outcome of the implementation could be measured 
+-->
+
+---
+# A few days later ...
+
+
+---
+
+# SPACE and DX Core 4 Frameworks
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; margin-top: 1.5rem;">
+  <BulletBox accent="#01D393" title="SPACE" :bullets="['Satisfaction', 'Performance', 'Activity', 'Communication', 'Efficiency']"></BulletBox>
+
+  <BulletBox accent="#176AFA" title="DX Core 4" :bullets="['Flow State', 'Feedback Loops', 'Cognitive Load', 'Developer Value']"></BulletBox>
+</div>
+
+<!--
+T: Did some research on Frameworks on how to measure Developer Experience and Productivity and fell across SPACE and DX Core
+
+K: Very hyped around the DX things
+
+T: Wants to get features and products shipped faster. So what do we need to measure to know if we are actually faster?
 -->
 
 ---
 
-# Our fictional company
+# Asking the right questions
+
+<Cloud top="5rem" right="2rem" width="320px" height="150px">
+  How often is a template used?
+</Cloud>
+
+<Cloud top="20rem" right="4rem" width="320px" height="150px">
+  How satisfied are developers with the IDP?
+</Cloud>
+
+<Cloud top="12rem" right="17rem" width="320px" height="150px">
+  What features are missing?
+</Cloud>
+
+<Cloud top="8rem" right="35rem" width="350px" height="180px">
+  How convenient is the bootstrapping process?
+</Cloud>
+
+<Cloud top="20rem" right="40rem" width="320px" height="150px">
+  How often do developers switch between tools?
+</Cloud>
 
 <!--
-But today we're not Kathi & Thomas from Dynatrace & TSC Labs but we both work at Alfi corp (or whatever). 
-Quickly introduce the company and our roles.
--->
+What do we want to achieve with our IDP and which problems do we want to solve?
+
+
+--> 
+
 
 ---
 
-# Why Backstage / The Problem / Current State
-
-<!--
-- What's the current state at Alfi corp?
-- Where do we see problems?
-
-I think we should keep this slide rather short and then always refer back to it when showing practical examples. Our abstract promises a practical framework, so I'm scared to loose people in the beginning if we have too much theory?
--->
-
----
-
-# DevEx Framework
-
-<!--
-How can we measure if we actually have problems with DevEx?
-Apply DevEx Framework to Alfi corp and highlight problems
--->
-
----
-
-# Create a baseline
+# Find the right metrics and create a baseline
 
 <!--
 - We can't search for a solution without knowing what's currently going on
@@ -91,15 +161,15 @@ Note: we should add a note that if you have backstage already running, you can a
 
 ---
 
-# Apply Baseline to Alfi corp
+# Measurement is (not) hard
 
 <!--
-Briefly discuss the main problems of Alfi corp
+Describe how observability can be implemented in Backstage
 -->
 
 ---
 
-# So... Backstage?
+# Showcase
 
 <!--
 K: See! We need Backstage
@@ -110,7 +180,7 @@ Conclusion: for alfi corp, Backstage makes sense
 
 ---
 
-# Yes, Backstage!
+# What you saw here
 
 <!--
 Day 1:
@@ -127,46 +197,9 @@ Week 2:
 
 ---
 
-# Problem N - Overview
+# How to approach an IDP project
 
-<!--
-T: Ok, let's take a look at problem X. Here's waht the baseline told us: ...
-
-Problem intro includes:
-
-- problem statement (easy to understand, relatable)
-- DevEx dimension(s)
-- Baseline metric & target (where we want to get to)
--->
-
----
-
-# Problem N - Backstage Implementation
-
-<!--
-- How to solve this in Backstage, which features/plgins are needed
-- Screenshots of the solution
--->
-
----
-
-# Problem N - Measure if it worked
-
-<!--
-- How to get metrics out of that
-- Which leading indicators (e.g. usage metrics to see if we're heading into the right direction) and outcomes (e.g. onboarding time, survey, whatever) to show the actual impact
-
-We could also highlight that it takes patience to see outcomes sometimes but leading indicator should rise first
-
-We can repeat those 3 sections for a set of problems to give people 1) an idea of how to approach this, 2) actual insights on how they can really measure this stuff in their platform - that's the walk away with a practical framwork to apply part to me
--->
 
 ---
 
 # Wrap Up
-
-<!--
-The one big thing we want people to remember :)
-
-Maybe wrapped in a little convo again
--->
