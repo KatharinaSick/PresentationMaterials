@@ -23,7 +23,7 @@ Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
 # Intro
 
 <div style="display: flex; justify-content: center; margin-top: 1.0rem;">
-  <img src="./public/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
+  <img src="./discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
 </div>
 
 
@@ -205,7 +205,7 @@ Note: we should add a note that if you have backstage already running, you can a
 
 <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
   <!-- TODO: replace with actual screenshot filename -->
-  <img src="./public/dt-backstage-screenshot.png" alt="Backstage in Dynatrace" style="max-height: 320px; border-radius: 12px;" />
+  <img src="./dt-backstage-screenshot.png" alt="Backstage in Dynatrace" style="max-height: 320px; border-radius: 12px;" />
 </div>
 
 <!--
@@ -278,11 +278,11 @@ layout: center
 <div v-click style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 0.5rem;">
   <div style="text-align: center;">
     <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;">❌ Too many choices</div>
-    <img src="./public/template-bad.png" alt="Template with too many input fields" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(255,80,80,0.5);" />
+    <img src="./template-bad.png" alt="Template with too many input fields" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(255,80,80,0.5);" />
   </div>
   <div v-click style="text-align: center;">
     <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;">✅ Opinionated & fast</div>
-    <img src="./public/template-good.png" alt="Good template screenshot" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(1,211,147,0.5);" />
+    <img src="./template-good.png" alt="Good template screenshot" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(1,211,147,0.5);" />
   </div>
 </div>
 
