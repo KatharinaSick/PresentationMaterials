@@ -43,7 +43,7 @@ K: Fair point. Let's fidn out. But before that: who are you actually to push me 
 
 ---
 
-# Who are we?
+# Who Are We?
 
 <div style="display: flex; gap: 2em; justify-content: center; align-items: stretch; padding: 1em;">
   <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="/me.jpeg"></SpeakerCard>
@@ -63,35 +63,35 @@ T: Kathi, You caught me off guard with that topic and I always hear about Backst
 layout: four-columns
 ---
 
-# Wait, what's Backstage?
+# Wait, What's Backstage?
 
 <span v-click>An open source framework for building developer portals.</span>
 
 ::col1::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="catalog" size="4rem" /></div>
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #7D1CFE;"><Icon name="catalog" size="4rem" /></div>
   <h2>Catalog</h2>
 </div>
 
 ::col2::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="scaffolder" size="4rem" /></div>
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #01D393;"><Icon name="scaffolder" size="4rem" /></div>
   <h2>Scaffolder</h2>
 </div>
 
 ::col3::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="docs" size="4rem" /></div>
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #176AFA;"><Icon name="docs" size="4rem" /></div>
   <h2>Docs</h2>
 </div>
 
 ::col4::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="plugins" size="4rem" /></div>
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #FF8C42;"><Icon name="plugins" size="4rem" /></div>
   <h2>Plugins</h2>
 </div>
 
@@ -111,11 +111,17 @@ layout: two-cols
 
 # Overkill?
 
+<img src="./robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+
+<div style="position: relative; z-index: 1; background: #121212; border-radius: 8px; padding: 0.25rem;">
+
 <Box accent="#01D393">Backstage is a Framework to create IDPs -> react know-how/maintenance</Box>
 
 <Box accent="#7D1CFE">It introduces a new component to maintain</Box>
 
 <Box accent="#176AFA">The IDP also changes the way things work</Box>
+
+</div>
 
 <!--
 T: Sees the problems and overhead coming with Backstage
@@ -128,6 +134,7 @@ T: Asks himself how the outcome of the implementation could be measured
 ---
 layout: quote
 quote: A few days later ...
+background: robot-chilling.jpeg
 ---
 
 ---
@@ -150,7 +157,7 @@ T: Wants to get features and products shipped faster. So what do we need to meas
 
 ---
 
-# Asking the right questions
+# Asking the Right Questions
 
 <Cloud top="5rem" right="2rem" width="320px" height="150px">
   How often is a template used?
@@ -182,7 +189,7 @@ What do we want to achieve with our IDP and which problems do we want to solve?
 layout: quote
 quote: Shipping without a baseline is hoping, not engineering
 subtitle: Data beats gut feeling. Always.
-background: robot.jpeg
+background: robot-working.jpeg
 ---
 
 <!--
@@ -199,14 +206,7 @@ Note: we should add a note that if you have backstage already running, you can a
 
 # Instrumentation Gets You Started
 
-- Report traces & metrics with OpenTelemetry
-- Needs minor configuration & code changes
-- Basic metrics around catalog, scaffolder and tasks are available out of the box
-
-<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-  <!-- TODO: replace with actual screenshot filename -->
-  <img src="./dt-backstage-screenshot.png" alt="Backstage in Dynatrace" style="max-height: 320px; border-radius: 12px;" />
-</div>
+<Todo>Screenshot of a Backstage dashboard</Todo>
 
 <!--
 K: Look, setting up observability for Backstage is actually pretty straightforward. [walk through bullets] And here's what it looks like in Dynatrace — traces, metrics, you get a decent picture of what's happening.
@@ -220,11 +220,11 @@ K: I knew you'd say that. I prepared something.
 
 # Your Problems, Your Metrics
 
-<span v-click><Icon name="puzzle" />&numsp;Backstage needs to take the shape of YOUR platform.</span>
+<span v-click><Icon name="puzzle" style="color: #7D1CFE;" />&numsp;Backstage needs to take the shape of YOUR platform.</span>
 
-<span v-click><Icon name="target" />&numsp;Your portal is unique. Your metrics should be too.</span>
+<span v-click><Icon name="target" style="color: #176AFA;" />&numsp;Your portal is unique. Your metrics should be too.</span>
 
-<span v-click><Icon name="idea" />&numsp;Start with the problem. The metric follows.</span>
+<span v-click><Icon name="idea" style="color: #01D393;" />&numsp;Start with the problem. The metric follows.</span>
 
 <!--
 T: Right. The instrumentation is there. But just because we CAN measure everything doesn't mean we should. What are you actually measuring and why?
@@ -244,47 +244,44 @@ layout: center
 
 ---
 
-# How do I add a new app?
+# Day One Friction
 
-<span v-click><Icon name="unknown" />&numsp;Ask three people, get three different answers.</span>
+<span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Ask three people, get three different answers.</span>
 
-<span v-click><Icon name="settings" />&numsp;CI/CD copy-pasted and half broken.</span>
+<span v-click><Icon name="settings" style="color: #176AFA;" />&numsp;CI/CD copy-pasted and half broken.</span>
 
-<span v-click><Icon name="hourglass" />&numsp;Days between idea and first code commit.</span>
+<span v-click><Icon name="hourglass" style="color: #01D393;" />&numsp;Days between idea and first code commit.</span>
 
 <LifecycleFlow v-click :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 ---
 
-# What can success look like?
+# What Could Better Look Like?
 
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" />&numsp;Reduce time to first deployment.
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Reduce time to first deployment.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. ticket "In Progress" → first successful CI/CD run</span></p>
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" />&numsp;Reduce ops interruptions during app creation.
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Reduce ops interruptions during app creation.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. ops tickets tagged "app-setup" per new service</span></p>
-<p v-click style="padding-bottom: 0;"><Icon name="smile" />&numsp;Improve developer satisfaction during app creation.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly survey on the app creation process (1–5)</span></p>
+<p v-click style="padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Improve developer satisfaction during app creation.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly survey on the app creation process</span></p>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 ---
 
-# Reduce time to first deployment
+# Reduce Time to First Deployment
 
-<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; top: 1rem; left: 2rem; right: 2rem;" />
-
-<span v-click><Icon name="scaffolder" />&numsp;Software Templates can get you there.</span>
-
-<div v-click style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 0.5rem;">
-  <div style="text-align: center;">
-    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;"><Icon name="cross" /> Too many choices</div>
-    <img src="./template-bad.png" alt="Template with too many input fields" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(255,80,80,0.5);" />
-  </div>
-  <div v-click style="text-align: center;">
-    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;"><Icon name="check" /> Opinionated & fast</div>
-    <img src="./template-good.png" alt="Good template screenshot" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(1,211,147,0.5);" />
-  </div>
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+    <Chip v-click><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip v-click><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
+
+
+<Todo v-click>Screenshot of a template with too many input fields</Todo>
+
+<Todo v-click>Screenshot of a good, opinionated template</Todo>
+
+<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
 K: Software templates are one of the most powerful Backstage features for this problem — one click and your repo, CI/CD, and docs are all wired up.
@@ -300,41 +297,123 @@ K: [show good template screenshot] — minimal inputs, sensible defaults, done i
 
 ---
 
-# How do we know it's working?
+# What Backstage Tells You
 
-<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; top: 1rem; left: 2rem; right: 2rem;" />
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+    <Chip><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
+</div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-  <BulletBox accent="#01D393" title="Leading" :bullets="['% services created via templates', 'Template completion rate', 'Time from trigger to first deploy']" />
-  <BulletBox accent="#7D1CFE" title="Outcome" :bullets="['Time from impl. start to first deploy ↓', 'Ops interruptions per new service ↓']" />
+  <BulletBox accent="#7D1CFE" title="Adoption" :bullets="['Are templates being used?', 'Which template is most popular?', 'Is adoption growing over time?', 'How often do runs fail?']" />
+  <BulletBox v-click accent="#01D393" title="Performance" :bullets="['How long does a run take?', 'Which step is the slowest or most error-prone?', 'Are some users stuck while others are fast?']" />
 </div>
+
+<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+K: Once you wire up OpenTelemetry, Backstage gives you a solid starting point. You can see whether templates are being used, whether adoption is growing, and where runs fail. On the performance side, you can see how long template execution takes, which step is the bottleneck, and whether some users are consistently getting a much worse experience than others.
+
+T: Ok, that tells me people are using it — and I can see where it breaks. But does it tell me whether we're actually shipping faster now?
+
+K: Not directly. For that, we need to zoom out a bit.
+-->
 
 ---
 
-# Problem 2: Unfamiliar Services
+# Connecting the Dots
 
-<LifecycleFlow :highlight="['Deploy', 'Maintain']" compact style="position: absolute; top: 1rem; left: 2rem; right: 2rem;" />
-
-<ProblemStatement accent="#7D1CFE">
-  During an incident, developers can't find who owns a service, how it works, or what to do when it breaks.
-</ProblemStatement>
-
-<div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
-  <Chip><Icon name="catalog" /> Catalog + <Icon name="docs" /> TechDocs</Chip>
-  <Chip><Icon name="brain" /> Cognitive Load</Chip>
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+    <Chip><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-  <BulletBox accent="#7D1CFE" title="Metrics" :bullets="['% services with a defined owner', '% services with TechDocs coverage', 'Doc freshness vs last commit date']" />
-  <BulletBox accent="#01D393" title="KPIs" :bullets="['MTTR during incidents', 'Fewer ownership interruptions', 'Developer satisfaction']" />
-</div>
+<Todo>Screenshot of the full trace from template trigger to first deploy</Todo>
+
+<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-T: Same pattern. Problem: cognitive load during incidents. No single place to find ownership or runbooks.
+K: I built a small demo for this. We emit an OpenTelemetry trace from the moment the user clicks "Create" in the template, all the way through to when the app is successfully deployed for the first time.
 
-K: Backstage gives you the catalog and TechDocs. Leading metric: coverage. Outcome: does MTTR actually go down?
+T: So you can actually measure that end-to-end time?
 
-T: And you can cross-check catalog ownership against your actual alerting routes. If they don't match, your catalog data isn't trustworthy yet.
+K: Exactly. And you can see where the time goes — is it the repo creation? The CI pipeline? The first rollout? That's where you spot the bottlenecks. And that's what you compare against your baseline.
+-->
+
+---
+
+# Try It Yourself
+
+<img src="./robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+
+<div style="display: flex; justify-content: center; margin-top: 1rem;">
+  <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+    <img src="/demo-qr.png" alt="QR code to demo repository" style="width: 180px; height: 180px; border-radius: 8px;" />
+    <a href="https://github.com/KatharinaSick/demos" style="font-size: 0.8em; opacity: 0.7;">github.com/KatharinaSick/demos</a>
+  </div>
+</div>
+
+<p style="position: absolute; bottom: 3rem; left: 2rem; right: 2rem; text-align: center; font-size: 0.8em; margin: 0;">Zero setup. Just bring your own observability backend.</p>
+
+---
+
+# 2am Friction
+
+<span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Who owns it? No single source of truth.</span>
+
+<span v-click><Icon name="docs" style="color: #176AFA;" />&numsp;How does it work? Docs are scattered or missing.</span>
+
+<span v-click><Icon name="brain" style="color: #01D393;" />&numsp;What if it breaks? No runbook → debug from zero.</span>
+
+<LifecycleFlow v-click :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+T: Same problem pattern. You're paged at 2am. You don't know the service, you don't know who owns it, there are no runbooks. You spend the first 30 minutes just figuring out where to start.
+
+K: This is pure cognitive load. And it's completely avoidable.
+-->
+
+---
+
+# What Could Better Look Like?
+
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Reduce MTTR during incidents.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Reduce "who owns this?" interruptions.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. Slack messages tagged "ownership" per week</span></p>
+<p v-click style="padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Improve developer satisfaction on-call.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly on-call survey</span></p>
+
+<LifecycleFlow :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+T: What would actually fix this? If we solve the problem, what changes?
+
+K: Three things. Incidents resolve faster. People stop getting pinged to answer ownership questions. And developers dread on-call a little less.
+-->
+
+---
+
+# Reduce MTTR
+
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+    <Chip v-click><Icon name="brain" style="color: #01D393;" /> Cognitive Load</Chip> 
+    <Chip v-click><Icon name="catalog" style="color: #7D1CFE;" /> Catalog + <Icon name="docs" style="color: #176AFA;" /> TechDocs</Chip>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+    <BulletBox v-click accent="#7D1CFE" title="Backstage Data*" :bullets="['Services with a defined owner', 'TechDocs coverage']" />
+    <BulletBox v-click accent="#01D393" title="Connecting the Dots" :bullets="['TODO']" />
+</div>
+
+<p style="position: absolute; bottom: 7.5rem; left: 2rem; right: 2rem; font-size: 0.8em; margin: 0;">* not available as OTel metrics out of the box (get via Catalog API or Tech Insights plugin)</p>
+
+<LifecycleFlow :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+K: The catalog tells you who owns what. TechDocs puts the runbooks right next to the service. And here's a cross-tool signal worth tracking: compare catalog ownership against your actual alerting routes. If they don't match, your catalog data isn't trustworthy yet.
+
+T: That last one is a great sanity check. If the catalog says team A owns it but alerts go to team B, something is wrong.
 -->
 
 ---
@@ -378,7 +457,7 @@ Conclusion: for alfi corp, Backstage makes sense
 
 ---
 
-# What you saw here
+# What You Saw Here
 
 <!--
 Day 1:
@@ -395,7 +474,7 @@ Week 2:
 
 ---
 
-# How to approach an IDP project
+# How to Approach an IDP Project
 
 
 ---

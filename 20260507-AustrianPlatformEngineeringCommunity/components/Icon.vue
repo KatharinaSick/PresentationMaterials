@@ -8,6 +8,7 @@ const iconMap = {
   plugins: 'i-lucide:plug',
 
   // Concepts
+  waves: 'i-lucide:waves',
   puzzle: 'i-lucide:puzzle',
   target: 'i-lucide:target',
   idea: 'i-lucide:lightbulb',
