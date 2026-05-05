@@ -7,6 +7,7 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.2.105",
     "slidev-theme-underglow": "^0.1.0"
   },
   "devDependencies": {
