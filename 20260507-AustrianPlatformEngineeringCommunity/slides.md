@@ -70,28 +70,28 @@ layout: four-columns
 ::col1::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;">📦</div>
+  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="catalog" size="4rem" /></div>
   <h2>Catalog</h2>
 </div>
 
 ::col2::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🏗️</div>
+  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="scaffolder" size="4rem" /></div>
   <h2>Scaffolder</h2>
 </div>
 
 ::col3::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;">📖</div>
+  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="docs" size="4rem" /></div>
   <h2>Docs</h2>
 </div>
 
 ::col4::
 
 <div class="text-center" v-click>
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🔌</div>
+  <div style="font-size: 4rem; margin-bottom: 1rem;"><Icon name="plugins" size="4rem" /></div>
   <h2>Plugins</h2>
 </div>
 
@@ -220,11 +220,11 @@ K: I knew you'd say that. I prepared something.
 
 # Your Problems, Your Metrics
 
-<span v-click>🧩&numsp;Backstage needs to take the shape of YOUR platform.</span>
+<span v-click><Icon name="puzzle" />&numsp;Backstage needs to take the shape of YOUR platform.</span>
 
-<span v-click>🎯&numsp;Your portal is unique. Your metrics should be too.</span>
+<span v-click><Icon name="target" />&numsp;Your portal is unique. Your metrics should be too.</span>
 
-<span v-click>💡&numsp;Start with the problem. The metric follows.</span>
+<span v-click><Icon name="idea" />&numsp;Start with the problem. The metric follows.</span>
 
 <!--
 T: Right. The instrumentation is there. But just because we CAN measure everything doesn't mean we should. What are you actually measuring and why?
@@ -246,11 +246,11 @@ layout: center
 
 # How do I add a new app?
 
-<span v-click>🤷‍♀️&numsp;Ask three people, get three different answers.</span>
+<span v-click><Icon name="unknown" />&numsp;Ask three people, get three different answers.</span>
 
-<span v-click>⚙️&numsp;CI/CD copy-pasted and half broken.</span>
+<span v-click><Icon name="settings" />&numsp;CI/CD copy-pasted and half broken.</span>
 
-<span v-click>⏳&numsp;Days between idea and first code commit.</span>
+<span v-click><Icon name="hourglass" />&numsp;Days between idea and first code commit.</span>
 
 <LifecycleFlow v-click :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -258,11 +258,11 @@ layout: center
 
 # What can success look like?
 
-<p v-click style="padding-bottom: 0.6rem;">⏱️&numsp;Reduce time to first deployment.
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" />&numsp;Reduce time to first deployment.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. ticket "In Progress" → first successful CI/CD run</span></p>
-<p v-click style="padding-bottom: 0.6rem;">🎫&numsp;Reduce ops interruptions during app creation.
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" />&numsp;Reduce ops interruptions during app creation.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. ops tickets tagged "app-setup" per new service</span></p>
-<p v-click style="padding-bottom: 0;">😊&numsp;Improve developer satisfaction during app creation.
+<p v-click style="padding-bottom: 0;"><Icon name="smile" />&numsp;Improve developer satisfaction during app creation.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly survey on the app creation process (1–5)</span></p>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
@@ -273,15 +273,15 @@ layout: center
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; top: 1rem; left: 2rem; right: 2rem;" />
 
-<span v-click>🏗️&numsp;Software Templates can get you there.</span>
+<span v-click><Icon name="scaffolder" />&numsp;Software Templates can get you there.</span>
 
 <div v-click style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 0.5rem;">
   <div style="text-align: center;">
-    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;">❌ Too many choices</div>
+    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;"><Icon name="cross" /> Too many choices</div>
     <img src="./template-bad.png" alt="Template with too many input fields" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(255,80,80,0.5);" />
   </div>
   <div v-click style="text-align: center;">
-    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;">✅ Opinionated & fast</div>
+    <div style="font-size: 0.7em; opacity: 0.6; margin-bottom: 0.4rem;"><Icon name="check" /> Opinionated & fast</div>
     <img src="./template-good.png" alt="Good template screenshot" style="max-height: 220px; border-radius: 8px; border: 1.5px solid rgba(1,211,147,0.5);" />
   </div>
 </div>
@@ -320,8 +320,8 @@ K: [show good template screenshot] — minimal inputs, sensible defaults, done i
 </ProblemStatement>
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
-  <Chip>📦 Catalog + 📖 TechDocs</Chip>
-  <Chip>🧠 Cognitive Load</Chip>
+  <Chip><Icon name="catalog" /> Catalog + <Icon name="docs" /> TechDocs</Chip>
+  <Chip><Icon name="brain" /> Cognitive Load</Chip>
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -348,8 +348,8 @@ T: And you can cross-check catalog ownership against your actual alerting routes
 </ProblemStatement>
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
-  <Chip>🔍 Tech Insights</Chip>
-  <Chip>🔄 Feedback Loops</Chip>
+  <Chip><Icon name="search" /> Tech Insights</Chip>
+  <Chip><Icon name="refresh" /> Feedback Loops</Chip>
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
