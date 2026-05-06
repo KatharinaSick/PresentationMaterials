@@ -98,9 +98,9 @@ layout: four-columns
 <!--
 leute abholen, die backstage nicht kennen. die meisten kennens
 
-- K: Describes Backstage — open source framework by Spotify for building developer portals
+- K: Describes Backstage, an open source framework by Spotify for building developer portals
 - K: Walk through the four core features: catalog, templates, docs, plugins
-- K: Describes where it can improve DevEx — one place for everything, less context switching
+- K: Describes where it can improve DevEx: one place for everything, less context switching
 
 - K: Thomas, what do you think about it?
 -->
@@ -209,7 +209,7 @@ Note: we should add a note that if you have backstage already running, you can a
 <Todo>Screenshot of a Backstage dashboard</Todo>
 
 <!--
-K: Look, setting up observability for Backstage is actually pretty straightforward. [walk through bullets] And here's what it looks like in Dynatrace — traces, metrics, you get a decent picture of what's happening.
+K: Look, setting up observability for Backstage is actually pretty straightforward. [walk through bullets] And here's what it looks like in Dynatrace: traces, metrics, you get a decent picture of what's happening.
 
 T: Ok, that's nice. But what does this actually tell you about whether Backstage is helping our developers?
 
@@ -229,7 +229,7 @@ K: I knew you'd say that. I prepared something.
 <!--
 T: Right. The instrumentation is there. But just because we CAN measure everything doesn't mean we should. What are you actually measuring and why?
 
-K: Exactly. Our platforms aren't one-size-fits-all — and Backstage isn't either. The plugins, the templates, the catalog — they're different for everyone. So the metrics have to be too. Let me show you three concrete problems we mapped to Backstage features and how we observe them.
+K: Exactly. Our platforms aren't one-size-fits-all, and Backstage isn't either. The plugins, the templates, the catalog, they're different for everyone. So the metrics have to be too. Let me show you three concrete problems we mapped to Backstage features and how we observe them.
 -->
 
 ---
@@ -284,15 +284,15 @@ layout: center
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-K: Software templates are one of the most powerful Backstage features for this problem — one click and your repo, CI/CD, and docs are all wired up.
+K: Software templates are one of the most powerful Backstage features for this problem: one click and your repo, CI/CD, and docs are all wired up.
 
-T: At least... if they're not built like this. [show bad template — wall of input fields, every possible option exposed]
+T: At least... if they're not built like this. [show bad template: wall of input fields, every possible option exposed]
 
 K: Exactly. A template that asks 30 questions doesn't reduce cognitive load, it adds to it. The magic is in the defaults and the opinions baked in.
 
 T: So what does a good template actually look like?
 
-K: [show good template screenshot] — minimal inputs, sensible defaults, done in under a minute.
+K: [show good template screenshot]: minimal inputs, sensible defaults, done in under a minute.
 -->
 
 ---
@@ -314,7 +314,7 @@ K: [show good template screenshot] — minimal inputs, sensible defaults, done i
 <!--
 K: Once you wire up OpenTelemetry, Backstage gives you a solid starting point. You can see whether templates are being used, whether adoption is growing, and where runs fail. On the performance side, you can see how long template execution takes, which step is the bottleneck, and whether some users are consistently getting a much worse experience than others.
 
-T: Ok, that tells me people are using it — and I can see where it breaks. But does it tell me whether we're actually shipping faster now?
+T: Ok, that tells me people are using it, and I can see where it breaks. But does it tell me whether we're actually shipping faster now?
 
 K: Not directly. For that, we need to zoom out a bit.
 -->
@@ -337,7 +337,7 @@ K: I built a small demo for this. We emit an OpenTelemetry trace from the moment
 
 T: So you can actually measure that end-to-end time?
 
-K: Exactly. And you can see where the time goes — is it the repo creation? The CI pipeline? The first rollout? That's where you spot the bottlenecks. And that's what you compare against your baseline.
+K: Exactly. And you can see where the time goes: is it the repo creation? The CI pipeline? The first rollout? That's where you spot the bottlenecks. And that's what you compare against your baseline.
 -->
 
 ---
@@ -368,7 +368,7 @@ K: Exactly. And you can see where the time goes — is it the repo creation? The
 <LifecycleFlow v-click :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-T: After Day 1 you've deployed. Now Day 2 hits — incidents, onboarding, code review. You need to work with services you didn't build, and there's no single place to find what you need.
+T: After Day 1 you've deployed. Now Day 2 hits: incidents, onboarding, code review. You need to work with services you didn't build, and there's no single place to find what you need.
 
 K: Three questions that should have instant answers. But don't.
 -->
@@ -406,49 +406,64 @@ K: Incidents resolve faster. Quality issues don't reach production. And new team
     <BulletBox v-click accent="#01D393" title="Connecting the Dots" :bullets="['Ticket picked up', 'Owner &amp; context found in catalog', 'Architecture found in TechDocs', 'PR submitted']" />
 </div>
 
-<p v-click="3" style="font-size: 0.8em; margin-top: 1rem;">* via Catalog API or Tech Insights — not available as OTel metrics out of the box</p>
+<p v-click="3" style="font-size: 0.8em; margin-top: 1rem;">* via Catalog API or Tech Insights, not available as OTel metrics out of the box</p>
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-K: The catalog is your single source of truth for Day 2. Who owns it, how it works, whether it meets your standards — all in one place.
+K: The catalog is your single source of truth for Day 2. Who owns it, how it works, whether it meets your standards: all in one place.
 
-T: Tech Insights pulls in external signals — Snyk, GitHub, CI — and surfaces them as one compliance score. You stop checking five tools.
+T: Tech Insights pulls in external signals (Snyk, GitHub, CI) and surfaces them as one compliance score. You stop checking five tools.
 -->
 
 ---
 
-# Showcase
+# Your Backstage Playbook
+
+<div style="display: flex; flex-direction: column; gap: 0.55rem; margin-top: 1.25rem;">
+
+<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
+  <span style="font-weight: 700; color: #7D1CFE; font-size: 1.1em; min-width: 1.5rem;">1</span>
+  <div><strong>Name the problem</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Which developer pain are you actually targeting?</span></div>
+</div>
+
+<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
+  <span style="font-weight: 700; color: #176AFA; font-size: 1.1em; min-width: 1.5rem;">2</span>
+  <div><strong>Establish a baseline</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Measure the current state if you can. It becomes your comparison point later.</span></div>
+</div>
+
+<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #01D393; border-radius: 0 8px 8px 0; background: rgba(1,211,147,0.07);">
+  <span style="font-weight: 700; color: #01D393; font-size: 1.1em; min-width: 1.5rem;">3</span>
+  <div><strong>Define success</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">What does "better" look like, in numbers?</span></div>
+</div>
+
+<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
+  <span style="font-weight: 700; color: #176AFA; font-size: 1.1em; min-width: 1.5rem;">4</span>
+  <div><strong>Build &amp; instrument</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Find which feature fits your problem in your platform. Wire up your observability.</span></div>
+</div>
+
+<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
+  <span style="font-weight: 700; color: #7D1CFE; font-size: 1.1em; min-width: 1.5rem;">5</span>
+  <div><strong>Measure &amp; iterate</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Did it move the needle? If not, back to step 1.</span></div>
+</div>
+
+</div>
 
 <!--
-K: See! We need Backstage
-T: Wait, slow down. Backstage is huge. We should also consider ....
+K: We just did this twice without naming it. Let's name it.
 
-Conclusion: for alfi corp, Backstage makes sense
+T: Notice step 5 doesn't end the loop. If Backstage didn't move the needle, that's not a failure. It's new information. You have a better-defined problem now. Back to step 1.
+
+K: And this works whether you're evaluating Backstage, already running it, or deciding which feature to build next.
 -->
 
 ---
-
-# What You Saw Here
+layout: quote
+quote: Your Backstage. Your problems. Your metrics.
+subtitle: Data beats gut feeling. Always.
+background: robot-chilling.jpeg
+---
 
 <!--
-Day 1:
-- K: Yeees, let's finally deploy Backstage! 🥳 See, it's running. I told you it's easy to deploy and it looks so cool! Let's start using it right away!
-- T: ok it's running, but now what? How do we know if it helps?
-- K: Trust me, it's awesome!
-
-Week 2:
-- K: Wait.. People actually aren't using Backstage. Why? I thought everyone would love it.
-- T: Well, you just deployed it without even asking what people in our company need. We already identified problems but didn't tailor Backstage to solve them. Maybe we should have started with that?
-- K: True.. So what can we do about that?
-- T: It's not too late. we already did the hard part. We have our baseline, we know our problems. Let's actually use that.
+Intentional callback to the title, lands as a takeaway not a summary.
 -->
-
----
-
-# How to Approach an IDP Project
-
-
----
-
-# Wrap Up
