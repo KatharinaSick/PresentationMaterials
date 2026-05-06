@@ -357,91 +357,63 @@ K: Exactly. And you can see where the time goes — is it the repo creation? The
 
 ---
 
-# 2am Friction
+# Day 2 Knowledge Gaps
 
-<span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Who owns it? No single source of truth.</span>
+<span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Who owns what? No single source of truth.</span>
 
 <span v-click><Icon name="docs" style="color: #176AFA;" />&numsp;How does it work? Docs are scattered or missing.</span>
 
-<span v-click><Icon name="brain" style="color: #01D393;" />&numsp;What if it breaks? No runbook → debug from zero.</span>
+<span v-click><Icon name="search" style="color: #01D393;" />&numsp;Does it meet our standards? No single answer.</span>
 
-<LifecycleFlow v-click :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+<LifecycleFlow v-click :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-T: Same problem pattern. You're paged at 2am. You don't know the service, you don't know who owns it, there are no runbooks. You spend the first 30 minutes just figuring out where to start.
+T: After Day 1 you've deployed. Now Day 2 hits — incidents, onboarding, code review. You need to work with services you didn't build, and there's no single place to find what you need.
 
-K: This is pure cognitive load. And it's completely avoidable.
+K: Three questions that should have instant answers. But don't.
 -->
 
 ---
 
 # What Could Better Look Like?
 
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Reduce MTTR during incidents.
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Faster incident resolution.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Reduce "who owns this?" interruptions.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. Slack messages tagged "ownership" per week</span></p>
-<p v-click style="padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Improve developer satisfaction on-call.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly on-call survey</span></p>
+<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Quality issues caught early, not late.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
+<p v-click style="padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Tribal knowledge replaced by catalog data.
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
 
-<LifecycleFlow :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-T: What would actually fix this? If we solve the problem, what changes?
+T: Same question. If we fix this, what actually changes?
 
-K: Three things. Incidents resolve faster. People stop getting pinged to answer ownership questions. And developers dread on-call a little less.
+K: Incidents resolve faster. Quality issues don't reach production. And new team members stop being blocked on "who do I ask?"
 -->
 
 ---
 
-# Reduce MTTR
+# From Tribal Knowledge to Catalog Data
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
-    <Chip v-click><Icon name="brain" style="color: #01D393;" /> Cognitive Load</Chip> 
-    <Chip v-click><Icon name="catalog" style="color: #7D1CFE;" /> Catalog + <Icon name="docs" style="color: #176AFA;" /> TechDocs</Chip>
+    <Chip v-click><Icon name="brain" style="color: #01D393;" /> Cognitive Load</Chip>
+    <Chip v-click><Icon name="catalog" style="color: #7D1CFE;" /> Catalog + <Icon name="docs" style="color: #176AFA;" /> TechDocs + <Icon name="search" style="color: #FF8C42;" /> Tech Insights</Chip>
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-    <BulletBox v-click accent="#7D1CFE" title="Backstage Data*" :bullets="['Services with a defined owner', 'TechDocs coverage']" />
-    <BulletBox v-click accent="#01D393" title="Connecting the Dots" :bullets="['TODO']" />
+    <BulletBox v-click accent="#7D1CFE" title="Backstage Data*" :bullets="['Catalog completeness score', 'TechDocs coverage', 'Services with a description', 'Dependencies mapped in catalog']" />
+    <BulletBox v-click accent="#01D393" title="Connecting the Dots" :bullets="['Ticket picked up', 'Owner &amp; context found in catalog', 'Architecture found in TechDocs', 'PR submitted']" />
 </div>
 
-<p style="position: absolute; bottom: 7.5rem; left: 2rem; right: 2rem; font-size: 0.8em; margin: 0;">* not available as OTel metrics out of the box (get via Catalog API or Tech Insights plugin)</p>
+<p v-click="3" style="font-size: 0.8em; margin-top: 1rem;">* via Catalog API or Tech Insights — not available as OTel metrics out of the box</p>
 
-<LifecycleFlow :highlight="['Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 <!--
-K: The catalog tells you who owns what. TechDocs puts the runbooks right next to the service. And here's a cross-tool signal worth tracking: compare catalog ownership against your actual alerting routes. If they don't match, your catalog data isn't trustworthy yet.
+K: The catalog is your single source of truth for Day 2. Who owns it, how it works, whether it meets your standards — all in one place.
 
-T: That last one is a great sanity check. If the catalog says team A owns it but alerts go to team B, something is wrong.
--->
-
----
-
-# Problem 3: Service Quality Visibility
-
-<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; top: 1rem; left: 2rem; right: 2rem;" />
-
-<ProblemStatement accent="#176AFA">
-  There's no way to know if a service — especially AI-generated code — meets quality standards without checking five different places.
-</ProblemStatement>
-
-<div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
-  <Chip><Icon name="search" /> Tech Insights</Chip>
-  <Chip><Icon name="refresh" /> Feedback Loops</Chip>
-</div>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-  <BulletBox accent="#7D1CFE" title="Metrics" :bullets="['% services with a scorecard defined', 'Average compliance score per team']" />
-  <BulletBox accent="#01D393" title="KPIs" :bullets="['Reduction in PR rejections', 'Reduction in ownerless service incidents', 'Audit pass rate']" />
-</div>
-
-<!--
-K: Third problem: quality visibility. Especially relevant now with AI-generated code — how do you know if it's actually good?
-
-T: Tech Insights lets you define scorecards and surface compliance data in one place. Leading metric: do teams even have a scorecard? Outcome: fewer surprises at review time.
-
-K: And you can pull in external signals — Snyk, GitHub, Dynatrace — to validate that scorecard results match what's actually happening in production.
+T: Tech Insights pulls in external signals — Snyk, GitHub, CI — and surfaces them as one compliance score. You stop checking five tools.
 -->
 
 ---
