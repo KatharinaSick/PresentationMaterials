@@ -23,7 +23,7 @@ Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
 # Intro
 
 <div style="display: flex; justify-content: center; margin-top: 1.0rem;">
-  <img src="./discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
+  <img src="/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
 </div>
 
 
@@ -111,7 +111,7 @@ layout: two-cols
 
 # Overkill?
 
-<img src="./robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+<img src="/robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
 
 <div style="position: relative; z-index: 1; background: #121212; border-radius: 8px; padding: 0.25rem;">
 
@@ -134,7 +134,7 @@ T: Asks himself how the outcome of the implementation could be measured
 ---
 layout: quote
 quote: A few days later ...
-background: robot-chilling.jpeg
+background: /robot-chilling.jpeg
 ---
 
 ---
@@ -189,7 +189,7 @@ What do we want to achieve with our IDP and which problems do we want to solve?
 layout: quote
 quote: Shipping without a baseline is hoping, not engineering
 subtitle: Data beats gut feeling. Always.
-background: robot-working.jpeg
+background: /robot-working.jpeg
 ---
 
 <!--
@@ -344,7 +344,7 @@ K: Exactly. And you can see where the time goes: is it the repo creation? The CI
 
 # Try It Yourself
 
-<img src="./robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+<img src="/robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
 
 <div style="display: flex; justify-content: center; margin-top: 1rem;">
   <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
@@ -461,7 +461,7 @@ K: And this works whether you're evaluating Backstage, already running it, or de
 layout: quote
 quote: Your Backstage. Your problems. Your metrics.
 subtitle: Data beats gut feeling. Always.
-background: robot-chilling.jpeg
+background: /robot-chilling.jpeg
 ---
 
 <!--
