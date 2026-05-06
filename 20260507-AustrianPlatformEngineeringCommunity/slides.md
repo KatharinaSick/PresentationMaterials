@@ -139,12 +139,12 @@ background: /robot-chilling.jpeg
 
 ---
 
-# SPACE and DX Core 4 Frameworks
+# SPACE and DevEx Frameworks
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; margin-top: 1.5rem;">
   <BulletBox accent="#01D393" title="SPACE" :bullets="['Satisfaction', 'Performance', 'Activity', 'Communication', 'Efficiency']"></BulletBox>
 
-<BulletBox accent="#176AFA" title="DX Core 4" :bullets="['Flow State', 'Feedback Loops', 'Cognitive Load', 'Developer Value']"></BulletBox>
+<BulletBox accent="#176AFA" title="DevEx Framework" :bullets="['Flow State', 'Feedback Loops', 'Cognitive Load']"></BulletBox>
 </div>
 
 <!--
@@ -415,6 +415,12 @@ K: The catalog is your single source of truth for Day 2. Who owns it, how it wor
 
 T: Tech Insights pulls in external signals (Snyk, GitHub, CI) and surfaces them as one compliance score. You stop checking five tools.
 -->
+
+---
+
+# Some Metrics That Matter
+
+<img src="./lifecycle.svg" style="width: 97%; height: auto; margin-left: auto; margin-right: auto;" alt="lifecycle" />
 
 ---
 
