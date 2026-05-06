@@ -46,8 +46,8 @@ K: Fair point. Let's fidn out. But before that: who are you actually to push me 
 # Who Are We?
 
 <div style="display: flex; gap: 2em; justify-content: center; align-items: stretch; padding: 1em;">
-  <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="/me.jpeg"></SpeakerCard>
-  <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="/tscweb.jpeg"></SpeakerCard>
+  <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="me.jpeg"></SpeakerCard>
+  <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="tscweb.jpeg"></SpeakerCard>
 </div>
 
 <!--
@@ -134,7 +134,7 @@ T: Asks himself how the outcome of the implementation could be measured
 ---
 layout: quote
 quote: A few days later ...
-background: /robot-chilling.jpeg
+background: robot-chilling.jpeg
 ---
 
 ---
@@ -189,7 +189,7 @@ What do we want to achieve with our IDP and which problems do we want to solve?
 layout: quote
 quote: Shipping without a baseline is hoping, not engineering
 subtitle: Data beats gut feeling. Always.
-background: /robot-working.jpeg
+background: robot-working.jpeg
 ---
 
 <!--
@@ -467,7 +467,7 @@ K: And this works whether you're evaluating Backstage, already running it, or de
 layout: quote
 quote: Your Backstage. Your problems. Your metrics.
 subtitle: Data beats gut feeling. Always.
-background: /robot-chilling.jpeg
+background: robot-chilling.jpeg
 ---
 
 <!--
