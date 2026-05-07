@@ -206,15 +206,29 @@ Note: we should add a note that if you have backstage already running, you can a
 
 # Instrumentation Gets You Started
 
-<Todo>Screenshot of a Backstage dashboard</Todo>
+<img src="/standard-instrumentation.png" alt="Backstage instrumentation dashboard" style="width: 98%; border-radius: 8px; display: block; margin: auto;" />
 
-<!--
-K: Look, setting up observability for Backstage is actually pretty straightforward. [walk through bullets] And here's what it looks like in Dynatrace: traces, metrics, you get a decent picture of what's happening.
+---
+layout: three-columns
+---
 
-T: Ok, that's nice. But what does this actually tell you about whether Backstage is helping our developers?
+# Metrics You Get Out of the Box
 
-K: I knew you'd say that. I prepared something.
--->
+::left::
+<div style="font-size: 0.6em;">
+  <BulletBox accent="#7D1CFE" title="Catalog" :bullets="['<code>entities_count</code>', '<code>registered_locations_count</code>', '<code>relations_count</code>', '<code>processed.entities.count</code>', '<code>processing.duration</code>', '<code>processors.duration</code>', '<code>processing.queue.delay</code>', '<code>stitched.entities.count</code>', '<code>stitching.duration</code>', '<code>stitching.queue.length</code>', '<code>stitching.queue.delay</code>']" />
+</div>
+
+::middle::
+<div style="font-size: 0.6em;">
+  <BulletBox accent="#01D393" title="Scaffolder" :bullets="['<code>task.count</code>', '<code>task.duration</code>', '<code>step.count</code>', '<code>step.duration</code>']" />
+</div>
+
+::right::
+<div style="font-size: 0.6em;">
+  <BulletBox accent="#176AFA" title="Backend Tasks" :bullets="['<code>task.runs.count</code>', '<code>task.runs.duration</code>']" />
+</div>
+
 
 ---
 
@@ -277,9 +291,10 @@ layout: center
 </div>
 
 
-<Todo v-click>Screenshot of a template with too many input fields</Todo>
-
-<Todo v-click>Screenshot of a good, opinionated template</Todo>
+<div style="position: relative; width: 70%; margin: auto;">
+  <img v-click="[3, 4]" src="/bad-template.png" alt="Template with too many input fields" style="width: 100%; border-radius: 8px;" />
+  <img v-click="4" src="/good-template.png" alt="Good, opinionated template" style="position: absolute; top: 0; left: 0; width: 90%; border-radius: 8px;" />
+</div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -328,7 +343,72 @@ K: Not directly. For that, we need to zoom out a bit.
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
-<Todo>Screenshot of the full trace from template trigger to first deploy</Todo>
+<div style="font-size: 0.62em; font-family: monospace; margin-top: 0.25rem;">
+  <div style="display: flex; opacity: 0.4; font-size: 0.85em; margin-bottom: 0.4rem;">
+    <div style="width: 44%;">span</div>
+    <div style="width: 56%; display: flex; justify-content: space-between;"><span>0 s</span><span>~ 5 min</span></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #7D1CFE; font-weight: bold;">backstage: template run</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 0%; width: 100%; height: 100%; background: #7D1CFE; border-radius: 2px;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ fill template</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 0%; width: 15%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ click create</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 15%; width: 3%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ create repositories</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #aaaaaa; padding-left: 1.8em;">↳ create app repo</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #aaaaaa; border-radius: 2px; opacity: 0.7;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #aaaaaa; padding-left: 1.8em;">↳ create deployment repo</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #aaaaaa; border-radius: 2px; opacity: 0.7;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #FF8C42; padding-left: 1em;">↳ argo-events: trigger</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 27%; width: 3%; height: 100%; background: #FF8C42; border-radius: 2px;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #176AFA; padding-left: 1em;">↳ argo-workflows: build & update</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 30%; width: 53%; height: 100%; background: #176AFA; border-radius: 2px;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #176AFA; padding-left: 1.8em;">↳ build image</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 30%; width: 43%; height: 100%; background: #176AFA; border-radius: 2px; opacity: 0.55;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #176AFA; padding-left: 1.8em;">↳ update deployment repo</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 73%; width: 10%; height: 100%; background: #176AFA; border-radius: 2px; opacity: 0.55;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
+    <div style="width: 44%; color: #01D393; padding-left: 1em;">↳ argocd: sync</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 83%; width: 12%; height: 100%; background: #01D393; border-radius: 2px;"></div></div>
+  </div>
+
+  <div style="display: flex; align-items: center; height: 1.3em;">
+    <div style="width: 44%; color: #01D393; padding-left: 1em;">↳ app: healthy ✓</div>
+    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 95%; width: 5%; height: 100%; background: #01D393; border-radius: 2px; opacity: 0.7;"></div></div>
+  </div>
+</div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -340,20 +420,29 @@ T: So you can actually measure that end-to-end time?
 K: Exactly. And you can see where the time goes: is it the repo creation? The CI pipeline? The first rollout? That's where you spot the bottlenecks. And that's what you compare against your baseline.
 -->
 
----
+[//]: # (---)
 
-# Try It Yourself
+[//]: # ()
+[//]: # (# Try It Yourself)
 
-<img src="/robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+[//]: # ()
+[//]: # (<img src="/robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />)
 
-<div style="display: flex; justify-content: center; margin-top: 1rem;">
-  <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-    <img src="/demo-qr.png" alt="QR code to demo repository" style="width: 180px; height: 180px; border-radius: 8px;" />
-    <a href="https://github.com/KatharinaSick/demos" style="font-size: 0.8em; opacity: 0.7;">github.com/KatharinaSick/demos</a>
-  </div>
-</div>
+[//]: # ()
+[//]: # (<div style="display: flex; justify-content: center; margin-top: 1rem;">)
 
-<p style="position: absolute; bottom: 3rem; left: 2rem; right: 2rem; text-align: center; font-size: 0.8em; margin: 0;">Zero setup. Just bring your own observability backend.</p>
+[//]: # (  <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">)
+
+[//]: # (    <img src="/demo-qr.png" alt="QR code to demo repository" style="width: 180px; height: 180px; border-radius: 8px;" />)
+
+[//]: # (    <a href="https://github.com/KatharinaSick/demos" style="font-size: 0.8em; opacity: 0.7;">github.com/KatharinaSick/demos</a>)
+
+[//]: # (  </div>)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (<p style="position: absolute; bottom: 3rem; left: 2rem; right: 2rem; text-align: center; font-size: 0.8em; margin: 0;">Zero setup. Just bring your own observability backend.</p>)
 
 ---
 
@@ -402,11 +491,11 @@ K: Incidents resolve faster. Quality issues don't reach production. And new team
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-    <BulletBox v-click accent="#7D1CFE" title="Backstage Data*" :bullets="['Catalog completeness score', 'TechDocs coverage', 'Services with a description', 'Dependencies mapped in catalog']" />
-    <BulletBox v-click accent="#01D393" title="Connecting the Dots" :bullets="['Ticket picked up', 'Owner &amp; context found in catalog', 'Architecture found in TechDocs', 'PR submitted']" />
+    <BulletBox v-click="3" accent="#7D1CFE" title="Backstage Data*" :bullets="['Catalog completeness score', 'TechDocs coverage', 'Services with a description', 'Dependencies mapped in catalog']" />
+    <BulletBox v-click="4" accent="#01D393" title="Connecting the Dots" :bullets="['Ticket picked up', 'Owner &amp; context found in catalog', 'Architecture found in TechDocs', 'PR submitted']" />
 </div>
 
-<p v-click="3" style="font-size: 0.8em; margin-top: 1rem;">* via Catalog API or Tech Insights, not available as OTel metrics out of the box</p>
+<p v-click="3" style="font-size: 0.8em; margin-top: 0.2rem;">* via Catalog API or Tech Insights, not available as OTel metrics out of the box</p>
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -420,7 +509,11 @@ T: Tech Insights pulls in external signals (Snyk, GitHub, CI) and surfaces them 
 
 # Some Metrics That Matter
 
-<img src="./lifecycle.svg" style="width: 97%; height: auto; margin-left: auto; margin-right: auto;" alt="lifecycle" />
+<img src="/lifecycle.svg" style="width: 97%; height: auto; margin-left: auto; margin-right: auto;" alt="lifecycle" />
+
+---
+
+<img src="/backstage-dashboard.png" alt="Dynatrace dashboard showing Backstage metrics" style="width: 90%; border-radius: 8px; display: block; margin: auto; margin-top: -15px" />
 
 ---
 
@@ -464,12 +557,32 @@ K: And this works whether you're evaluating Backstage, already running it, or de
 -->
 
 ---
-layout: quote
-quote: Your Backstage. Your problems. Your metrics.
-subtitle: Data beats gut feeling. Always.
-background: robot-chilling.jpeg
+layout: center
 ---
 
-<!--
-Intentional callback to the title, lands as a takeaway not a summary.
--->
+<img src="/robot-chilling.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+
+<h1 style="font-size: 3rem; text-align: center; line-height: 1.2; margin-bottom: 0.5rem;">Your Backstage. Your Problems. Your Metrics.</h1>
+
+<p style="text-align: center; opacity: 0.8; margin-bottom: 2rem; font-size: 0.8rem;">Data beats gut feeling. Always.</p>
+
+<div style="display: flex; gap: 3rem; justify-content: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+    <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
+      <img src="/qr-thomas.png" alt="Thomas on LinkedIn" style="width: 160px; height: 160px; display: block;" />
+    </div>
+    <span style="font-size: 0.7em;">Thomas</span>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+    <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
+      <img src="/qr-open-ecosystem.png" alt="Open Ecosystem Forum" style="width: 160px; height: 160px; display: block;" />
+    </div>
+    <span style="font-size: 0.7em;">Join the discussion</span>
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+    <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
+      <img src="/qr-kathi.png" alt="Kathi on LinkedIn" style="width: 160px; height: 160px; display: block;" />
+    </div>
+    <span style="font-size: 0.7em;">Kathi</span>
+  </div>
+</div>

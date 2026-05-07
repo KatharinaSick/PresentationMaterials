@@ -10,7 +10,7 @@ defineProps({
   <div class="bullet-box" :style="{ borderLeft: `6px solid ${accent}` }">
 	<div class="title">{{ title }}</div>
 	<ul v-if="bullets.length" class="bullets">
-	  <li v-for="(item, i) in bullets" :key="i">{{ item }}</li>
+	  <li v-for="(item, i) in bullets" :key="i" v-html="item"></li>
 	</ul>
   </div>
 </template>
@@ -25,7 +25,7 @@ defineProps({
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 0.55rem;
@@ -34,7 +34,7 @@ defineProps({
 .bullets {
   margin: 0;
   padding-left: 1.15rem;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 1.5;
   opacity: 0.9;
 }
@@ -43,5 +43,3 @@ defineProps({
   margin-top: 0.3rem;
 }
 </style>
-
-
