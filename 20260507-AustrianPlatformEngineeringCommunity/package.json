@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.105",
-    "slidev-theme-underglow": "^0.1.0"
+    "slidev-theme-underglow": "^0.1.1"
   },
   "devDependencies": {
     "@slidev/cli": "^52.11.5"

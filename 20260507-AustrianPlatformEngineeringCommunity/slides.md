@@ -4,7 +4,9 @@ title: 'Your Backstage, Your Problems, Your Metrics'
 event:
   name: Austrian Plattform Engineering Community 2026
   date: May 07, 2026
-speaker: Katharina Sick
+speakers:
+  - name: Katharina Sick
+  - name: Thomas Schuetz
 logo: 'https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/refs/heads/main/Shared/Logos/dynatrace-tsclabs-white.png'
 themeConfig:
   color-primary: '#7D1CFE'
@@ -16,8 +18,6 @@ layout: cover
 
 # Your Backstage, Your Problems, Your Metrics
 
-Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
-
 ---
 
 # Intro
@@ -25,21 +25,6 @@ Thomas Schuetz, TSC Labs<br/>Katharina Sick, Dynatrace
 <div style="display: flex; justify-content: center; margin-top: 1.0rem;">
   <img src="/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
 </div>
-
-
-<!--
-Conversation between us:
-
-K: Hey, I just discovered Backstage. It's so cool! It can do this, this and this and will solve all our problems! I think I'll deploy it :D
-
-T: pushes back, does this even make sense for us? 
-
-K: But we need better developer experience. Everyon talks about taht right now
-
-T: Ok, but how do you know that our developer experience is actually bad at the moment? And how can you be sure, that Backstage will improve it and is not just another tool causing toil and cogntivie load?
-
-K: Fair point. Let's fidn out. But before that: who are you actually to push me back all the time? 
--->
 
 ---
 
@@ -49,15 +34,6 @@ K: Fair point. Let's fidn out. But before that: who are you actually to push me 
   <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="me.jpeg"></SpeakerCard>
   <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="tscweb.jpeg"></SpeakerCard>
 </div>
-
-<!--
-Before begin with our Backstage Journey, let's introduce ourselves ...
-
-Quick intros about us & what we're passionate about...
-
-T: Kathi, You caught me off guard with that topic and I always hear about Backstage somewhere, so what is it about and where can it help us?
-
--->
 
 ---
 layout: four-columns
@@ -95,16 +71,6 @@ layout: four-columns
   <h2>Plugins</h2>
 </div>
 
-<!--
-leute abholen, die backstage nicht kennen. die meisten kennens
-
-- K: Describes Backstage, an open source framework by Spotify for building developer portals
-- K: Walk through the four core features: catalog, templates, docs, plugins
-- K: Describes where it can improve DevEx: one place for everything, less context switching
-
-- K: Thomas, what do you think about it?
--->
-
 ---
 layout: two-cols
 ---
@@ -125,14 +91,6 @@ layout: two-cols
 
 </div>
 
-<!--
-T: Sees the problems and overhead coming with Backstage
-
-K: Talks about the documentation, ecosystem and wide adoption
-
-T: Asks himself how the outcome of the implementation could be measured 
--->
-
 ---
 layout: quote
 quote: A few days later ...
@@ -148,14 +106,6 @@ background: robot-chilling.jpeg
 
 <BulletBox accent="#176AFA" title="DevEx Framework" :bullets="['Flow State', 'Feedback Loops', 'Cognitive Load']"></BulletBox>
 </div>
-
-<!--
-T: Did some research on Frameworks on how to measure Developer Experience and Productivity and fell across SPACE and DX Core
-
-K: Very hyped around the DX things
-
-T: Wants to get features and products shipped faster. So what do we need to measure to know if we are actually faster?
--->
 
 ---
 
@@ -181,28 +131,12 @@ T: Wants to get features and products shipped faster. So what do we need to meas
   How often do developers switch between tools?
 </Cloud>
 
-<!--
-What do we want to achieve with our IDP and which problems do we want to solve?
-
-
--->
-
 ---
 layout: quote
 quote: Shipping without a baseline is hoping, not engineering
 subtitle: Data beats gut feeling. Always.
 background: robot-working.jpeg
 ---
-
-<!--
-- We can't search for a solution without knowing what's currently going on
-- We need to create a baseline so that we have something to compare against later. Otherwise, it will be hard to know if we succeeded
-- baseline metrics show we have a problem in alfi corp
-
-This could be a big statement slide like "if you deploy with nothing to compare against, you never know if you succeeded"
-
-Note: we should add a note that if you have backstage already running, you can also create this baseline including backstage.
--->
 
 ---
 
@@ -241,12 +175,6 @@ layout: three-columns
 <span v-click><Icon name="target" style="color: #176AFA;" />&numsp;Your portal is unique. Your metrics should be too.</span>
 
 <span v-click><Icon name="idea" style="color: #01D393;" />&numsp;Start with the problem. The metric follows.</span>
-
-<!--
-T: Right. The instrumentation is there. But just because we CAN measure everything doesn't mean we should. What are you actually measuring and why?
-
-K: Exactly. Our platforms aren't one-size-fits-all, and Backstage isn't either. The plugins, the templates, the catalog, they're different for everyone. So the metrics have to be too. Let me show you three concrete problems we mapped to Backstage features and how we observe them.
--->
 
 ---
 layout: center
@@ -300,18 +228,6 @@ layout: center
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
-<!--
-K: Software templates are one of the most powerful Backstage features for this problem: one click and your repo, CI/CD, and docs are all wired up.
-
-T: At least... if they're not built like this. [show bad template: wall of input fields, every possible option exposed]
-
-K: Exactly. A template that asks 30 questions doesn't reduce cognitive load, it adds to it. The magic is in the defaults and the opinions baked in.
-
-T: So what does a good template actually look like?
-
-K: [show good template screenshot]: minimal inputs, sensible defaults, done in under a minute.
--->
-
 ---
 
 # What Backstage Tells You
@@ -327,14 +243,6 @@ K: [show good template screenshot]: minimal inputs, sensible defaults, done in u
 </div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
-<!--
-K: Once you wire up OpenTelemetry, Backstage gives you a solid starting point. You can see whether templates are being used, whether adoption is growing, and where runs fail. On the performance side, you can see how long template execution takes, which step is the bottleneck, and whether some users are consistently getting a much worse experience than others.
-
-T: Ok, that tells me people are using it, and I can see where it breaks. But does it tell me whether we're actually shipping faster now?
-
-K: Not directly. For that, we need to zoom out a bit.
--->
 
 ---
 
@@ -414,14 +322,6 @@ K: Not directly. For that, we need to zoom out a bit.
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
-<!--
-K: I built a small demo for this. We emit an OpenTelemetry trace from the moment the user clicks "Create" in the template, all the way through to when the app is successfully deployed for the first time.
-
-T: So you can actually measure that end-to-end time?
-
-K: Exactly. And you can see where the time goes: is it the repo creation? The CI pipeline? The first rollout? That's where you spot the bottlenecks. And that's what you compare against your baseline.
--->
-
 [//]: # (---)
 
 [//]: # ()
@@ -458,12 +358,6 @@ K: Exactly. And you can see where the time goes: is it the repo creation? The CI
 
 <LifecycleFlow v-click :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
-<!--
-T: After Day 1 you've deployed. Now Day 2 hits: incidents, onboarding, code review. You need to work with services you didn't build, and there's no single place to find what you need.
-
-K: Three questions that should have instant answers. But don't.
--->
-
 ---
 
 # What Could Better Look Like?
@@ -476,12 +370,6 @@ K: Three questions that should have instant answers. But don't.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
-<!--
-T: Same question. If we fix this, what actually changes?
-
-K: Incidents resolve faster. Quality issues don't reach production. And new team members stop being blocked on "who do I ask?"
--->
 
 ---
 
@@ -500,12 +388,6 @@ K: Incidents resolve faster. Quality issues don't reach production. And new team
 <p v-click="3" style="font-size: 0.8em; margin-top: 0.2rem;">* via Catalog API or Tech Insights, not available as OTel metrics out of the box</p>
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
-<!--
-K: The catalog is your single source of truth for Day 2. Who owns it, how it works, whether it meets your standards: all in one place.
-
-T: Tech Insights pulls in external signals (Snyk, GitHub, CI) and surfaces them as one compliance score. You stop checking five tools.
--->
 
 ---
 
@@ -549,14 +431,6 @@ T: Tech Insights pulls in external signals (Snyk, GitHub, CI) and surfaces them 
 </div>
 
 </div>
-
-<!--
-K: We just did this twice without naming it. Let's name it.
-
-T: Notice step 5 doesn't end the loop. If Backstage didn't move the needle, that's not a failure. It's new information. You have a better-defined problem now. Back to step 1.
-
-K: And this works whether you're evaluating Backstage, already running it, or deciding which feature to build next.
--->
 
 ---
 
