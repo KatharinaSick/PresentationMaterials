@@ -115,9 +115,11 @@ layout: two-cols
 
 <div style="position: relative; z-index: 1; background: #121212; border-radius: 8px; padding: 0.25rem;">
 
-<Box accent="#01D393">Backstage is a Framework to create IDPs -> react know-how/maintenance</Box>
 
-<Box accent="#7D1CFE">It introduces a new component to maintain</Box>
+
+<Box accent="#7D1CFE">It introduces a new piece of software to maintain</Box>
+
+<Box accent="#01D393">Platform People need react Know-How</Box>
 
 <Box accent="#176AFA">The IDP also changes the way things work</Box>
 
@@ -555,6 +557,20 @@ T: Notice step 5 doesn't end the loop. If Backstage didn't move the needle, that
 
 K: And this works whether you're evaluating Backstage, already running it, or deciding which feature to build next.
 -->
+
+---
+
+# Takeaways
+
+<Box accent="#7D1CFE">IDP done wrong can introduce lots of confusion and extra-work</Box>
+
+<Box accent="#01D393">It has to support your development workflow and enhance DevEx</Box>
+
+<Box accent="#176AFA">Start thinking about what you want to achieve before implementing</Box>
+
+<Box accent="#7D1CFE">Backstage itself exposes OpenTelemetry Metrics and Traces</Box>
+
+<Box accent="#01D393">Done right, it helps you keeping an overview and automate complex tasks</Box>
 
 ---
 layout: center
