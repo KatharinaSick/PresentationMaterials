@@ -204,7 +204,7 @@ Note: we should add a note that if you have backstage already running, you can a
 
 ---
 
-# Instrumentation Gets You Started
+# A Few Days Later
 
 <img src="/standard-instrumentation.png" alt="Backstage instrumentation dashboard" style="width: 98%; border-radius: 8px; display: block; margin: auto;" />
 
