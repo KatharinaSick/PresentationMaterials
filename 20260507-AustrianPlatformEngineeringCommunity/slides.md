@@ -93,7 +93,7 @@ layout: two-cols
 
 ---
 layout: quote
-quote: A few days later ...
+quote: A Few Days Later ...
 background: robot-chilling.jpeg
 ---
 
@@ -140,9 +140,9 @@ background: robot-working.jpeg
 
 ---
 
-# A Few Days Later
+# A Few Days Later (Again)
 
-<img src="/standard-instrumentation.png" alt="Backstage instrumentation dashboard" style="width: 98%; border-radius: 8px; display: block; margin: auto;" />
+<img v-click src="/standard-instrumentation.png" alt="Backstage instrumentation dashboard" style="width: 98%; border-radius: 8px; display: block; margin: auto;" />
 
 ---
 layout: three-columns
