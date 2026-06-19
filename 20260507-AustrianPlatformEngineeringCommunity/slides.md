@@ -196,7 +196,7 @@ layout: center
 
 <span v-click><Icon name="hourglass" style="color: #01D393;" />&numsp;Days between idea and first code commit.</span>
 
-<LifecycleFlow v-click :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+<LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 ---
 
@@ -356,7 +356,7 @@ layout: center
 
 <span v-click><Icon name="search" style="color: #01D393;" />&numsp;Does it meet our standards? No single answer.</span>
 
-<LifecycleFlow v-click :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
 ---
 
