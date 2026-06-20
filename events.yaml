@@ -1,4 +1,67 @@
 talks:
+  - title: "Turning Platform Engineering Right Side Up: Building Better Paths for Juniors"
+    abstract: |
+      Platform engineering stacks are vast. Juniors are expected to navigate Linux, networking, auth, containers, cloud, CI/CD, infrastructure as code, and observability — all at once. But cognitive load research tells us our brains have limits, and the platform doesn't care.
+
+      This talk explores how platform engineers can design better onboarding paths for junior developers by applying principles from cognitive load theory. We'll look at why "learning ≠ readiness", why we teach nouns but work in verbs, and how to build the "In-Between" — safe, realistic, guided environments where juniors can practice without the pressure of production. Platform engineering isn't just about the tools we build. It's about the paths we create for people to grow into them.
+    date: 2026/09/05
+    event:
+      name: DevOpsDays Graz
+      url: https://www.devopsdays.at/
+    tags:
+      - Platform Engineering
+      - Developer Experience
+      - Learning
+
+  - title: "Your Backstage, Your Problems, Your Metrics"
+    abstract: |
+      Backstage is often proposed as the solution to all platform problems. Just deploy it and watch the magic happen. Too good to be true? Exactly. Let's take a step back: which problems are you actually trying to solve? Service discovery? Onboarding? Tool sprawl? Documentation chaos? Your problems are unique. Just as the metrics for your developer portal should be.
+
+      A Developer Portal without a purpose is only just another piece of software, causing toil and maintenance effort. In this talk, we'll show you how to apply a product mindset to your platform (and Backstage): starting with identifying the specific problems you want to solve before implementing Backstage, define metrics for those problems, and measure whether Backstage actually delivers value and how it can be improved. Think DORA metrics, but for your internal developer portal.
+
+      We'll equip you with a framework to validate your platform decisions with data, whether you're considering Backstage or already running it in production.
+    date: 2026/06/30
+    event:
+      name: Cloud Native Summit Munich
+      url: https://www.cnsmunich.com/
+    coSpeakers:
+      - name: Thomas Schuetz
+        url: https://t-sc.at/
+    tags:
+      - Backstage
+      - Platform Engineering
+      - Developer Experience
+      - Metrics
+
+  - title: "Your Platform Is Probably Working - You Just Can't Prove It"
+    abstract: |
+      This is a panel discussion where you, the audience, will get the chance to ask the panelists questions and share your thoughts live.
+
+      Here's what platform engineers will never say out loud: very few can answer the question "Was it worth it?". This talk helps you find that answer.
+
+      Everyone knows that to call the win you first need to measure success; the hard part: knowing what to measure. This is where people start shopping: DORA, SPACE, DevEx, MONK/MOCK, Scorecards, OKRs and more. So many frameworks, yet 30% of organizations still don't measure anything at all (I guess they didn't know what to pick), while others pick one or two and hope they work.
+
+      After building multiple platforms with tools such as Kubernetes Operators, OpenTofu, Crossplane, pipelines and good old Java, let me tell you what we measured and what really mattered. In every journey, the real challenge wasn't picking a framework: it was figuring out what success actually meant, and then measuring it without losing sight of what we were aiming for.
+
+      Let's walk through these frameworks so that you can bring home a "slightly" opinionated approach on how to measure platform initiatives at Day 0 (still building), Day 1 (we got there), and Day 2 (it worked - now scale it, please).
+    date: 2026/06/29
+    event:
+      name: Cloud Native Summit Munich
+      url: https://www.cnsmunich.com/
+    coSpeakers:
+      - name: Riccardo Capraro
+        url: https://www.riccardocapraro.com/
+      - name: Lian Li
+        url: https://lianmakesthings.dev/
+      - name: Roberth Strand
+        url: https://www.linkedin.com/in/roberthstrand/
+      - name: Thomas Schuetz
+        url: https://t-sc.at/
+    tags:
+      - Platform Engineering
+      - Developer Experience
+      - Metrics
+
   - title: "Your Backstage, Your Problems, Your Metrics"
     abstract: |
       Backstage is often proposed as the solution to all platform problems. Just deploy it and watch the magic happen. Too good to be true? Exactly. Let's take a step back: which problems are you actually trying to solve? Service discovery? Onboarding? Tool sprawl? Documentation chaos? Your problems are unique. Just as the metrics for your developer portal should be.
@@ -9,13 +72,13 @@ talks:
     date: 2026/05/07
     event:
       name: Austrian Platform Engineering Community
-      url: https://platformengineering.at/
+      url: https://www.brz.gv.at/wie-wir-arbeiten/Kontakt-aufnehmen/veranstaltungen/20260507-austrian-plattform-engineering-community-2026.html
     slides:
       type: web
       url: https://slides.ksick.dev/20260507/AustrianPlatformEngineeringCommunity
-    coSpeaker:
-      name: Thomas Schuetz
-      url: https://www.linkedin.com/in/thomas-schuetz/
+    coSpeakers:
+      - name: Thomas Schuetz
+        url: https://t-sc.at/
     tags:
       - Backstage
       - Platform Engineering
@@ -108,9 +171,9 @@ talks:
     slides:
       type: web
       url: https://slides.ksick.dev/20240516/kcdistanbul
-    coSpeaker:
-      name: Thomas Labarussias
-      url: https://www.linkedin.com/in/thomas-labarussias
+    coSpeakers:
+      - name: Thomas Labarussias
+        url: https://www.linkedin.com/in/thomas-labarussias
     tags:
       - Kubernetes
       - Least Privilege
@@ -169,9 +232,9 @@ talks:
     slides:
       type: web
       url: https://vfarcic.github.io/observability/crossplane.html
-    coSpeaker:
-      name: Viktor Farcic
-      url: https://www.linkedin.com/in/viktorfarcic/
+    coSpeakers:
+      - name: Viktor Farcic
+        url: https://www.linkedin.com/in/viktorfarcic/
     tags:
       - Crossplane
       - Observability
@@ -237,9 +300,9 @@ talks:
     slides:
       type: pdf
       url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20231117-TheNewItGirls/slides.pdf
-    coSpeaker:
-      name: Rigerta Demiri
-      url: https://www.linkedin.com/in/rigerta/
+    coSpeakers:
+      - name: Rigerta Demiri
+        url: https://www.linkedin.com/in/rigerta/
     tags:
       - Containers
       - Kubernetes
@@ -387,9 +450,9 @@ talks:
     slides:
       type: pdf
       url: https://raw.githubusercontent.com/KatharinaSick/PresentationMaterials/main/20220530-JenkinsOnlineMeetup/slides.pdf
-    coSpeaker:
-      name: Martin Singer
-      url: https://www.linkedin.com/in/martin-singer1/
+    coSpeakers:
+      - name: Martin Singer
+        url: https://www.linkedin.com/in/martin-singer1/
     tags:
       - Jenkins
       - CI/CD
