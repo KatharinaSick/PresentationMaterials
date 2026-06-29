@@ -37,6 +37,7 @@ layout: cover
 
 ---
 layout: four-columns
+disabled: true
 ---
 
 # Wait, What's Backstage?
@@ -72,24 +73,16 @@ layout: four-columns
 </div>
 
 ---
-layout: two-cols
----
 
-# Overkill?
+# Hold On...
 
 <img src="/robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
 
-<div style="position: relative; z-index: 1; background: #121212; border-radius: 8px; padding: 0.25rem;">
+<span><Icon name="settings" style="color: #7D1CFE;" />&numsp;Backstage adds a new piece of software to maintain.</span>
 
+<span><Icon name="brain" style="color: #176AFA;" />&numsp;Platform people need React know-how.</span>
 
-
-<Box accent="#7D1CFE">It introduces a new piece of software to maintain</Box>
-
-<Box accent="#01D393">Platform People need react Know-How</Box>
-
-<Box accent="#176AFA">The IDP also changes the way things work</Box>
-
-</div>
+<span><Icon name="waves" style="color: #01D393;" />&numsp;The IDP also changes the way things work.</span>
 
 ---
 layout: quote
@@ -98,13 +91,30 @@ background: robot-chilling.jpeg
 ---
 
 ---
+layout: three-columns
+---
 
-# DevEx Frameworks
+# DevEx Framework
 
-<Todo>remove box and use icons for the 3 bullets</Todo>
+::left::
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; margin-top: 1.5rem;">
-<BulletBox accent="#176AFA" title="DevEx Framework" :bullets="['Flow State', 'Feedback Loops', 'Cognitive Load']"></BulletBox>
+<div class="text-center">
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #7D1CFE;"><Icon name="waves" size="4rem" /></div>
+  <h2>Flow State</h2>
+</div>
+
+::middle::
+
+<div class="text-center">
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #176AFA;"><Icon name="target" size="4rem" /></div>
+  <h2>Feedback Loops</h2>
+</div>
+
+::right::
+
+<div class="text-center">
+  <div style="font-size: 4rem; margin-bottom: 1rem; color: #01D393;"><Icon name="brain" size="4rem" /></div>
+  <h2>Cognitive Load</h2>
 </div>
 
 ---
@@ -220,10 +230,9 @@ layout: center
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
-<Todo>fix</Todo>
 <div style="position: relative; width: 70%; margin: auto;">
-  <img v-hide src="/bad-template.png" alt="Template with too many input fields" style="width: 100%; border-radius: 8px;" />
-  <img v-click src="/good-template.png" alt="Good, opinionated template" style="position: absolute; top: 0; left: 0; width: 90%; border-radius: 8px;" />
+  <img v-click.hide="1" src="/bad-template.png" alt="Template with too many input fields" style="width: 100%; border-radius: 8px;" />
+  <img v-click="1" src="/good-template.png" alt="Good, opinionated template" style="position: absolute; top: 0; left: 0; width: 90%; border-radius: 8px;" />
 </div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
@@ -253,141 +262,27 @@ layout: center
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
-<div style="font-size: 0.62em; font-family: monospace; margin-top: 0.25rem;">
-  <div style="display: flex; opacity: 0.4; font-size: 0.85em; margin-bottom: 0.4rem;">
-    <div style="width: 44%;">span</div>
-    <div style="width: 56%; display: flex; justify-content: space-between;"><span>0 s</span><span>~ 5 min</span></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #7D1CFE; font-weight: bold;">backstage: template run</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 0%; width: 100%; height: 100%; background: #7D1CFE; border-radius: 2px;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ fill template</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 0%; width: 15%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ click create</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 15%; width: 3%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #7D1CFE; padding-left: 1em;">↳ create repositories</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #7D1CFE; border-radius: 2px; opacity: 0.6;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #aaaaaa; padding-left: 1.8em;">↳ create app repo</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #aaaaaa; border-radius: 2px; opacity: 0.7;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #aaaaaa; padding-left: 1.8em;">↳ create deployment repo</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 18%; width: 9%; height: 100%; background: #aaaaaa; border-radius: 2px; opacity: 0.7;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #FF8C42; padding-left: 1em;">↳ argo-events: trigger</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 27%; width: 3%; height: 100%; background: #FF8C42; border-radius: 2px;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #176AFA; padding-left: 1em;">↳ argo-workflows: build & update</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 30%; width: 53%; height: 100%; background: #176AFA; border-radius: 2px;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #176AFA; padding-left: 1.8em;">↳ build image</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 30%; width: 43%; height: 100%; background: #176AFA; border-radius: 2px; opacity: 0.55;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #176AFA; padding-left: 1.8em;">↳ update deployment repo</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 73%; width: 10%; height: 100%; background: #176AFA; border-radius: 2px; opacity: 0.55;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; margin-bottom: 0.22rem; height: 1.3em;">
-    <div style="width: 44%; color: #01D393; padding-left: 1em;">↳ argocd: sync</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 83%; width: 12%; height: 100%; background: #01D393; border-radius: 2px;"></div></div>
-  </div>
-
-  <div style="display: flex; align-items: center; height: 1.3em;">
-    <div style="width: 44%; color: #01D393; padding-left: 1em;">↳ app: healthy ✓</div>
-    <div style="width: 56%; position: relative; height: 1em;"><div style="position: absolute; left: 95%; width: 5%; height: 100%; background: #01D393; border-radius: 2px; opacity: 0.7;"></div></div>
-  </div>
-</div>
+<img src="./jaeger-trace.png" style="width: 90%; margin: auto"/>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
-[//]: # (---)
-
-[//]: # ()
-[//]: # (# Try It Yourself)
-
-[//]: # ()
-[//]: # (<img src="/robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />)
-
-[//]: # ()
-[//]: # (<div style="display: flex; justify-content: center; margin-top: 1rem;">)
-
-[//]: # (  <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">)
-
-[//]: # (    <img src="/demo-qr.png" alt="QR code to demo repository" style="width: 180px; height: 180px; border-radius: 8px;" />)
-
-[//]: # (    <a href="https://github.com/KatharinaSick/demos" style="font-size: 0.8em; opacity: 0.7;">github.com/KatharinaSick/demos</a>)
-
-[//]: # (  </div>)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (<p style="position: absolute; bottom: 3rem; left: 2rem; right: 2rem; text-align: center; font-size: 0.8em; margin: 0;">Zero setup. Just bring your own observability backend.</p>)
 
 ---
 
 # Day 2 Knowledge Gaps
 
-<span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Who owns what? No single source of truth.</span>
-
-<span v-click><Icon name="docs" style="color: #176AFA;" />&numsp;How does it work? Docs are scattered or missing.</span>
-
-<span v-click><Icon name="search" style="color: #01D393;" />&numsp;Does it meet our standards? No single answer.</span>
-
-<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
----
-
-# What Could Better Look Like?
-
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Faster incident resolution.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
-<p v-click style="padding-bottom: 0.6rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Quality issues caught early, not late.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
-<p v-click style="padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Tribal knowledge replaced by catalog data.
-<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
-
-<LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
-
----
-
-# From Tribal Knowledge to Catalog Data
-
-<Todo>shorten this usecase - it's just the same pattern</Todo>
-
-<div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1.25rem;">
     <Chip><Icon name="brain" style="color: #01D393;" /> Cognitive Load</Chip>
     <Chip><Icon name="catalog" style="color: #7D1CFE;" /> Catalog + <Icon name="docs" style="color: #176AFA;" /> TechDocs + <Icon name="search" style="color: #FF8C42;" /> Tech Insights</Chip>
 </div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-    <BulletBox v-click="3" accent="#7D1CFE" title="Backstage Data*" :bullets="['Catalog completeness score', 'TechDocs coverage', 'Services with a description', 'Dependencies mapped in catalog']" />
-    <BulletBox v-click="4" accent="#01D393" title="Connecting the Dots" :bullets="['Ticket picked up', 'Owner &amp; context found in catalog', 'Architecture found in TechDocs', 'PR submitted']" />
-</div>
+<p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Slow incident resolution.
+<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
+<p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Quality issues are caught too late.
+<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
+<p style="margin: 0; padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Engineers have to rely on tribal knowledge.
+<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
 
-<p v-click="3" style="font-size: 0.8em; margin-top: 0.2rem;">* via Catalog API or Tech Insights, not available as OTel metrics out of the box</p>
+<span v-click style="display: block; font-size: 0.7em">Same: <span style="color: #01D393">name problem → map to platform → instrument → measure → iterate</span></span>
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -405,31 +300,29 @@ layout: center
 
 # Your Backstage Playbook
 
-<Todo>Try to shorten (e.g. 2 & 3, 3 points = ideal)</Todo>
-
 <div style="display: flex; flex-direction: column; gap: 0.55rem; margin-top: 1.25rem;">
 
-<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
+<div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
   <span style="font-weight: 700; color: #7D1CFE; font-size: 1.1em; min-width: 1.5rem;">1</span>
   <div><strong>Name the problem</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Which developer pain are you actually targeting?</span></div>
 </div>
 
-<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
+<div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
   <span style="font-weight: 700; color: #176AFA; font-size: 1.1em; min-width: 1.5rem;">2</span>
   <div><strong>Establish a baseline</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Measure the current state if you can. It becomes your comparison point later.</span></div>
 </div>
 
-<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #01D393; border-radius: 0 8px 8px 0; background: rgba(1,211,147,0.07);">
+<div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #01D393; border-radius: 0 8px 8px 0; background: rgba(1,211,147,0.07);">
   <span style="font-weight: 700; color: #01D393; font-size: 1.1em; min-width: 1.5rem;">3</span>
   <div><strong>Define success</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">What does "better" look like, in numbers?</span></div>
 </div>
 
-<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
+<div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #176AFA; border-radius: 0 8px 8px 0; background: rgba(23,106,250,0.07);">
   <span style="font-weight: 700; color: #176AFA; font-size: 1.1em; min-width: 1.5rem;">4</span>
   <div><strong>Build &amp; instrument</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Find which feature fits your problem in your platform. Wire up your observability.</span></div>
 </div>
 
-<div v-click style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
+<div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 1rem; border-left: 3px solid #7D1CFE; border-radius: 0 8px 8px 0; background: rgba(125,28,254,0.07);">
   <span style="font-weight: 700; color: #7D1CFE; font-size: 1.1em; min-width: 1.5rem;">5</span>
   <div><strong>Measure &amp; iterate</strong><span style="opacity: 0.55; font-size: 0.82em; margin-left: 0.5rem;">Did it move the needle? If not, back to step 1.</span></div>
 </div>
@@ -440,18 +333,13 @@ layout: center
 
 # Takeaways
 
-<Todo>Try to shorten (3 points = ideal)</Todo>
-
-
-<Box accent="#7D1CFE">IDP done wrong can introduce lots of confusion and extra-work</Box>
-
-<Box accent="#01D393">It has to support your development workflow and enhance DevEx</Box>
-
-<Box accent="#176AFA">Start thinking about what you want to achieve before implementing</Box>
-
-<Box accent="#7D1CFE">Backstage itself exposes OpenTelemetry Metrics and Traces</Box>
-
-<Box accent="#01D393">Done right, it helps you keeping an overview and automate complex tasks</Box>
+<div style="font-size: 1.4em;">
+<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="unknown" style="color: #7D1CFE;" />&numsp;IDP done wrong can introduce lots of confusion and extra-work.</p>
+<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="smile" style="color: #01D393;" />&numsp;It has to support your development workflow and enhance DevEx.</p>
+<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="target" style="color: #176AFA;" />&numsp;Think about what you want to achieve before implementing.</p>
+<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="search" style="color: #7D1CFE;" />&numsp;Backstage itself exposes OpenTelemetry Metrics and Traces.</p>
+<p style="margin: 0; padding-bottom: 0; font-size: inherit;"><Icon name="scaffolder" style="color: #01D393;" />&numsp;Done right, it helps you keep an overview and automate complex tasks.</p>
+</div>
 
 ---
 layout: center
@@ -463,21 +351,12 @@ layout: center
 
 <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem; font-size: 0.8rem;">Data beats gut feeling. Always.</p>
 
-<Todo>update middle qr code</Todo>
-
-
 <div style="display: flex; gap: 3rem; justify-content: center;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
     <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
       <img src="/qr-thomas.png" alt="Thomas on LinkedIn" style="width: 160px; height: 160px; display: block;" />
     </div>
     <span style="font-size: 0.7em;">Thomas</span>
-  </div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-    <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
-      <img src="/qr-open-ecosystem.png" alt="Open Ecosystem Forum" style="width: 160px; height: 160px; display: block;" />
-    </div>
-    <span style="font-size: 0.7em;">Join the discussion</span>
   </div>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
     <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
