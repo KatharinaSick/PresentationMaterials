@@ -15,6 +15,7 @@ const iconMap = {
   brain: 'i-lucide:brain',
   search: 'i-lucide:search',
   refresh: 'i-lucide:refresh-cw',
+  cloud: 'i-lucide:cloud',
 
   // Status / sentiment
   unknown: 'i-lucide:circle-help',

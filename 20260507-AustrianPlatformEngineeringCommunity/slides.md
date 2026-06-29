@@ -322,30 +322,6 @@ layout: center
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
-[//]: # (---)
-
-[//]: # ()
-[//]: # (# Try It Yourself)
-
-[//]: # ()
-[//]: # (<img src="/robot-demo.jpeg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />)
-
-[//]: # ()
-[//]: # (<div style="display: flex; justify-content: center; margin-top: 1rem;">)
-
-[//]: # (  <div style="background: #121212; border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">)
-
-[//]: # (    <img src="/demo-qr.png" alt="QR code to demo repository" style="width: 180px; height: 180px; border-radius: 8px;" />)
-
-[//]: # (    <a href="https://github.com/KatharinaSick/demos" style="font-size: 0.8em; opacity: 0.7;">github.com/KatharinaSick/demos</a>)
-
-[//]: # (  </div>)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (<p style="position: absolute; bottom: 3rem; left: 2rem; right: 2rem; text-align: center; font-size: 0.8em; margin: 0;">Zero setup. Just bring your own observability backend.</p>)
-
 ---
 
 # Day 2 Knowledge Gaps

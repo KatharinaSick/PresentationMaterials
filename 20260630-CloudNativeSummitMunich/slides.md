@@ -46,28 +46,28 @@ disabled: true
 
 ::col1::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #7D1CFE;"><Icon name="catalog" size="4rem" /></div>
   <h2>Catalog</h2>
 </div>
 
 ::col2::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #01D393;"><Icon name="scaffolder" size="4rem" /></div>
   <h2>Scaffolder</h2>
 </div>
 
 ::col3::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #176AFA;"><Icon name="docs" size="4rem" /></div>
   <h2>Docs</h2>
 </div>
 
 ::col4::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #FF8C42;"><Icon name="plugins" size="4rem" /></div>
   <h2>Plugins</h2>
 </div>
@@ -76,7 +76,7 @@ disabled: true
 
 # Hold On...
 
-<img src="/robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; z-index: -1;" />
+<img src="/robot-thinking.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; z-index: -1;" />
 
 <span><Icon name="settings" style="color: #7D1CFE;" />&numsp;Backstage adds a new piece of software to maintain.</span>
 
@@ -98,21 +98,21 @@ layout: three-columns
 
 ::left::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #7D1CFE;"><Icon name="waves" size="4rem" /></div>
   <h2>Flow State</h2>
 </div>
 
 ::middle::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #176AFA;"><Icon name="target" size="4rem" /></div>
   <h2>Feedback Loops</h2>
 </div>
 
 ::right::
 
-<div class="text-center">
+<div class="text-center" style="margin-top: -4rem;">
   <div style="font-size: 4rem; margin-bottom: 1rem; color: #01D393;"><Icon name="brain" size="4rem" /></div>
   <h2>Cognitive Load</h2>
 </div>
@@ -121,25 +121,22 @@ layout: three-columns
 
 # Asking the Right Questions
 
-<Cloud top="5rem" right="2rem" width="320px" height="150px">
-  How often is a template used?
-</Cloud>
+<div style="max-width: 72%; margin: 2rem auto 0;">
 
-<Cloud top="20rem" right="4rem" width="320px" height="150px">
-  How satisfied are developers with the IDP?
-</Cloud>
+  <div style="display: flex; align-items: center; gap: 1rem; background: rgba(20,20,28,0.85); border: 1px solid rgba(255,255,255,0.18); border-radius: 16px; padding: 1.1rem 1.5rem; box-shadow: 0 16px 40px rgba(0,0,0,0.45); font-size: 1.6rem;">
+    <Icon name="search" size="1.6rem" style="color: #7D1CFE; flex-shrink: 0;" />
+    <span style="color: #fff;">how satisfied are developers?</span>
+    <span style="display: inline-block; width: 2px; height: 1.6rem; background: #7D1CFE; margin-left: -0.4rem;"></span>
+  </div>
 
-<Cloud top="12rem" right="17rem" width="320px" height="150px">
-  What features are missing?
-</Cloud>
+  <div style="margin-top: 0.6rem; background: rgba(18,18,24,0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 0.4rem; font-size: 1.3rem;">
+    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #176AFA; flex-shrink: 0;" />How often is a template used?</div>
+    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #01D393; flex-shrink: 0;" />What features are missing?</div>
+    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #176AFA; flex-shrink: 0;" />How convenient is the bootstrapping process?</div>
+    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #7D1CFE; flex-shrink: 0;" />How often do developers switch between tools?</div>
+  </div>
 
-<Cloud top="8rem" right="35rem" width="350px" height="180px">
-  How convenient is the bootstrapping process?
-</Cloud>
-
-<Cloud top="20rem" right="40rem" width="320px" height="150px">
-  How often do developers switch between tools?
-</Cloud>
+</div>
 
 ---
 layout: quote
@@ -198,7 +195,7 @@ layout: center
 
 ---
 
-# Day One Friction
+# Day 0 Friction
 
 <span v-click><Icon name="unknown" style="color: #7D1CFE;" />&numsp;Ask three people, get three different answers.</span>
 
@@ -226,13 +223,13 @@ layout: center
 # Reduce Time to First Deployment
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
-    <Chip><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip><Icon name="waves" style="color: #7D1CFE;" /> Flow State</Chip>
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
 <div style="position: relative; width: 70%; margin: auto;">
   <img v-click.hide="1" src="/bad-template.png" alt="Template with too many input fields" style="width: 100%; border-radius: 8px;" />
-  <img v-click="1" src="/good-template.png" alt="Good, opinionated template" style="position: absolute; top: 0; left: 0; width: 90%; border-radius: 8px;" />
+  <img v-click="1" src="/good-template.png" alt="Good, opinionated template" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 90%; border-radius: 8px;" />
 </div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
@@ -242,7 +239,7 @@ layout: center
 # What Backstage Tells You
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
-    <Chip><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip><Icon name="waves" style="color: #7D1CFE;" /> Flow State</Chip>
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
@@ -258,11 +255,18 @@ layout: center
 # Connecting the Dots
 
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
-    <Chip><Icon name="waves" style="color: #176AFA;" /> Flow State</Chip>
+    <Chip><Icon name="waves" style="color: #7D1CFE;" /> Flow State</Chip>
     <Chip><Icon name="scaffolder" style="color: #01D393;" /> Software Templates</Chip>
 </div>
 
-<img src="./jaeger-trace.png" style="width: 90%; margin: auto"/>
+<img src="/jaeger-trace.png" alt="Jaeger trace of a template run" style="width: 90%; margin: auto"/>
+
+<div style="position: absolute; top: 1.5rem; right: 2rem; display: flex; flex-direction: column; align-items: center; gap: 0.2rem;">
+  <div style="background: #121212; border-radius: 8px; padding: 0.2rem;">
+    <img src="/qr-demo.png" alt="QR code to the demo" style="width: 97px; height: 97px; display: block;" />
+  </div>
+  <span style="font-size: 0.5em; padding: 0">Try it yourself</span>
+</div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
@@ -276,11 +280,11 @@ layout: center
 </div>
 
 <p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Slow incident resolution.
-<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
 <p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Quality issues are caught too late.
-<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
 <p style="margin: 0; padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Engineers have to rely on tribal knowledge.
-<span style="display: block; font-size: 0.5em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
+<span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
 
 <span v-click style="display: block; font-size: 0.7em">Same: <span style="color: #01D393">name problem → map to platform → instrument → measure → iterate</span></span>
 
