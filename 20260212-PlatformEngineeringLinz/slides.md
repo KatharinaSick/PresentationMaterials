@@ -33,7 +33,7 @@ layout: two-columns
 
 ::right::
 
-<img v-click src="/02-reality.png" class="h-120 mt--5 ms-10" />
+<img v-click src="./02-reality.png" class="h-120 mt--5 ms-10" />
 
 ---
 layout: intro
@@ -56,7 +56,7 @@ layout: center
  </div>
 </div>
 
-<img src="/04-karriere-at.png" class="absolute bottom-10 right-3 w-10" />
+<img src="./04-karriere-at.png" class="absolute bottom-10 right-3 w-10" />
 
 ---
 layout: quote
@@ -171,7 +171,7 @@ clicks: 2
     v-motion
     :initial="{ x: 0, y: -30 }"
     :click-1="{ x: 0, y: 0, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-argo-rollouts.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-argo-rollouts.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Argo Rollouts</p>
 </div>
 
@@ -180,7 +180,7 @@ clicks: 2
     v-motion
     :initial="{ x: -525, y: -190, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-fluentd.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-fluentd.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">fluentd</p>
 </div>
 
@@ -189,7 +189,7 @@ clicks: 2
     v-motion
     :initial="{ x: -570, y: -50, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-thanos.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-thanos.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Thanos</p>
 </div>
 
@@ -198,7 +198,7 @@ clicks: 2
     v-motion
     :initial="{ x: -285, y: -330, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-cortex.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-cortex.svg" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Cortex</p>
 </div>
 
@@ -207,7 +207,7 @@ clicks: 2
     v-motion
     :initial="{ x: 5, y: -330, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-grafana.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-grafana.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Grafana</p>
 </div>
 
@@ -216,7 +216,7 @@ clicks: 2
     v-motion
     :initial="{ x: -40, y: -50, scale: 1, opacity: 1 }"
     :click-1="{ x: 0, y: 0, scale: 0.6, opacity: 0.3, transition: { type: 'tween', ease: 'easeInOut', duration: 700 } }">
-    <img src="/12-dynatrace.png" class="w-15 h-15 p-2 object-contain rounded-full bg-white"/>
+    <img src="./12-dynatrace.png" class="w-15 h-15 p-2 object-contain rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Dynatrace</p>
 </div>
 
@@ -225,7 +225,7 @@ clicks: 2
     v-motion
     :initial="{ x: 0, y: 105 }"
     :click-1="{ x: 0, y: 0, transition: { type: 'tween', ease: 'easeInOut', duration: 500 } }">
-    <img src="/12-otel.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-otel.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">OpenTelemetry Collector</p>
 </div>
 
@@ -233,7 +233,7 @@ clicks: 2
     v-motion
     :initial="{ x: 0, y: 105 }"
     :click-1="{ x: 0, y: 0, transition: { type: 'tween', ease: 'easeInOut', duration: 500 } }">
-    <img src="/12-jaeger.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-jaeger.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Jaeger</p>
 </div>
 
@@ -241,7 +241,7 @@ clicks: 2
     v-motion
     :initial="{ x: 0, y: 45 }"
     :click-1="{ x: 0, y: 0, transition: { type: 'tween', ease: 'easeInOut', duration: 500 } }">
-    <img src="/12-prometheus.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
+    <img src="./12-prometheus.png" class="w-15 h-15 p-2 rounded-full bg-white"/>
     <p style="font-size: 1rem; margin-top: 0">Prometheus</p>
 </div>
 
@@ -346,15 +346,15 @@ overlayOpacity: 0.8
 # Practice in the In-Between
 
 <v-switch class="flex items-center justify-center h-full">
-    <template #0><img src="/17-challenges.png" class="h-100"></template>
-    <template #1><img src="/17-architecture.png"/></template>
-    <template #2><img src="/17-ports.png"/></template>
-    <template #3><img src="/17-argocd.png"/></template>
-    <template #4><img src="/17-otel-fixes.png" class="h-100"/></template>
-    <template #5><img src="/17-jaeger.png" class="h-100"/></template>
-    <template #6><img src="/17-rollouts.png" class="h-100"/></template>
-    <template #7><img src="/17-rollout-fixes.png" class="h-100"/></template>
-    <template #8><img src="/17-smoke-test.png" class="h-100"/></template>
+    <template #0><img src="./17-challenges.png" class="h-100"></template>
+    <template #1><img src="./17-architecture.png"/></template>
+    <template #2><img src="./17-ports.png"/></template>
+    <template #3><img src="./17-argocd.png"/></template>
+    <template #4><img src="./17-otel-fixes.png" class="h-100"/></template>
+    <template #5><img src="./17-jaeger.png" class="h-100"/></template>
+    <template #6><img src="./17-rollouts.png" class="h-100"/></template>
+    <template #7><img src="./17-rollout-fixes.png" class="h-100"/></template>
+    <template #8><img src="./17-smoke-test.png" class="h-100"/></template>
 </v-switch>
 
 ---
@@ -368,7 +368,7 @@ layout: two-columns
 <div class="flex flex-col items-center justify-start h-full">
     <div class="relative">
         <div class="bg-white p-1 rounded-lg mb-4 border-4" style="border-color: var(--slidev-theme-color-primary)">
-            <img src="/17-qr.png" class="w-48 h-48" alt="QR code to challenges"/>
+            <img src="./17-qr.png" class="w-48 h-48" alt="QR code to challenges"/>
         </div>
         <!-- Shameless Self-Promotion Stamp -->
         <div class="absolute -top-8 -right-8 text-white px-3 py-1 rounded-full transform rotate-12 text-xs font-bold shadow-lg border-2 border-white" style="background-color: var(--slidev-theme-color-middle)">
@@ -423,7 +423,7 @@ Let's keep the conversation going
 <div class="flex flex-col items-center">
     <div class="p-2 rounded-lg mb-3" style="background: linear-gradient(135deg, var(--slidev-theme-color-primary) 0%, var(--slidev-theme-color-middle) 50%, var(--slidev-theme-color-accent) 100%);">
         <div class="bg-white p-1 rounded">
-            <img src="/20-linkedin.png" class="w-40 h-40" alt="LinkedIn QR code"/>
+            <img src="./20-linkedin.png" class="w-40 h-40" alt="LinkedIn QR code"/>
         </div>
     </div>
     <div class="text-center">
@@ -435,7 +435,7 @@ Let's keep the conversation going
 <div class="flex flex-col items-center">
     <div class="p-2 rounded-lg mb-3" style="background: linear-gradient(135deg, var(--slidev-theme-color-primary) 0%, var(--slidev-theme-color-middle) 50%, var(--slidev-theme-color-accent) 100%);">
         <div class="bg-white p-1 rounded">
-            <img src="/20-slides.png" class="w-40 h-40" alt="Slides QR code"/>
+            <img src="./20-slides.png" class="w-40 h-40" alt="Slides QR code"/>
         </div>
     </div>
     <div class="text-center">
