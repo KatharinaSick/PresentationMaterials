@@ -121,22 +121,25 @@ layout: three-columns
 
 # Asking the Right Questions
 
-<div style="max-width: 72%; margin: 2rem auto 0;">
+<Cloud top="5rem" right="2rem" width="320px" height="150px">
+  How often is a template used?
+</Cloud>
 
-  <div style="display: flex; align-items: center; gap: 1rem; background: rgba(20,20,28,0.85); border: 1px solid rgba(255,255,255,0.18); border-radius: 16px; padding: 1.1rem 1.5rem; box-shadow: 0 16px 40px rgba(0,0,0,0.45); font-size: 1.6rem;">
-    <Icon name="search" size="1.6rem" style="color: #7D1CFE; flex-shrink: 0;" />
-    <span style="color: #fff;">how satisfied are developers?</span>
-    <span style="display: inline-block; width: 2px; height: 1.6rem; background: #7D1CFE; margin-left: -0.4rem;"></span>
-  </div>
+<Cloud top="20rem" right="4rem" width="320px" height="150px">
+  How satisfied are developers with the IDP?
+</Cloud>
 
-  <div style="margin-top: 0.6rem; background: rgba(18,18,24,0.55); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 0.4rem; font-size: 1.3rem;">
-    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #176AFA; flex-shrink: 0;" />How often is a template used?</div>
-    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #01D393; flex-shrink: 0;" />What features are missing?</div>
-    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #176AFA; flex-shrink: 0;" />How convenient is the bootstrapping process?</div>
-    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.6rem 1rem; border-radius: 10px; color: rgba(255,255,255,0.82);"><Icon name="cloud" style="color: #7D1CFE; flex-shrink: 0;" />How often do developers switch between tools?</div>
-  </div>
+<Cloud top="12rem" right="17rem" width="320px" height="150px">
+  What features are missing?
+</Cloud>
 
-</div>
+<Cloud top="8rem" right="35rem" width="350px" height="180px">
+  How convenient is the bootstrapping process?
+</Cloud>
+
+<Cloud top="20rem" right="40rem" width="320px" height="150px">
+  How often do developers switch between tools?
+</Cloud>
 
 ---
 layout: quote
