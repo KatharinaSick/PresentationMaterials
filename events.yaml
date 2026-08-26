@@ -1,9 +1,11 @@
 talks:
   - title: "Turning Platform Engineering Right Side Up: Building Better Paths for Juniors"
     abstract: |
-      Platform engineering stacks are vast. Juniors are expected to navigate Linux, networking, auth, containers, cloud, CI/CD, infrastructure as code, and observability — all at once. But cognitive load research tells us our brains have limits, and the platform doesn't care.
+      Starting in DevOps, I navigated two extremes: perfect and predictable sunshine tutorials and production's messy reality where overwhelming systems left me stuck & spiraling into procrastination. It's like stepping into the Upside Down: confusing, chaotic, full of unexpected challenges.
 
-      This talk explores how platform engineers can design better onboarding paths for junior developers by applying principles from cognitive load theory. We'll look at why "learning ≠ readiness", why we teach nouns but work in verbs, and how to build the "In-Between" — safe, realistic, guided environments where juniors can practice without the pressure of production. Platform engineering isn't just about the tools we build. It's about the paths we create for people to grow into them.
+      The issue isn't just complexity. With countless tool combinations, there is no one-size-fits-all guide. Understanding the "why" behind tools, how they connect, transforms how you approach learning and how you add new tools to the platform.
+
+      I'll share strategies like making connections visible, creating safe spaces to learn and building community support. Whether you're a junior or someone looking to support the next generation, this talk offers actionable ways to turn frustration into meaningful progress.
     date: 2026/09/05
     event:
       name: DevOpsDays Graz
@@ -24,6 +26,10 @@ talks:
     event:
       name: Cloud Native Summit Munich
       url: https://www.cnsmunich.com/
+    recording: https://www.youtube.com/watch?v=fNMNj96JItQ
+    slides:
+      type: web
+      url: https://slides.ksick.dev/20260630/CloudNativeSummitMunich
     coSpeakers:
       - name: Thomas Schuetz
         url: https://t-sc.at/
@@ -48,6 +54,7 @@ talks:
     event:
       name: Cloud Native Summit Munich
       url: https://www.cnsmunich.com/
+    recording: https://www.youtube.com/watch?v=vt5d4qfuWic
     coSpeakers:
       - name: Riccardo Capraro
         url: https://www.riccardocapraro.com/
@@ -87,9 +94,11 @@ talks:
 
   - title: "Turning Platform Engineering Right Side Up: Building Better Paths for Juniors"
     abstract: |
-      Platform engineering stacks are vast. Juniors are expected to navigate Linux, networking, auth, containers, cloud, CI/CD, infrastructure as code, and observability — all at once. But cognitive load research tells us our brains have limits, and the platform doesn't care.
+      Starting in DevOps, I navigated two extremes: perfect and predictable sunshine tutorials and production's messy reality where overwhelming systems left me stuck & spiraling into procrastination. It's like stepping into the Upside Down: confusing, chaotic, full of unexpected challenges.
 
-      This talk explores how platform engineers can design better onboarding paths for junior developers by applying principles from cognitive load theory. We'll look at why "learning ≠ readiness", why we teach nouns but work in verbs, and how to build the "In-Between" — safe, realistic, guided environments where juniors can practice without the pressure of production. Platform engineering isn't just about the tools we build. It's about the paths we create for people to grow into them.
+      The issue isn't just complexity. With countless tool combinations, there is no one-size-fits-all guide. Understanding the "why" behind tools, how they connect, transforms how you approach learning and how you add new tools to the platform.
+
+      I'll share strategies like making connections visible, creating safe spaces to learn and building community support. Whether you're a junior or someone looking to support the next generation, this talk offers actionable ways to turn frustration into meaningful progress.
     date: 2026/02/12
     event:
       name: Platform Engineering Linz

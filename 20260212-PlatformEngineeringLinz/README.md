@@ -1,14 +1,13 @@
-# Build Their Platform, Not Yours: Empowering Developers
+# Turning Platform Engineering Right Side Up: Building Better Paths for Juniors
 
-Developer platforms are designed to make developers' lives easier. When built with the end user in mind, they can
-streamline workflows, foster collaboration, and speed up innovation. In essence, they act as a helpful assistant that
-takes care of the complex behind-the-scenes work, freeing developers to focus on what they usually do best – building
-great software.
+Starting in DevOps, I navigated two extremes: perfect and predictable sunshine tutorials and production's messy
+reality where overwhelming systems left me stuck & spiraling into procrastination. It's like stepping into the Upside
+Down: confusing, chaotic, full of unexpected challenges.
 
-This naturally leads us to some critical questions: How much of the underlying complexity should these platforms
-abstract away? How can we empower developers with helpful tools without making their work feel rigid? And how can we
-cater to the diverse needs and preferences within development teams?
+The issue isn't just complexity. With countless tool combinations, there is no one-size-fits-all guide. Understanding
+the "why" behind tools, how they connect, transforms how you approach learning and how you add new tools to the
+platform.
 
-This talk will explore various approaches to crafting opinionated user interfaces and compare their strengths and
-weaknesses. We'll journey from the concept of the thinnest viable platform (TVP) to the pitfalls of over-engineering,
-where meaningful abstractions turn into limitations.
+I'll share strategies like making connections visible, creating safe spaces to learn and building community support.
+Whether you're a junior or someone looking to support the next generation, this talk offers actionable ways to turn
+frustration into meaningful progress.
