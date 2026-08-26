@@ -31,7 +31,7 @@ layout: cover
 # Who Are We?
 
 <div style="display: flex; gap: 2em; justify-content: center; align-items: stretch; padding: 1em;">
-  <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="me.jpeg"></SpeakerCard>
+  <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Open Source Program Office" accent="#7D1CFE" image="me.jpeg" logo="offon-logo.svg"></SpeakerCard>
   <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="tscweb.jpeg"></SpeakerCard>
 </div>
 
@@ -130,7 +130,7 @@ layout: three-columns
 </Cloud>
 
 <Cloud top="12rem" right="17rem" width="320px" height="150px">
-  What features are missing?
+  Which features are missing?
 </Cloud>
 
 <Cloud top="8rem" right="35rem" width="350px" height="180px">
@@ -282,12 +282,14 @@ layout: center
     <Chip><Icon name="catalog" style="color: #7D1CFE;" /> Catalog + <Icon name="docs" style="color: #176AFA;" /> TechDocs + <Icon name="search" style="color: #FF8C42;" /> Tech Insights</Chip>
 </div>
 
+<div v-click>
 <p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="timer" style="color: #7D1CFE;" />&numsp;Slow incident resolution.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. time from alert to mitigation</span></p>
 <p style="margin: 0; padding-bottom: 0.1rem;"><Icon name="ticket" style="color: #176AFA;" />&numsp;Quality issues are caught too late.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. % of issues caught at review vs. in production</span></p>
 <p style="margin: 0; padding-bottom: 0;"><Icon name="smile" style="color: #01D393;" />&numsp;Engineers have to rely on tribal knowledge.
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. senior engineer interruptions for service context</span></p>
+</div>
 
 <span v-click style="display: block; font-size: 0.7em">Same: <span style="color: #01D393">name problem → map to platform → instrument → measure → iterate</span></span>
 
@@ -344,7 +346,7 @@ layout: center
 <p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="unknown" style="color: #7D1CFE;" />&numsp;IDP done wrong can introduce lots of confusion and extra-work.</p>
 <p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="smile" style="color: #01D393;" />&numsp;It has to support your development workflow and enhance DevEx.</p>
 <p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="target" style="color: #176AFA;" />&numsp;Think about what you want to achieve before implementing.</p>
-<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="search" style="color: #7D1CFE;" />&numsp;Backstage itself exposes OpenTelemetry Metrics and Traces.</p>
+<p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="search" style="color: #7D1CFE;" />&numsp;Backstage itself exposes OpenTelemetry metrics and traces.</p>
 <p style="margin: 0; padding-bottom: 0; font-size: inherit;"><Icon name="scaffolder" style="color: #01D393;" />&numsp;Done right, it helps you keep an overview and automate complex tasks.</p>
 </div>
 
@@ -358,7 +360,7 @@ layout: center
 
 <p style="text-align: center; opacity: 0.8; margin-bottom: 2rem; font-size: 0.8rem;">Data beats gut feeling. Always.</p>
 
-<div style="display: flex; gap: 3rem; justify-content: center;">
+<div style="position: relative; display: flex; gap: 3rem; justify-content: center; align-items: flex-start;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
     <div style="background: #121212; border-radius: 8px; padding: 0.5rem;">
       <img src="/qr-thomas.png" alt="Thomas on LinkedIn" style="width: 160px; height: 160px; display: block;" />

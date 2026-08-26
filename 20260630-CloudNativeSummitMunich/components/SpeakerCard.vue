@@ -5,6 +5,7 @@ defineProps({
   role: { type: String, required: true },
   accent: { type: String, default: '#7D1CFE' },
   image: { type: String, default: '' },
+  logo: { type: String, default: '' },
 })
 </script>
 
@@ -15,37 +16,37 @@ defineProps({
     <h3 class="name">{{ name }}</h3>
     <div class="company" :style="{ color: accent }">{{ company }}</div>
     <div class="role">{{ role }}</div>
+    <img v-if="logo" class="logo" :src="logo" :alt="`${name} logo`" />
   </div>
 </template>
 
 <style scoped>
 .speaker-card {
-  padding: 2em;
+  padding: 1.4em;
   border-radius: 12px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  gap: 1em;
+  gap: 0.6em;
   max-width: 300px;
-  min-height: 280px;
 }
 .avatar {
   font-size: 3em;
 }
 
 .avatar-image {
-  width: 110px;
-  height: 110px;
+  width: 92px;
+  height: 92px;
   border-radius: 999px;
   object-fit: cover;
   object-position: center;
 }
 
 .name {
-  margin: 0.5em 0;
+  margin: 0.2em 0;
   font-size: 1.5em;
 }
 .company {
@@ -54,6 +55,11 @@ defineProps({
 .role {
   font-size: 0.9em;
   opacity: 0.9;
+}
+.logo {
+  height: 24px;
+  width: auto;
+  margin-top: 0.1em;
 }
 </style>
 
