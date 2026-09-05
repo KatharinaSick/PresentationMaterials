@@ -402,13 +402,8 @@ clicks: 2
 
 <!--
 - "Observability" = 10+ tools, no entry point
-- **[1]** Ask a verb → four tools
-- **[2] READ SLOWLY, one arrow at a time:**
-  - Argo Rollouts runs the release
-  - Service → traces → OTel Collector
-  - Collector → traces → Jaeger (for humans, debugging)
-  - Collector turns spans into metrics → Prometheus scrapes them
-  - Argo Rollouts queries Prometheus, promotes only if the numbers agree
+- [1] Ask a verb → four tools
+- [2] connections
 - Not four logos. **CONNECTIONS.** That's the map you hand a junior.
 - → my first ticket
 -->
@@ -514,7 +509,7 @@ It's Not Just Juniors
 </div>
 
 <div v-click class="mt-10 mx-auto" style="max-width: 42rem; font-size: 26px; opacity: 0.8">
-When did you last figure out a system on your own?
+When did you last figure out a system and could recall it a month later?
 </div>
 
 <div class="attrib" v-click="2">
@@ -526,12 +521,11 @@ When did you last figure out a system on your own?
 </div>
 
 <!--
-- **[1] ASK IT. STOP TALKING.**
-- Harder version: could you recall it a month later without looking it up?
+- could you recall it a month later without looking it up?
 - I failed that writing this talk. Understood in the moment, gone a week later.
-- Our models came from years of boring tickets. Can't feel it — the old ones still work.
+- Our mental models came from years of boring tickets. Can't feel it as the old ones still work.
 - Juniors notice first: nothing to coast on
-- **[2]** Simon Schrottner, from Graz, writing a book — leftoftheloop.dev
+- **[2]** Simon Schrottner, from Graz, writing a book: leftoftheloop.dev
   - Left = deciding, loop = agents, right = prod
   - Implementation cheap → understanding scarce
   - Careful: direction marker, not where we are today
@@ -551,7 +545,6 @@ Now production feels easy too.
 </div>
 
 <!--
-- Let them recognise the callback before you talk
 - Too easy / too hard / need something between. That question just changed.
 - **[1]** Now production feels easy too
 - It always looked like Hawkins. That was never the problem.
@@ -608,13 +601,13 @@ clicks: 1
 </style>
 
 <!--
-- One tool = an afternoon. The wiring = years.
+- One tool = a day. The wiring = months.
 - Every tool has docs. Connections are mostly in peoples heads.
 - Drawing shows when people have different mental models
 - **[1] Doesn't need to be beautiful**
 - Full diagram on day one = extraneous load in a helpful costume
-- Draw it all, then point at one box: today, only this
-- → and that's a lie
+- Draw it all, then point at one box: today, let's focus on this
+- → and that diagram is a lie
 -->
 
 ---
