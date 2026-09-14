@@ -1,0 +1,178 @@
+/* ── Type scale ───────────────────────────────────────────────────────────────
+   Four sizes. Nothing in between, nothing bespoke per slide.
+
+     24px  label      section kicker, roadmap steps
+     30px  body       bullets, the answer under a question   (theme default p)
+     40px  title      a normal slide's headline              (theme default h1)
+     72px  statement  a slide that IS one sentence, and section titles
+
+   A section title and a statement slide do the same job — one idea, whole
+   screen — so they are the same size rather than two near-misses.
+   ───────────────────────────────────────────────────────────────────────────── */
+:root {
+  --type-label: 24px;
+  --type-body: 30px;
+  --type-statement: 72px;
+}
+
+/* the whole slide is one sentence: So do I feel ready now?, What changes now? */
+.statement {
+  font-size: var(--type-statement) !important;
+  line-height: 1.1 !important;
+  /* matches the theme's h1 weight, so a statement and a section title are
+     the same thing rendered the same way */
+  font-weight: 900;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+/* The reveal under a question slide: the short answer, in the accent colour. */
+.answer {
+  max-width: 44rem;
+  margin: 2.5rem auto 0;
+  font-size: var(--type-body);
+  font-weight: 700;
+  color: var(--slidev-theme-color-primary);
+}
+
+/* Section card, ComCon style: a small gradient kicker over a large title.
+   The theme renders h1 as inline-block, so the title needs its own flex row. */
+.act-kicker {
+  margin: 0;
+  padding: 0;
+  font-size: var(--type-label) !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.act-title-row {
+  display: flex;
+  justify-content: center;
+}
+.act-title {
+  font-size: var(--type-statement) !important;
+  line-height: 1.1 !important;
+  padding-top: 20px;
+}
+
+/* Bullet slides that run to five or six lines. Same type size as everywhere else,
+   just without the theme's generous 32px gap between each one. */
+.dense p {
+  line-height: 1.4;
+  padding-bottom: 8px;
+}
+
+/* The career timeline, as the CV tells it. */
+.roadmap {
+  margin-top: 1.5rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  padding-left: 1.25rem;
+}
+.roadmap .step {
+  font-size: var(--type-label);
+  line-height: 1.6;
+  padding: 0.2rem 0;
+  opacity: 0.85;
+}
+.roadmap .step .n {
+  display: inline-block;
+  width: 1.8rem;
+  font-weight: 700;
+  opacity: 0.55;
+}
+.roadmap .step.done {
+  color: var(--slidev-theme-color-primary);
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* links stay quiet on screen, but are real links in the published deck */
+.slidev-layout a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+.slidev-layout a:hover {
+  border-bottom-color: var(--slidev-theme-color-primary);
+}
+
+/* ── Below here: fine print, not part of the headline scale ──────────────────── */
+
+/* Inline credit, bottom right, for slides that lean on someone else's idea. */
+.attrib {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+/* dim the credit text, never the codes or logos */
+.attrib > div {
+  opacity: 0.75;
+}
+.attrib img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 0.45rem;
+  display: block;
+}
+.attrib-who {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.attrib-what {
+  font-size: 0.74rem;
+  opacity: 0.7;
+  line-height: 1.25;
+}
+.attrib-qr {
+  width: 4.6rem;
+  height: 4.6rem;
+  background: #fff;
+  padding: 0.2rem;
+  border-radius: 0.35rem;
+  display: block;
+  margin-left: 0.4rem;
+}
+
+/* The deck URL, parked where the room can grab it during questions. */
+.deck-qr {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.4rem;
+  text-align: center;
+}
+.deck-qr img {
+  width: 5.4rem;
+  height: 5.4rem;
+  background: #fff;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  display: block;
+}
+.deck-qr a {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  opacity: 0.7;
+  border-bottom: none !important;
+}
+
+/* Conversation starter: the question stays on screen with no clicks while
+   Cornelia runs the room, so every option is visible at once. */
+.starter-q {
+  font-size: 40px !important;
+  line-height: 1.15 !important;
+  padding-top: 14px;
+}
+
+/* The open question under a starter's options: hands go up first, then this
+   turns the vote into a conversation. */
+.starter-follow {
+  max-width: 40rem;
+  margin: 2rem auto 0;
+  font-size: var(--type-label);
+  line-height: 1.4;
+  opacity: 0.6;
+}

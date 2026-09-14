@@ -71,7 +71,7 @@ layout: two-columns
 </style>
 
 <!--
-- Linux → containers → k8s → cloud → CI/CD → o11y → congrats, platform engineer
+- tools -> congrats, platform engineer
 - So why is r/devops full of "where do I start"?
 - **[1]** All from TWO two-week window. Sub banned the question.
 - Same gap in the job market
@@ -206,6 +206,7 @@ layout: center
 ---
 
 <h1 style="font-size: 86px">So What?!</h1>
+
 
 <!--
 - Tutorials: linear, clean. Too easy, too far to transfer.
@@ -1131,4 +1132,3 @@ layout: center
   opacity: 0.55;
 }
 </style>
-
