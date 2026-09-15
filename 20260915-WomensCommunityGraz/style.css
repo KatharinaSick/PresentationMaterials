@@ -12,6 +12,7 @@
 :root {
   --type-label: 24px;
   --type-body: 30px;
+  --type-title: 40px;
   --type-statement: 72px;
 }
 
@@ -19,9 +20,9 @@
 .statement {
   font-size: var(--type-statement) !important;
   line-height: 1.1 !important;
-  /* matches the theme's h1 weight, so a statement and a section title are
-     the same thing rendered the same way */
-  font-weight: 900;
+  /* Same SIZE as a section title, lighter weight. A title is a label, a
+     statement is a sentence; at 900 several in a row read as shouting. */
+  font-weight: 700;
   max-width: 46rem;
   margin: 0 auto;
 }
@@ -31,7 +32,7 @@
   max-width: 44rem;
   margin: 2.5rem auto 0;
   font-size: var(--type-body);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--slidev-theme-color-primary);
 }
 
@@ -162,17 +163,81 @@
 /* Conversation starter: the question stays on screen with no clicks while
    Cornelia runs the room, so every option is visible at once. */
 .starter-q {
-  font-size: 40px !important;
+  font-size: var(--type-title) !important;
   line-height: 1.15 !important;
   padding-top: 14px;
+  /* the base h1 carries mb-4; the sub-question belongs right under the question */
+  margin-bottom: 0 !important;
 }
 
 /* The open question under a starter's options: hands go up first, then this
    turns the vote into a conversation. */
 .starter-follow {
   max-width: 40rem;
-  margin: 2rem auto 0;
+  margin: 0.5rem auto 0;
   font-size: var(--type-label);
   line-height: 1.4;
   opacity: 0.6;
+}
+
+/* A borrowed rule, quoted verbatim. Left rule bar, key clause in the accent. */
+.slidev-layout blockquote.rule {
+  max-width: 46rem;
+  margin: 2rem auto 0;
+  font-size: var(--type-title);
+  line-height: 1.35;
+  font-weight: 700;
+  border-left: 4px solid var(--slidev-theme-color-primary);
+  padding: 1.1rem 1.5rem;
+  text-align: left;
+}
+.rule em {
+  font-style: normal;
+  color: var(--slidev-theme-color-primary);
+}
+
+/* Conversation starter options. Hands go up on these; the follow-up line below
+   is where people actually answer. No clicks, everything visible at once so the
+   slide can sit there for the whole discussion. */
+.choices {
+  max-width: 34rem;
+  margin: 2.4rem auto 0;
+  text-align: left;
+}
+.choice {
+  font-size: var(--type-label);
+  line-height: 1.35;
+  padding: 0.35rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.choice .letter {
+  font-weight: 900;
+  color: var(--slidev-theme-color-primary);
+  flex-shrink: 0;
+}
+
+/* Closing slide: the two codes people actually want to take away. */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2.2rem;
+}
+.link {
+  text-align: center;
+}
+.link img {
+  width: 168px;
+  height: 168px;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+.link strong {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: var(--type-label);
 }

@@ -20,11 +20,6 @@ layout: cover
 
 Impostor Syndrome, AI & Career Growth
 
-<!--
-- Joining from home - please interrupt me at any time
-- This is not a single source of truth or piece of advice. That's just my story and a base for discussion.
--->
-
 ---
 layout: intro
 speakers:
@@ -48,10 +43,6 @@ layout: center
 Name, what you do, and if you like, how you ended up there.
 </div>
 
-<!--
-- easy question to warm up
--->
-
 ---
 
 # The Story My CV Tells
@@ -64,11 +55,6 @@ Name, what you do, and if you like, how you ended up there.
   <div class="step"><span class="n">5</span> Developer Advocate</div>
   <div class="step done"><span class="n">★</span> Developer Advocate & CNCF Ambassador</div>
 </div>
-
-<!--
-- The LinkedIn version. Clean, intentional, everything makes sense.
-- Looks like I had a plan. We'll here's how all of that actually feels for me.
--->
 
 ---
 layout: center
@@ -93,13 +79,6 @@ clicks: 1
   transform: translateY(60px) scale(0.96);
 }
 </style>
-
-<!--
-- PAUSE a bit -> click
-- And this is how I felt putting this story together yesterday. 
-- Tell my full story of hating devops, unexpected people showing up in interviews, turning down opportunities because
-they feel wrong,...
--->
 
 ---
 
@@ -140,13 +119,6 @@ It's not my job to judge whether I'm ready.
 That's the job of the people on the other side.
 </div>
 
-<!--
-- I'm a huge perfectionist. I'm working on it, it's getting better but at the same time, I never feel ready because
-of that
-- My dad taught me that applying too early might make a bad impression. I disagree.
-- So do I feel ready now? No. And I probably never will.
--->
-
 ---
 layout: center
 ---
@@ -160,6 +132,13 @@ layout: center
 And what do we underestimate?
 </div>
 
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>Being good at the work</span></div>
+  <div class="choice"><span class="letter">B</span><span>The people who vouched for me</span></div>
+  <div class="choice"><span class="letter">C</span><span>Saying yes before I was ready</span></div>
+  <div class="choice"><span class="letter">D</span><span>Something else</span></div>
+</div>
+
 ---
 layout: center
 ---
@@ -168,11 +147,6 @@ layout: center
 <div class="act-title-row">
 <h1 class="act-title">Impostor Syndrome</h1>
 </div>
-
-<!--
-- Just revisited an old talk from ComCon 2.5 years ago and there I almost only talked about impostor syndrome. So,
-did my strategies from back then work? Yes & No.
--->
 
 ---
 layout: center
@@ -232,10 +206,6 @@ layout: center
 People I look up to have some version of this.
 </div>
 
-<!--
-- Example Adriana & Kelsey.
--->
-
 ---
 layout: center
 ---
@@ -249,7 +219,186 @@ layout: center
 And what's stopping you today?
 </div>
 
-<!--
-- Forward looking because it might be easier to share for everybody. Can be a fun thing that's not work related too.
--->
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>Apply for something</span></div>
+  <div class="choice"><span class="letter">B</span><span>Speak up more</span></div>
+  <div class="choice"><span class="letter">C</span><span>Stop over-preparing</span></div>
+  <div class="choice"><span class="letter">D</span><span>Sing karaoke</span></div>
+  <div class="choice"><span class="letter">E</span><span>Something else</span></div>
+</div>
 
+---
+layout: center
+---
+
+<h1 class="gradient act-kicker">ACT 3</h1>
+<div class="act-title-row">
+<h1 class="act-title">And Then AI Showed Up</h1>
+</div>
+
+---
+
+# Why I Thought I Was Behind
+
+<div class="dense">
+<v-clicks>
+
+🧠 Someone on my team is ten steps ahead of me on this
+
+💬 Every conversation, I'm the one catching up
+
+📱 Everyone I follow online is already further along
+
+🎙️ Then we invited an expert onto our livestream
+</v-clicks>
+</div>
+
+---
+layout: center
+clicks: 1
+---
+
+<div class="statement">
+She was asking the same questions I was.
+</div>
+
+<div v-click class="answer">
+I'd been calibrating on the outlier.
+</div>
+
+---
+
+# What I Am Betting On
+
+<div class="dense">
+<v-clicks>
+
+⏳ Nobody has ten years of experience with this.
+
+🧭 Judgment. The deciding part is the job now.
+
+❓ Ask why, not what.
+
+🧠 Spend some of the time it saves on learning.
+
+🤷‍♀️ Don't fear being wrong. It's early, everyone might be.
+</v-clicks>
+</div>
+
+---
+layout: center
+---
+
+<blockquote class="rule">
+  "If you cannot explain the purpose and impact of every change
+  <em>without the assistance of an agent</em>, it's not ready for submission."
+</blockquote>
+
+<div class="attrib">
+  <div>
+    <div class="attrib-who">Crossplane</div>
+    <a class="attrib-what" href="https://github.com/crossplane/crossplane/blob/main/AI_POLICY.md" target="_blank">AI_POLICY.md</a>
+  </div>
+  <img class="attrib-qr" src="/qr-crossplane.svg" alt="QR to the Crossplane AI policy" />
+</div>
+
+---
+layout: center
+---
+
+<h1 class="gradient act-kicker">Your turn</h1>
+<div class="act-title-row">
+<h1 class="starter-q">What have you stopped doing yourself?</h1>
+</div>
+
+<div class="starter-follow">
+And could you still do it if you had to?
+</div>
+
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>The first draft of something</span></div>
+  <div class="choice"><span class="letter">B</span><span>Working out why something broke</span></div>
+  <div class="choice"><span class="letter">C</span><span>Understanding how something works</span></div>
+  <div class="choice"><span class="letter">D</span><span>Something else</span></div>
+</div>
+
+---
+layout: center
+---
+
+# Thank you ❤️
+
+<div class="answer">
+Let's keep the conversation going.
+</div>
+
+<div class="links">
+  <div class="link">
+    <img src="/qr-linkedin.svg" alt="QR code to Katharina Sick on LinkedIn" />
+    <strong>LinkedIn</strong>
+  </div>
+  <div class="link">
+    <img src="/qr-slides.svg" alt="QR code to these slides" />
+    <strong>Slides</strong>
+  </div>
+</div>
+
+---
+layout: center
+---
+
+<h1 class="gradient act-kicker">Your turn</h1>
+<div class="act-title-row">
+<h1 class="starter-q">Which is harder?</h1>
+</div>
+
+<div class="starter-follow">
+And why do some asks feel harder than others?
+</div>
+
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>Asking for help</span></div>
+  <div class="choice"><span class="letter">B</span><span>Asking for recognition</span></div>
+  <div class="choice"><span class="letter">C</span><span>Setting boundaries</span></div>
+  <div class="choice"><span class="letter">D</span><span>Something else</span></div>
+</div>
+
+---
+layout: center
+---
+
+<h1 class="gradient act-kicker">Your turn</h1>
+<div class="act-title-row">
+<h1 class="starter-q">Which expectation have you let go of?</h1>
+</div>
+
+<div class="starter-follow">
+And what changed your mind?
+</div>
+
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>I need to have all the answers</span></div>
+  <div class="choice"><span class="letter">B</span><span>I can do everything myself</span></div>
+  <div class="choice"><span class="letter">C</span><span>Success has to look a certain way</span></div>
+  <div class="choice"><span class="letter">D</span><span>Something else</span></div>
+</div>
+
+---
+layout: center
+---
+
+<h1 class="gradient act-kicker">Your turn</h1>
+<div class="act-title-row">
+<h1 class="starter-q">What worries you most about AI?</h1>
+</div>
+
+<div class="starter-follow">
+And which part of that is actually in your control?
+</div>
+
+<div class="choices">
+  <div class="choice"><span class="letter">A</span><span>Falling behind</span></div>
+  <div class="choice"><span class="letter">B</span><span>Losing the parts of the job I enjoy</span></div>
+  <div class="choice"><span class="letter">C</span><span>Not knowing what skills will matter next</span></div>
+  <div class="choice"><span class="letter">D</span><span>Something else</span></div>
+</div>
