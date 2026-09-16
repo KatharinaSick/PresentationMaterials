@@ -1,0 +1,15 @@
+{
+  "name": "20260916-cloudnativelinz",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out ../dist/20260916/CloudNativeLinz/ --base /20260916/CloudNativeLinz/",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "slidev-theme-underglow": "^0.1.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.11.5"
+  }
+}
