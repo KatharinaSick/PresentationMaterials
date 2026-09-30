@@ -1,0 +1,117 @@
+/* Shared across the solution slides: a small move label above the headline. */
+.kicker {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 0.5rem;
+}
+
+/* --- type scale -------------------------------------------------------------
+   40px  slide title      theme default h1
+   48px  quote card       theme's quote layout
+   72px  statement        a slide that IS one sentence
+   -------------------------------------------------------------------------- */
+
+/* two-line slide title, so it doesn't sit as loose as a single-liner */
+.claim {
+  line-height: 1.15 !important;
+}
+
+/* the whole slide is one sentence: So What?!, It's Not Just Juniors, ... */
+.statement {
+  font-size: 72px !important;
+  line-height: 1.1 !important;
+  max-width: 46rem;
+}
+
+/* Inline credit, bottom right, for slides that lean on someone else's idea. */
+.attrib {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+/* dim the credit text, never the codes or logos */
+.attrib > div {
+  opacity: 0.75;
+}
+.attrib img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 0.45rem;
+  display: block;
+}
+.attrib-who {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.attrib-what {
+  font-size: 0.74rem;
+  opacity: 0.7;
+  line-height: 1.25;
+}
+
+.attrib-logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 0.45rem;
+  display: block;
+}
+.attrib-qr {
+  width: 4.6rem;
+  height: 4.6rem;
+  background: #fff;
+  padding: 0.2rem;
+  border-radius: 0.35rem;
+  display: block;
+  margin-left: 0.4rem;
+}
+/* links stay quiet on screen, but are real links in the published deck */
+.slidev-layout a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+.slidev-layout a:hover {
+  border-bottom-color: var(--slidev-theme-color-primary);
+}
+
+/* The deck URL, parked where the room can grab it during questions. */
+.deck-qr {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.4rem;
+  text-align: center;
+}
+.deck-qr img {
+  width: 5.4rem;
+  height: 5.4rem;
+  background: #fff;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  display: block;
+}
+.deck-qr a {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  opacity: 0.7;
+  border-bottom: none !important;
+}
+
+/* A research citation: author, title, year. Stacks if a slide leans on two. */
+.attrib-cite {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  max-width: 24rem;
+  text-align: right;
+}
+.attrib-cite em {
+  font-style: italic;
+  opacity: 0.85;
+}
