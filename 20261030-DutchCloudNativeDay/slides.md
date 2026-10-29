@@ -18,6 +18,10 @@ layout: cover
 
 # Your Backstage, Your Problems, Your Metrics
 
+<!--
+test?
+-->
+
 ---
 
 # Intro
@@ -25,6 +29,12 @@ layout: cover
 <div style="display: flex; justify-content: center; margin-top: 1.0rem;">
   <img src="/discussion.png" alt="Discussion" style="max-height: 360px; border-radius: 12px;" />
 </div>
+
+<!--
+K: Super excited about Backstage -> let's do this
+T: Wait a minute, have you thought about...
+K: Hmmm right, let's think a bit. But before that, let's tell people who we are to argue about that
+-->
 
 ---
 
@@ -34,6 +44,10 @@ layout: cover
   <SpeakerCard name="Katharina Sick" company="Dynatrace" role="Developer Advocate" accent="#7D1CFE" image="me.jpeg"></SpeakerCard>
   <SpeakerCard name="Thomas Schuetz" company="TSC Labs" role="Cloud Native Trainer & Architect" accent="#2b6b78" image="tscweb.jpeg"></SpeakerCard>
 </div>
+
+<!--
+real life + talk role intro
+-->
 
 ---
 layout: four-columns
@@ -84,11 +98,19 @@ disabled: true
 
 <span><Icon name="waves" style="color: #01D393;" />&numsp;The IDP also changes the way things work.</span>
 
+<!--
+T: all the hold on points + "let me think about it for a few days"
+-->
+
 ---
 layout: quote
 quote: A Few Days Later ...
 background: robot-chilling.jpeg
 ---
+
+<!--
+K: Thomas, a few days have passed. Any results yet?
+-->
 
 ---
 layout: three-columns
@@ -117,6 +139,10 @@ layout: three-columns
   <h2>Cognitive Load</h2>
 </div>
 
+<!--
+T: ...
+-->
+
 ---
 
 # Asking the Right Questions
@@ -141,6 +167,10 @@ layout: three-columns
   How often do developers switch between tools?
 </Cloud>
 
+<!--
+T: ...
+-->
+
 ---
 layout: quote
 quote: Shipping without a baseline is hoping, not engineering
@@ -148,11 +178,20 @@ subtitle: Data beats gut feeling. Always.
 background: robot-working.jpeg
 ---
 
+<!--
+K: Hmmm, actually, you're right. If we just ship Backstage without defining what we want to achieve with it, we'll never know if it's of any help. That's not what i consider good engineering. It's just trying and hoping. Let's see how we can get some data. Give ma  bit.
+-->
+
 ---
 
 # A Few Days Later (Again)
 
 <img v-click src="/standard-instrumentation.png" alt="Backstage instrumentation dashboard" style="width: 98%; border-radius: 8px; display: block; margin: auto;" />
+
+<!--
+T: Kathi, any progress?
+K: yes, there's quite some data you can get out of Backstage. Look how cool it is. There's auto instrumentation that shows you EVERYTHIHNG that's happening
+-->
 
 ---
 layout: three-columns
@@ -175,6 +214,9 @@ layout: three-columns
   <BulletBox accent="#176AFA" title="Backend Tasks" :bullets="['<code>task.runs.count</code>', '<code>task.runs.duration</code>']" />
 </div>
 
+<!--
+K: And there's even more. There's all those cool metrics you can get out of Backstage for free by just enabling it in your config. You can see....
+-->
 
 ---
 
@@ -185,6 +227,11 @@ layout: three-columns
 <span v-click><Icon name="target" style="color: #176AFA;" />&numsp;Your portal is unique. Your metrics should be too.</span>
 
 <span v-click><Icon name="idea" style="color: #01D393;" />&numsp;Start with the problem. The metric follows.</span>
+
+<!--
+T: Ok cool, but those are quite generic. 
+Tailor stuff to your platform...
+-->
 
 ---
 layout: center
@@ -208,6 +255,10 @@ layout: center
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
+<!--
+K: Ok a big problem we have is the friction people experience when they join our company or when they want to deploy a new app
+-->
+
 ---
 
 # What Could Better Look Like?
@@ -220,6 +271,10 @@ layout: center
 <span style="display: block; font-size: 0.6em; opacity: 0.55;">E.g. quarterly survey on the app creation process</span></p>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+T: setting goals (or K? I don't remember)
+-->
 
 ---
 
@@ -237,6 +292,12 @@ layout: center
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
+<!--
+K: Software Templates help a ton
+T: Who's going to fill THAT out. Do you really think that makes things easier?
+K: I knew you'd say that
+-->
+
 ---
 
 # What Backstage Tells You
@@ -252,6 +313,12 @@ layout: center
 </div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+K: ok we have goals, but we also need to measure if we achieve them. Let's take a look at what Backstage tells us. 
+
+That data helps but it doesn't show the complete picture. Why don't we create a trace from start to end. And most importantly: let' not only focus on backstage but on the whole chain from opening the template to having a first running app deployed.
+-->
 
 ---
 
@@ -272,6 +339,10 @@ layout: center
 </div>
 
 <LifecycleFlow :highlight="['Bootstrap', 'Develop', 'Deploy']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
+
+<!--
+K: ...
+-->
 
 ---
 
@@ -295,15 +366,27 @@ layout: center
 
 <LifecycleFlow :highlight="['Develop', 'Maintain']" compact style="position: absolute; bottom: 3rem; width: 90%;" />
 
+<!--
+K: same pattern can be applied to anything. in this case day 2 knowledge gaps..
+-->
+
 ---
 
 # Some Metrics That Matter
 
 <img src="/lifecycle.svg" style="width: 97%; height: auto; margin-left: auto; margin-right: auto;" alt="lifecycle" />
 
+<!--
+T: ...
+-->
+
 ---
 
 <img src="/backstage-dashboard.png" alt="Dynatrace dashboard showing Backstage metrics" style="width: 90%; border-radius: 8px; display: block; margin: auto; margin-top: -15px" />
+
+<!--
+K: this is live IRL
+-->
 
 ---
 
@@ -338,6 +421,10 @@ layout: center
 
 </div>
 
+<!--
+K: ...
+-->
+
 ---
 
 # Takeaways
@@ -349,6 +436,10 @@ layout: center
 <p style="margin: 0; padding-bottom: 1.2rem; font-size: inherit;"><Icon name="search" style="color: #7D1CFE;" />&numsp;Backstage itself exposes OpenTelemetry metrics and traces.</p>
 <p style="margin: 0; padding-bottom: 0; font-size: inherit;"><Icon name="scaffolder" style="color: #01D393;" />&numsp;Done right, it helps you keep an overview and automate complex tasks.</p>
 </div>
+
+<!--
+T: ...
+-->
 
 ---
 layout: center
@@ -374,3 +465,7 @@ layout: center
     <span style="font-size: 0.7em;">Kathi</span>
   </div>
 </div>
+
+<!--
+Whoever :D
+-->
